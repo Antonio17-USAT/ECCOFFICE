@@ -11,6 +11,7 @@ body {
 .header {
     background-color: #7df1a7;
     padding: 10px 40px;
+    
 }
 
 .he1 {
@@ -71,40 +72,98 @@ body {
     padding: 5px 15px ;
     transition: all 1s ease;
 }
-.he2 .nav-link:hover{ 
-    background-color: white;
-    box-shadow: .5rem .5rem 1rem white, 
-    -.5rem -.5rem 1rem white; 
-}
+
+/*Hasta aquí el header*/
+
 main{ 
     grid-template-columns: repeat(1, auto);
-    border: 2px solid black;
     width: 90%;
     margin: 0 auto;
 }
 .Titulos{ 
     text-align: center;
-    margin-top: 50px;
+    margin-top: 90px;
 }
-.Titulos h4{ 
+.Titulos h1{ 
+    font-size: 45px;
+}
+.Titulos p{ 
     margin-top: 20px;
+    font-size: 25px;
 }
 .carrusel{
-    border: 2px solid black;
-    width: 90%;
-    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 100px;
+    width: 100%;
 }
-.Ofertas{ 
-    border: 2px solid black;
+
+.imagenes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 380px;
+}
+
+.img{
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.85);
+    border-radius: 15px ;
+    margin: 5px;
+    object-fit: cover;
+    filter: saturate(175%);
+    display: flex;
+    width: 70%;
+    height: 70%;
+
+}
+.puntos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 90%;
     margin: 0 auto;
-    margin-top: 15px;
+    padding-left: 70px;
+}
+
+.puntos p{
+    font-size: 100px;
+    font-weight: 500;
+}
+
+.puntos .bold{
+    font-weight: 700;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: black ;
+}
+
+.Ofertas{ 
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+    
 }
 .Ofertas h2{ 
-    padding: 10px 0px;
+    
+    padding: 10px 90px;
+    animation-name: movimiento;
+    animation-duration: 8s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+   
 } 
+@keyframes movimiento{
+    from{ 
+        margin-left: 65%;
+    }
+    to{ 
+        margin-left: 0%;
+    }
+}
 .contenedor{ 
-    border: 2px solid black;
     width: 95%;
     margin: 0 auto;
     display: flex;
@@ -112,35 +171,66 @@ main{
 }
 .caja{ 
     background-color: #7df1a7;
-    padding: 20px 0px;
+    margin-top: 20px;
 }
 .caja img{ 
-    width: 370px;
-    height: 320px;
+    height: 210px;
+    width: 285px;
+    margin: 10px 10px;
     border-radius: 70px;
-    margin: 0px 15px;
 }
 .caja .espacio{ 
-    background-color: #a6a6a6;
+    background-color: #b3b3b3;
     margin-top: 10px;
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     color: white;
     font-weight: bolder;
+    padding: 10px 0px;
+}
+.caja .nada{ 
+    background-color: #7df1a7; 
+    height: 20px;
+
 }
 .colaboraciones{ 
     background-color: #c0ffd7;
-    text-align: center;
     width: 90%;
-    margin-top: 0 auto;
-    padding: 20px 0px;
+    margin: 0 auto;
+    margin-top: 80px;
+    text-align: center;
 }
+.colaboraciones h3 { 
+    padding: 15px 0px ;
+    font-size: 25px;
+    word-spacing: 10px;
+} 
+
 .colaboraciones .area-marcas{ 
-    background-color: #a6a6a6;
+    background-color: #c0ffd7;
     display: flex;
     justify-content: space-around;
+    padding: 20px 0px;
 }
 
+.marca img{ 
+    margin-bottom: 20px;
+    width: 170px;
+    height: 100px;
+    margin-bottom: 25px;
+}
+.marca a { 
+    text-decoration: none ;
+    color: black;
+    border-radius: 60px;
+    background-color: white;
+    padding: 15px 50px;
+}
+.colaboraciones .vacio { 
+    background-color: #c0ffd7;
+    height: 20px;
+}
+/*Desde aquí el footer*/
 footer {
     grid-area: footer;
     background-color: #576d57;
@@ -148,6 +238,7 @@ footer {
     grid-template-columns: repeat(5, auto);
     padding: 1% 0 1% 5%;
     color: white;
+    margin-top: 100px;
     
 }
 footer .logo {
@@ -221,4 +312,10 @@ footer .titulo-div {
 }
 .item .ig{ 
     height: 30px;
+}
+.derechos { 
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
 }
