@@ -9,72 +9,72 @@
 </head>
 
 <body>
-    <header>
-        <div class="Logo">
-            <h1>ECCOFFICE</h1>
-            <ul>
-                <a href="#">Catalogo</a>
-                <a href="#">About</a>
-                <a href="#">Contacto</a>
-                <a href="#">Login</a>
-            </ul>
-            <div>
-
+    <header class="header">
+        <div class="he1">
+            <div class="logo">
+                <img src="Img/pinguino drogo.png" alt="ECCOFFICE Logo" class="logo-img">
+                <span class="logo-text"><strong>ECCOFFICE</strong></span>
+            </div>
+            <div class="icons">
+                <a href="" class="icon"><img src="Img/carro-de-la-compra.png" alt="" class="carrito"></a>
+                <a href="#favoritos" class="icon"><img src="Img/amor.png" alt=""></a>
+                <a href="#perfil" class="icon"><img src="Img/perfil.png" alt="" class="perfil"></a>
+            </div>
+        </div>
     </header>
+    <div class="dropdown">
+        <div class="enlace">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Catalogo
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Carrito</a></li>
+              </ul>
+        </div>
+        <div class="enlace">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Nosotros
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Nuestra Historia</a></li>
+                <li><a class="dropdown-item" href="#">Mision y Visión</a></li>
+              </ul>
+        </div>
+        <div class="enlace">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Contacto
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Mensaje</a></li>
+                <li><a class="dropdown-item" href="#">Redes Sociales</a></li>
+              </ul>
+        </div>
+        <div class="enlace">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Ayuda
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Centro de Ayuda</a></li>
+                <li><a class="dropdown-item" href="#">Libro de Reclamaciones</a></li>
+                <li><a class="dropdown-item" href="#">Preguntas Frecuentes</a></li>
+                <li><a class="dropdown-item" href="#">Horarios de atencion</a></li>
+                <li><a class="dropdown-item" href="#">Politicas de Privacidad</a></li>
+              </ul>
+        </div>
+    </div>
     <main>
-        <div class="filtros">
-            
-            <nav>
-                <ul class="lista">
-                    <li class="item-open">
-                        <div class="item-boton">
-                            <a href="" class="nav-link">Centro de ayuda</a>
-                        </div>
-                    </li>
-                    <li class="item-open">
-                        <div class="item-boton">
-                            <a href="" class="nav-link">Libro de Reclamaciones</a>
-                        </div>
-                    </li>
-                    <li class="item-open">
-                        <div class="item-boton">
-                            <a href="" class="nav-link">Preguntas Frecuentes</a>
-                        </div>
-                    </li>
-                    <li class="item-open">
-                        <div class="item-boton">
-                            <a href="" class="nav-link">Horarios de atencion</a>
-                        </div>
-                    </li>
-                    <li class="item-open">
-                        <div class="item-boton">
-                            <a href="" class="nav-link">Politicas de Privacidad</a>
-                        </div>
-                    </li>
+        
 
-                </ul>
-            </nav>
-        </div>
-        <div class="preguntas">
-            
-            <h2>Centro de Ayuda - Preguntas Frecuentes</h2>
-            
-            <div class="faq-item">
-                <div class="pregunta">¿Cuál es el horario de atención?</div>
-                <div class="respuesta">Para realizar una compra, selecciona el producto que deseas, sigue el proceso de pago. Te pediremos tu dirección de envío y método de pago.</div>
-            </div>
-            
-            <div class="faq-item">
-                <div class="pregunta">¿Cómo puedo hacer una devolución?</div>
-                <div class="respuesta">Puedes cancelar un pedido dentro de las primeras 24 horas desde la sección "Mis Compras" en tu perfil. Si el pedido ya ha sido enviado, comunícate con nosotros para opciones de devolución.</div>
-            </div>
-            <div class="faq-item">
-                <div class="pregunta">¿Dónde encuentro las políticas de privacidad?</div>
-                <div class="respuesta">Para comunicarte con nosotros, utiliza la sección "Contacto" en nuestra página o envíanos un correo a ecoffice@gmail.com. También puedes llamarnos al +51 999 999 999.</div>
-            </div>
-        </div>
     </main>
     <footer>
+        <div class="logo">
+            <div class="logo-f">
+                <img src="Img/pinguino drogo.png" alt="ECCOFFICE Logo" class="logo-img">
+            </div>
+            <di class="text-f">
+                <span class="logo-text"><strong>ECCOFFICE</strong></span>
+        </div>
+        </div>
         <div class="Ayuda">
             <div class="titulo-div">Te ayudamos</div>
             <div class="varios">
@@ -102,12 +102,25 @@
         <div class="Redes">
             <div class="titulo-div">Redes Sociales</div>
             <div class="varios">
-                <li><a href="">Facebook</a></li>
-                <li><a href="">Youtube</a></li>
-                <li><a href="">Instagram</a></li>
+                <li class="item">
+                    <img src="Img/facebook-brands-solid.svg" alt="">
+                    <span><a href="">Facebook</a></span>
+                </li>
+                <li class="item">
+                    <img src="Img/youtube-brands-solid.svg" alt="">
+                    <span><a href="">Youtube</a></span>
+                </li>
+                <li class="item">
+                    <img src="Img/instagram-brands-solid.svg" alt="" class="ig">
+                    <span><a href="">Instagram</a></span>
+                </li>
+
             </div>
         </div>
     </footer>
+    <div class="derechos">
+        <h3>Todos los derechos reservados, © Lambayeque, Perú 2024</h3>
+    </div>
     <!-- Se agrego -->
     <script src="JS/jquery-3.7.1.min.js"></script>
     <script src="JS/Preguntas.js"></script>
