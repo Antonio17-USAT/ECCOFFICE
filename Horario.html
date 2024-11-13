@@ -9,22 +9,94 @@
 </head>
 
 <body>
-    <header>
-        <div class="Logo">
-            <h1>ECCOFFICE</h1>
-            <ul>
-                <a href="#">Catalogo</a>
-                <a href="#">About</a>
-                <a href="#">Contacto</a>
-                <a href="#">Login</a>
-            </ul>
-            <div>
-
+    <header class="header">
+        <div class="he1">
+            <div class="logo">
+                <img src="Img/pinguino drogo.png" alt="ECCOFFICE Logo" class="logo-img">
+                <span class="logo-text"><strong>ECCOFFICE</strong></span>
+            </div>
+            <div class="icons">
+                <a href="" class="icon"><img src="Img/carro-de-la-compra.png" alt="" class="carrito"></a>
+                <a href="#favoritos" class="icon"><img src="Img/amor.png" alt=""></a>
+                <a href="#perfil" class="icon"><img src="Img/perfil.png" alt="" class="perfil"></a>
+            </div>
+        </div>
     </header>
+    <div class="dropdown">
+        <div class="enlace">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Catalogo
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Carrito</a></li>
+              </ul>
+        </div>
+        <div class="enlace">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Nosotros
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Nuestra Historia</a></li>
+                <li><a class="dropdown-item" href="#">Mision y Visión</a></li>
+              </ul>
+        </div>
+        <div class="enlace">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Contacto
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Mensaje</a></li>
+                <li><a class="dropdown-item" href="#">Redes Sociales</a></li>
+              </ul>
+        </div>
+        <div class="enlace">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Ayuda
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Centro de Ayuda</a></li>
+                <li><a class="dropdown-item" href="#">Libro de Reclamaciones</a></li>
+                <li><a class="dropdown-item" href="#">Preguntas Frecuentes</a></li>
+                <li><a class="dropdown-item" href="#">Horarios de atencion</a></li>
+                <li><a class="dropdown-item" href="#">Politicas de Privacidad</a></li>
+              </ul>
+        </div>
+    </div>
     <main>
-        
+        <div class="botones">
+            <button class="izq">Centro Ayuda</button>
+            <button class="izq">Libro de reclamaciones</button>
+            <button class="izq">Preguntas Frecuentes</button>
+            <button class="izq">Horarios de Atención</button>
+            <button class="izq">Políticas de privacidad</button>
+        </div>
+        <div class="texto">
+            <h2>Horarios de atención</h2>
+            <div class="box">
+                <h3>Ubicanos en</h3>
+                <p>*Av. San Josemaria Escriva de Balaguer 855, Chiclayo 14012</p>
+            </div>
+            <div class="box">
+                <h3>Horarios de atención</h3>
+                <ul>
+                    <li>*Lunes a Viernes        08:00 am a 18:00 pm</li>
+                    <li>*Sabados y Domingos     08:00 am a 18:00 pm</li>
+                    <li>*Feriados               08:00 am a 18:00 pm</li>
+                </ul>
+                <button class="costado">Ir a Contacto</button>
+            </div>
+        </div>
+
     </main>
     <footer>
+        <div class="logo">
+            <div class="logo-f">
+                <img src="Img/pinguino drogo.png" alt="ECCOFFICE Logo" class="logo-img">
+            </div>
+            <di class="text-f">
+                <span class="logo-text"><strong>ECCOFFICE</strong></span>
+        </div>
+        </div>
         <div class="Ayuda">
             <div class="titulo-div">Te ayudamos</div>
             <div class="varios">
@@ -52,12 +124,25 @@
         <div class="Redes">
             <div class="titulo-div">Redes Sociales</div>
             <div class="varios">
-                <li><a href="">Facebook</a></li>
-                <li><a href="">Youtube</a></li>
-                <li><a href="">Instagram</a></li>
+                <li class="item">
+                    <img src="Img/facebook-brands-solid.svg" alt="">
+                    <span><a href="">Facebook</a></span>
+                </li>
+                <li class="item">
+                    <img src="Img/youtube-brands-solid.svg" alt="">
+                    <span><a href="">Youtube</a></span>
+                </li>
+                <li class="item">
+                    <img src="Img/instagram-brands-solid.svg" alt="" class="ig">
+                    <span><a href="">Instagram</a></span>
+                </li>
+
             </div>
         </div>
     </footer>
+    <div class="derechos">
+        <h3>Todos los derechos reservados, © Lambayeque, Perú 2024</h3>
+    </div>
     <!-- Se agrego -->
     <script src="JS/jquery-3.7.1.min.js"></script>
     <script src="JS/Horario.js"></script>
