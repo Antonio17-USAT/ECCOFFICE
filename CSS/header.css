@@ -17,19 +17,10 @@
     align-items: center;
     justify-content: center;
 }
-@media (max-width: 700px) {
-    .he1 {
-        grid-template-columns: auto auto;
-    }
-    .caja-busqueda {
-        display: none;
-    }
+.caja-busqueda2 {
+   display: none;
 }
-@media (max-width: 560px) {
-    .he1 {
-        justify-content: space-between;
-    }
-}
+
 .barra-busqueda {
     border: 2px solid #54c37d;
     width: 100%;
@@ -79,7 +70,6 @@
 .icons {
     display: flex;
     gap: 15px;
-    
 }
 
 .icon img {
@@ -95,11 +85,20 @@
     height: 38px; 
     width: 38px;
 }
+ /* 2do header  */
 .dropdown{ 
     background-color: #b5f7cd;
-    padding: 15px 200px;
+    padding: 10px 10px;
     display: flex;
+    justify-content: center;
+}
+.dropdown-caja{ 
     justify-content: space-around;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    width: 100%;
+    max-width: 1500px;
 }
 .dropdown .btn{ 
     background-color: white;
@@ -115,3 +114,77 @@
 .dropdown .dropdown-menu a:hover{ 
     background-color: #7df1a7 ;
 }
+
+@media (max-width: 890px) {
+    .he1 {
+        grid-template-columns: auto auto;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .caja-busqueda {
+        display: none;
+    }
+    .dropdown{ 
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto , auto;
+        grid-template-areas: 
+        "area1"
+        "area2"
+        ;
+    }
+    .dropdown-caja{ 
+        grid-template-columns: auto auto auto auto;
+        grid-area: area1;
+        padding: 10px 10px ;
+        grid-gap: 25px;
+    }
+   
+    .dropdown .btn{ 
+        background-color: white;
+        color: black;
+        padding: 5px 5px;
+        font-size: 15px;
+        border: 30px;
+    }
+    .dropdown .dropdown-menu a{ 
+        font-size: 15px;
+    }
+    .caja-busqueda2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-area: area2;
+    }
+    .barra-busqueda2 {
+        border: 2px solid #54c37d;
+        width: 100%;
+        max-width: 400px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    .barra-busqueda2 input {
+        flex: 1;
+        border: none;
+        font-size: 16px;
+        padding: 6px 18px;
+    }
+    .barra-busqueda2 .icono {
+        text-align: center;
+        width: 30px;
+    }
+}
+
+@media (max-width: 560px) {
+    .he1 {
+        justify-content: space-between;
+    }
+    .he1 .logo .logo-text {
+        display: none;
+    }
+}
+
