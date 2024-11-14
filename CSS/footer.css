@@ -11,25 +11,9 @@ footer .caja-footer {
     color: white;
     margin-top: 100px;
     padding: 0px 16px 80px 16px;
-    
+    grid-template-columns: repeat(5,auto);
 }
-@media (max-width: 400px) {
-    footer .caja-footer {
-        grid-template-columns: 1fr;
-        grid-gap: 40px 18px;
-    }
-}
-@media (max-width: 800px) and (min-width: 401px) {
-    footer .caja-footer {
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 40px 18px;
-    }
-}
-@media (min-width: 801px) {
-    footer .caja-footer {
-        grid-template-columns: repeat(5, auto);
-    }
-}
+
 
 footer .logo-img{ 
     height: 140px;
@@ -101,3 +85,17 @@ footer .titulo-div {
     text-align: center;
     padding: 10px 10px;
 }
+
+@media(max-width:800px){ 
+    footer .caja-footer { 
+       
+        grid-gap: 25px;
+    }
+}
+@media(max-width:560px){ 
+    footer .caja-footer { 
+        grid-template-columns: repeat(2,auto); 
+        grid-gap: 25px;
+    }
+}
+

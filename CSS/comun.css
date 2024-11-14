@@ -12,7 +12,3 @@ body {
 body {
     font-family: Arial, sans-serif;
 }
-
-body > *:not(header):not(.dropdown) {
-    display: none;
-}

@@ -1,17 +1,12 @@
 header{ 
-    background-color: aquamarine; 
     padding: 10px 0px;
 }
-#navbar{
-    background-color: aquamarine;
-}
+
 .container-fluid{ 
-    background-color: aquamarine;
-    
+    background-color: #7df1a7;
+    padding: 10px 10px;
 }
-.navbarSupportedContent{ 
-    
-}
+
 main{ 
     grid-template-columns: repeat(1, auto);
    
