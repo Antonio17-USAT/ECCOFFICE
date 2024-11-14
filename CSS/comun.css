@@ -1,0 +1,18 @@
+@import url(header.css);
+@import url(footer.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    /* zoom: 0.4; */
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+body > *:not(header):not(.dropdown) {
+    display: none;
+}
