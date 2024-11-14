@@ -11,6 +11,7 @@ body {
 .header {
     background-color: #7df1a7;
     padding: 10px 40px;
+    
 }
 
 .he1 {
@@ -55,30 +56,29 @@ body {
     height: 38px; 
     width: 38px;
 }
-.dropdown{ 
+.he2{ 
     background-color: #b5f7cd;
     padding: 15px 200px;
     display: flex;
     justify-content: space-around;
 }
-.dropdown .btn{ 
+.he2 .nav-link{ 
+    text-decoration: none;
+    font-size: 20px;
+    text-decoration: none; 
+    border-radius: 10px;
     background-color: white;
     color: black;
-    padding: 5px 25px;
-    font-size: 25px;
+    padding: 5px 15px ;
+    transition: all 1s ease;
 }
-.dropdown .dropdown-menu a{ 
-    font-size: 25px;
-}
-.dropdown .dropdown-menu a:hover{ 
-    background-color: #7df1a7 ;
-}
+
+/*Hasta aquí el header*/
 /*Hasta aquí el header*/
 main{ 
     grid-area: main; 
     display: grid;
     grid-template-columns: repeat(2, 25% 75%);  
-    background-color:  white;
 }
 main .filtros{ 
     height: 100%;
@@ -88,7 +88,6 @@ main .filtros{
    
 } 
 nav{ 
-   background-color: #d3f7cd;
    padding-top: 5px;
    padding-bottom: 5px;
    width: auto;
@@ -124,9 +123,15 @@ nav{
     gap: 1em;
     width: 100%;
     padding-left: 20px;
+    margin-top: 5px;
+    background-color: #B5F7CD;
+    border-radius: 50px;
+}
+.item-boton a{
+    margin: 5px;
 }
 .item-boton:hover{ 
-    background: #9bf59b;
+    background: #4BAA6E;
     border-radius: 50px;
 }
 
@@ -155,66 +160,104 @@ nav{
     padding-left: 20px;
 }
 
-main .productos {
-   text-align: center;
-    margin: 30px auto;
-    padding: 50px auto;
-    
-} 
-.product-catalog {
+/*aqui es el main sin las listas*/
+.productos {
     display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
-    padding: 30px auto;
-    flex: 1; 
+    padding: 20px;
+}
+
+section {
+    width: 75%;
+    margin-left: 5%;
+}
+
+.perfilConfi, .pedido {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+
+}
+
+.perfilConfi div h2, .pedido h2 {
+    padding: 10px 20px;
     width: 100%;
+    height: 45px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    background-color: #B5F7CD;
 }
 
-.product-card {
-    width: 300px;
-    height: auto;
-    padding: 10px auto;
-    background-color: #fff;
-    border: 1px solid #ddd;
+.iconsPerfil {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.iconsPerfil div {
     text-align: center;
-    border: 4px solid #4baa6e;
-    border-radius: 20px;
 }
 
-.product-image {
-    width: 300px;
-    height: 200px;
-    margin-bottom: 10px;
-   
-}
-.descripcion{ 
-    text-align: start;
-    padding: 20px 20px;
-
-}
-.descripcion .nombre-p{ 
-    font-size: 24px;
-    text-align: start;
-    font-weight: bold;
-}
-.descripcion .precio-p{ 
-    font-size: 20px;
-    text-align: start;
+.iconsPerfil span {
+    font-size: 2em;
 }
 
-.view-button {
-    padding: 5px 40px;
-    background-color: #4baa6e;
+.pedido {
+    display: flex;
+    flex-direction: column;
+}
+
+.detalles {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+}
+
+.img {
+    width: 100px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.info {
+    flex: 1;
+}
+
+.info h3 {
+    margin-bottom: 5px;
+}
+
+.botones {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.confirmarbtn {
+    background-color: #4BAA6E;
     color: white;
-    border-radius: 20px;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 20px;
-    margin-left: 70px;
-    transition: background-color 0.3s;
 }
 
-.view-button:hover {
-    background-color: #0056b3;
+.cancelarbtn {
+    background-color: #4BAA6E;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.detallesbtn {
+    background-color: #4BAA6E;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 /*Desde aquí el footer*/
@@ -306,4 +349,3 @@ footer .titulo-div {
     text-align: center;
     padding: 10px 10px;
 }
-

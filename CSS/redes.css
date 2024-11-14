@@ -74,90 +74,47 @@ body {
 }
 
 /*Hasta aquí el header*/
-
-/*aqui es el main sin las listas*/
 main {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 130px;
+    
 }
 
-section {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border: 2px solid #98f5a9;
-    border-radius: 8px;
-    width: 400px;
+main h2 {
+    font-weight: normal;
+    margin:  30px;
+    font-size: 30px;
+}
+
+.social-media-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-media-item {  
     text-align: center;
 }
 
-section h2 {
-    margin-bottom: 15px;
+.social-media-item img {
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.infor {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 15px;
-}
-
-.infor label {
-    width: 30%;
-    text-align: left;
+.social-media-item a {
     font-weight: bold;
+    margin-top: 10px;
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+.social-media-item a :hover{ 
+    color: #7df1a7 ;
 }
 
-.infor input[type="text"],
-.infor input[type="email"],
-.infor input[type="password"],
-.infor input[type="tel"] {
-    width: 65%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.genero {
-    display: flex;
-    align-items: center;
-    gap: 17px;
-}
-
-.boton {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    margin-top: 15px;
-}
-
-.btnR {
-    background-color: #4caf50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 45%;
-}
-
-.btnC {
-    background-color: #f44336;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 45%;
-}
 /*Desde aquí el footer*/
 footer {
     grid-area: footer;
@@ -166,7 +123,7 @@ footer {
     grid-template-columns: repeat(5, auto);
     padding: 1% 0 1% 5%;
     color: white;
-    
+    margin-top: 100px;
 }
 footer .logo {
     grid-template-rows: repeat(2,auto);
@@ -246,4 +203,3 @@ footer .titulo-div {
     text-align: center;
     padding: 10px 10px;
 }
-

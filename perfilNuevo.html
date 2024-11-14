@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrar</title>
-    <link rel="stylesheet" href="CSS/registrar.css">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="CSS/perfil.css">
 </head>
 
 <body>
@@ -18,7 +18,7 @@
             <div class="icons">
                 <a href="" class="icon"><img src="Img/carro-de-la-compra.png" alt="" class="carrito"></a>
                 <a href="#favoritos" class="icon"><img src="Img/amor.png" alt=""></a>
-                <a href="#perfil" class="icon"><img src="Img/perfil.png" alt="" class="perfil"></a>
+                <a href="#perfil" class="icon"><img src="Img/perfil.png" class="perfil"></a>
             </div>
         </div>
     </header>
@@ -38,45 +38,86 @@
     </div>
     <main>
         <!-- de inmedio -->
-        <section >
-            <h2>Crea una cuenta</h2>
-            <form action="#">
-                <div class="infor">
-                    <label for="nombres">Nombres</label>
-                    <input type="text" id="nombres" name="nombres" required>
-                </div>
-                
-                <div class="infor">
-                    <label for="correo">Correo</label>
-                    <input type="email" id="correo" name="correo" required>
-                </div>
-
-                <div class="infor">
-                    <label for="contrasena">Contraseña</label>
-                    <input type="password" id="contrasena" name="contrasena" required>
-                </div>
-
-                <div class="infor">
-                    <label>Género</label>
-                    <div class="genero">
-                        <input type="radio" id="masculino" name="genero" value="masculino">
-                        <label for="masculino">Masculino</label>
-                        <input type="radio" id="femenino" name="genero" value="femenino">
-                        <label for="femenino">Femenino</label>
+        <div class="filtros">
+            <nav>
+                <ul class="lista">
+                    <li class="item-open">
+                        <div class="item-boton">
+                            <a href="" class="nav-link">Perfil</a>
+                        </div>
+                    </li>
+                    <li class="item-open">
+                        <div class="item-boton">
+                            <a href="" class="nav-link">Compras</a>
+                        </div>
+                        <ul class="lista_show">
+                            <li class="lista_dentro">
+                                <a href="" class="nav-link-dentro">Detalle de pedido</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item-open">
+                        <div class="item-boton">
+                            <a href="" class="nav-link">Lista de deseos</a>
+                        </div>
+                    </li>
+                    <li class="item-open">
+                        <div class="item-boton">
+                            <a href="" class="nav-link">Devolucion</a>
+                        </div>
+                    </li>
+                    <li class="item-open">
+                        <div class="item-boton">
+                            <a href="" class="nav-link">Configuracion</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="productos">
+            <section>
+                <div class="perfilConfi">
+                    <div>
+                        <h2>MI PERFIL</h2>
+                    </div>
+                    <div class="iconsPerfil">
+                        <div>
+                            <span>🛒</span>
+                            <p>Lista de deseos</p>
+                        </div>
+                        <div>
+                            <span>👜</span>
+                            <p>Devoluciones</p>
+                        </div>
+                        <div>
+                            <span>🛍️</span>
+                            <p>Mis compras</p>
+                        </div>
+                        <div>
+                            <span>✏️</span>
+                            <p>Editar</p>
+                        </div>
                     </div>
                 </div>
-
-                <div class="infor">
-                    <label for="telefono">Teléfono</label>
-                    <input type="tel" id="telefono" name="telefono">
+        
+                <div class="pedido">
+                    <h2>ULTIMO PEDIDO</h2>
+                    <div class="detalles">
+                        <img src="img/notas adhseivas.jpg" alt="Notas adhesivas" class="img">
+                        <div class="info">
+                            <h3>Notas adhesivas</h3>
+                            <p>Realizadas a base de papel reciclado</p>
+                            <p>$ 99.99</p>
+                        </div>
+                        <div class="botones">
+                            <button class="confirmarbtn">Confirmar pedido</button>
+                            <button class="cancelarbtn">Cancelar</button>
+                            <button class="detallesbtn">Detalles</button>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="botonRC">
-                    <button type="submit" class="btnR">Registrar</button>
-                    <button type="reset" class="btnC">Cancelar</button>
-                </div>
-            </form>
-        </section>
+            </section>
+        </div>
     </main>
     <footer>
         <div class="logo">
@@ -136,5 +177,3 @@
 </body>
 
 </html>
-        
-    

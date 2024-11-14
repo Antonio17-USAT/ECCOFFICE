@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrar</title>
-    <link rel="stylesheet" href="CSS/registrar.css">
+    <title>Configuracion</title>
+    <link rel="stylesheet" href="CSS/configuracion.css">
 </head>
 
 <body>
@@ -38,45 +38,70 @@
     </div>
     <main>
         <!-- de inmedio -->
-        <section >
-            <h2>Crea una cuenta</h2>
-            <form action="#">
-                <div class="infor">
-                    <label for="nombres">Nombres</label>
-                    <input type="text" id="nombres" name="nombres" required>
-                </div>
-                
-                <div class="infor">
-                    <label for="correo">Correo</label>
-                    <input type="email" id="correo" name="correo" required>
-                </div>
-
-                <div class="infor">
-                    <label for="contrasena">Contraseña</label>
-                    <input type="password" id="contrasena" name="contrasena" required>
-                </div>
-
-                <div class="infor">
-                    <label>Género</label>
-                    <div class="genero">
-                        <input type="radio" id="masculino" name="genero" value="masculino">
-                        <label for="masculino">Masculino</label>
-                        <input type="radio" id="femenino" name="genero" value="femenino">
-                        <label for="femenino">Femenino</label>
+        <div class="filtros">
+            <nav>
+                <ul class="lista">
+                    <li class="item-open">
+                        <div class="item-boton">
+                            <a href="" class="nav-link">Perfil</a>
+                        </div>
+                    </li>
+                    <li class="item-open">
+                        <div class="item-boton">
+                            <a href="" class="nav-link">Compras</a>
+                        </div>
+                        <ul class="lista_show">
+                            <li class="lista_dentro">
+                                <a href="" class="nav-link-dentro">Detalle de pedido</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item-open">
+                        <div class="item-boton">
+                            <a href="" class="nav-link">Lista de deseos</a>
+                        </div>
+                    </li>
+                    <li class="item-open">
+                        <div class="item-boton">
+                            <a href="" class="nav-link">Devolucion</a>
+                        </div>
+                    </li>
+                    <li class="item-open">
+                        <div class="item-boton">
+                            <a href="" class="nav-link">Configuracion</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="productos">
+            <section>
+                <div class="editarP">
+                    <h2>EDITAR PERFIL</h2>
+                    <div class="info">
+                        <div class="labels">
+                            <p>Nombre</p>
+                            <p>Genero</p>
+                            <p>Codigo Postal</p>
+                        </div>
+                        <div class="infoC">
+                            <p>LUIS BARBOZA</p>
+                            <p>MASCULINO</p>
+                            <p>14012</p>
+                        </div>
+                        <button class="editar">Editar</button>
                     </div>
                 </div>
-
-                <div class="infor">
-                    <label for="telefono">Teléfono</label>
-                    <input type="tel" id="telefono" name="telefono">
+        
+                <div class="editarC">
+                    <h2>EDITAR CUENTA</h2>
+                    <div class="botones">
+                        <button class="btn">Cambiar correo</button>
+                        <button class="btn">Activar notificaciones</button>
+                    </div>
                 </div>
-
-                <div class="botonRC">
-                    <button type="submit" class="btnR">Registrar</button>
-                    <button type="reset" class="btnC">Cancelar</button>
-                </div>
-            </form>
-        </section>
+            </section>
+        </div>
     </main>
     <footer>
         <div class="logo">
@@ -136,5 +161,3 @@
 </body>
 
 </html>
-        
-    
