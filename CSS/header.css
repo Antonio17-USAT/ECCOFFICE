@@ -51,11 +51,6 @@
 .he1 .logo-img {
     height: 70px;
 }
-@media (max-width: 560px) {
-    .he1 .logo .logo-text {
-        display: none;
-    }
-}
 
 .logo-text {
     font-size: 40px;
@@ -93,12 +88,11 @@
 }
 .dropdown-caja{ 
     justify-content: center;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
+    display: flex;
     align-items: center;
     width: 100%;
-    max-width: 1500px;
-    
+    max-width: 900px;
+   
 }
 .dropdown .btn{ 
     background-color: #b5f7cd;
@@ -106,7 +100,7 @@
     border: 0px solid transparent;  
     padding: 3px 8px;
     font-size: 25px;
-    margin-inline: 80px;
+    margin-inline: 50px;
     border-radius: 0px;
 }
 .dropdown .btn:hover{ 
@@ -138,18 +132,23 @@
         ;
     }
     .dropdown-caja{ 
-        grid-template-columns: auto auto auto auto;
+        display: grid;
+        grid-template-columns: repeat(4,auto);
         grid-area: area1;
         padding: 10px 10px ;
-        grid-gap: 50px;
+        grid-gap: 30px;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
     }
-   
     .dropdown .btn{ 
-        background-color: white;
-        color: black;
-        padding: 5px 5px;
-        font-size: 15px;
-        border: 30px;
+        background-color: #b5f7cd;
+        color: black; 
+        border: 0px solid transparent;  
+        padding: 3px 8px;
+        font-size: 25px;
+        margin-inline: 0px;
+        border-radius: 0px;
     }
     .dropdown .dropdown-menu a{ 
         font-size: 15px;
@@ -159,6 +158,7 @@
         align-items: center;
         justify-content: center;
         grid-area: area2;
+        margin: 10px 10px;
     }
     .barra-busqueda2 {
         border: 2px solid #54c37d;
@@ -181,6 +181,7 @@
         text-align: center;
         width: 30px;
     }
+  
 }
 
 @media (max-width: 560px) {
@@ -190,11 +191,25 @@
     .he1 .logo .logo-text {
         display: none;
     }
+
     .dropdown-caja{ 
-        grid-template-columns: auto auto auto auto;
+        display: grid;
+        grid-template-columns: repeat(4,auto);
         grid-area: area1;
         padding: 10px 10px ;
-        grid-gap: 15px;
+        grid-gap: 30px;
+        justify-content: space-between;
+        align-items: center;
+       
+    }
+    .dropdown .btn{ 
+        background-color: #b5f7cd;
+        color: black; 
+        border: 0px solid transparent;  
+        padding: 3px 8px;
+        font-size: 15px;
+        margin-inline: 0px;
+        border-radius: 0px;
     }
 }
 
@@ -209,7 +224,7 @@
         grid-template-columns: auto auto auto auto;
         grid-area: area1;
         padding: 10px 10px ;
-        grid-gap: 15px;
+        grid-gap: 5px;
     }
 }
 
