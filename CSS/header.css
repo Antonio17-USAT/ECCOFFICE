@@ -88,25 +88,29 @@
  /* 2do header  */
 .dropdown{ 
     background-color: #b5f7cd;
-    padding: 10px 10px;
     display: flex;
     justify-content: center;
 }
 .dropdown-caja{ 
-    justify-content: space-around;
+    justify-content: center;
     display: grid;
     grid-template-columns: auto auto auto auto;
     align-items: center;
     width: 100%;
     max-width: 1500px;
+    
 }
 .dropdown .btn{ 
-    background-color: white;
-    color: black;
-    padding: 0px 25px;
+    background-color: #b5f7cd;
+    color: black; 
+    border: 0px solid transparent;  
+    padding: 3px 8px;
     font-size: 25px;
-    border: 30px;
-    padding-inline: 14px;
+    margin-inline: 80px;
+    border-radius: 0px;
+}
+.dropdown .btn:hover{ 
+    background-color: white;
 }
 .dropdown .dropdown-menu a{ 
     font-size: 25px;
@@ -205,7 +209,7 @@
         grid-template-columns: auto auto auto auto;
         grid-area: area1;
         padding: 10px 10px ;
-        grid-gap: 3px;
+        grid-gap: 15px;
     }
 }
 
