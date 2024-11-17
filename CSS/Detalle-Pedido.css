@@ -1,4 +1,6 @@
+
 /*Hasta aquí el header*/
+
 main{ 
     grid-area: main; 
     display: grid;
@@ -84,102 +86,74 @@ nav{
     padding-left: 20px;
 }
 
-/*aqui es el main sin las listas*/
-.productos {
-    display: flex;
-    padding: 20px;
+.texto{
+    gap: 5%;
+    padding: 2%;
 }
-
-section {
-    width: 75%;
-    margin-left: 5%;
-}
-
-.perfilConfi, .pedido {
+.box{
+    border: 1px solid #4BAA6E;
+    border-radius: 5px;
     padding: 15px;
     margin-bottom: 20px;
-    border-radius: 5px;
-
 }
 
-.perfilConfi div h2, .pedido h2 {
-    padding: 10px 20px;
-    width: 100%;
-    height: 45px;
-    margin-bottom: 15px;
-    font-size: 20px;
-    background-color: #B5F7CD;
+.hr{
+    border: 1px solid #4BAA6E;
+    width: 40%;
+    border: 1px solid #4BAA6E;
 }
 
-.iconsPerfil {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 10px;
+/* Media Queries para Responsividad */
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+    main {
+        grid-template-columns: 1fr; /* Diseño de una sola columna */
+    }
+
+    main .filtros {
+        font-size: 18px; /* Tamaño de texto más pequeño */
+    }
+
+    nav {
+        position: relative; /* Cambia de fijo a relativo */
+        margin: 10px 0;
+        width: 100%; /* Ajusta el ancho al 100% */
+    }
+
+    .item-boton {
+        padding-left: 10px;
+        gap: 0.5em;
+    }
+
+    .box {
+        padding: 10px; /* Reducir padding en móviles */
+    }
+
+    .hr {
+        width: 80%; /* Más ancho en móviles */
+    }
 }
 
-.iconsPerfil div {
-    text-align: center;
-}
+/* Para pantallas medianas (tablets) */
+@media (max-width: 1024px) {
+    main {
+        grid-template-columns: 1fr 2fr; /* Ajuste para dos columnas */
+    }
 
-.iconsPerfil span {
-    font-size: 2em;
-}
+    main .filtros {
+        font-size: 20px; /* Tamaño de texto más ajustado */
+    }
 
-.pedido {
-    display: flex;
-    flex-direction: column;
-}
+    .box {
+        padding: 20px; /* Espaciado más amplio */
+    }
 
-.detalles {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding: 15px;
-}
+    nav {
+        margin-left: 20px;
+    }
 
-.img {
-    width: 100px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.info {
-    flex: 1;
-}
-
-.info h3 {
-    margin-bottom: 5px;
-}
-
-.botones {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.confirmarbtn {
-    background-color: #4BAA6E;
-    color: white;
-    border: none;
-    padding: 8px 12px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.cancelarbtn {
-    background-color: #4BAA6E;
-    color: white;
-    border: none;
-    padding: 8px 12px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.detallesbtn {
-    background-color: #4BAA6E;
-    color: white;
-    border: none;
-    padding: 8px 12px;
-    border-radius: 5px;
-    cursor: pointer;
+    .hr {
+        width: 60%; /* Ajuste del ancho */
+    }
 }

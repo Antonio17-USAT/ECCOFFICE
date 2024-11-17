@@ -15,14 +15,38 @@
     <header class="header"></header>
     <div class="dropdown"></div>
     <main>
-        <div class="botones">
-            <button class="izq">Centro Ayuda</button>
-            <button class="izq">Libro de reclamaciones</button>
-            <button class="izq">Preguntas Frecuentes</button>
-            <button class="izq">Horarios de Atención</button>
-            <button class="izq">Políticas de privacidad</button>
+        <div class="filtros">
+            <nav>
+                <ul class="lista">
+                    <li class="item-open">
+                        <div class="item-boton">
+                            <a href="" class="nav-link">Centro de ayuda</a>
+                        </div>
+                    </li>
+                    <li class="item-open">
+                        <div class="item-boton">
+                            <a href="" class="nav-link">Libro de Reclamaciones</a>
+                        </div>
+                        <ul class="lista_show">
+                            <li class="lista_dentro">
+                                <a href="" class="nav-link-dentro">Preguntas frecuentes</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item-open">
+                        <div class="item-boton">
+                            <a href="" class="nav-link">Horarios de atención</a>
+                        </div>
+                    </li>
+                    <li class="item-open">
+                        <div class="item-boton">
+                            <a href="" class="nav-link">Políticas de privacidad</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <div class="formulario">
+        <!-- <div class="formulario">
             <h3>Libro de Reclamaciones</h3>
             <p>Nombres</p>
             <input type="text">
@@ -39,6 +63,32 @@
             <p>Motivo del reclamo</p>
             <textarea name="Motivo" id="Motivo"></textarea>
             <button>Enviar</button>
+        </div> -->
+        <div class="formulario2">
+            <h3><strong> Libro de Reclamaciones</strong></h3>
+            <hr class="hr">
+            <div class="info">
+                <div class="p">
+                    <p>Nombres</p>
+                    <p>Correo</p>
+                    <p>Dirección</p>
+                    <p>Telefono</p>
+                    <p>Id de Compra</p>
+                    <p>Descripcion del producto</p>
+                    <p>Motivo del reclamo</p>
+                    <button>Enviar</button>
+                </div>
+                <div class="msj">
+                    <input type="text" class="y"><br>
+                    <input class="y" type="email" name="correo" id="Correo"><br>
+                    <input type="text" class="y"><br>
+                    <input type="text" name="telefono" id="Telefono"><br>
+                    <input type="text" name="Id" id="Id"><br>
+                    <input type="text" class="y"><br>
+                    <textarea name="Motivo" id="Motivo" class="y"></textarea>
+                </div>
+            </div>
+            
         </div>
 
     </main>

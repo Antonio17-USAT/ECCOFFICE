@@ -2,155 +2,198 @@
 /*Hasta aquí el header*/
 
 main{ 
-    grid-template-columns: repeat(1, auto);
-   
-    margin: 0 auto;
+    grid-area: main; 
+    display: grid;
+    grid-template-columns: repeat(2, 25% 75%);  
 }
-.Titulos{ 
-    text-align: center;
-    margin-top: 90px;
-}
-.Titulos h1{ 
-    font-size: 45px;
-}
-.Titulos p{ 
-    margin-top: 20px;
-    font-size: 25px;
-}
-.carrusel{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    margin-top: 100px;
+main .filtros{ 
+    height: 100%;
     width: 100%;
-}
-
-.imagenes{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-left: 380px;
-}
-
-.img{
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.85);
-    border-radius: 15px ;
-    margin: 5px;
-    object-fit: cover;
-    filter: saturate(175%);
-    display: flex;
-    width: 70%;
-    height: 70%;
-
-}
-.puntos{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 90%;
-    margin: 0 auto;
-    padding-left: 70px;
-}
-
-.puntos p{
-    font-size: 100px;
-    font-weight: 500;
-}
-
-.puntos .bold{
-    font-weight: 700;
-    margin-left: 10px;
-    margin-right: 10px;
-    color: black ;
-}
-
-.Ofertas{ 
-    width: 90%;
-    margin: 0 auto;
-    margin-top: 50px;
-    
-}
-.Ofertas h2{ 
-    
-    padding: 10px 90px;
-    animation-name: movimiento;
-    animation-duration: 8s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
+    text-align:left ;
+    font-size: 25px;
    
 } 
-@keyframes movimiento{
-    from{ 
-        margin-left: 65%;
-    }
-    to{ 
-        margin-left: 0%;
-    }
+nav{ 
+   padding-top: 5px;
+   padding-bottom: 5px;
+   width: auto;
+   margin-left: 30px;
+   margin-top: 2%;
+   margin-bottom: 5%;
+   position: fixed;
+  
 }
-.contenedor{ 
-    width: 95%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-}
-.caja{ 
-    background-color: #7df1a7;
-    margin-top: 20px;
-}
-.caja img{ 
-    height: 210px;
-    width: 285px;
-    margin: 10px 10px;
-    border-radius: 70px;
-}
-.caja .espacio{ 
-    background-color: #b3b3b3;
-    margin-top: 10px;
-    text-align: center;
-    font-size: 20px;
-    color: white;
-    font-weight: bolder;
-    padding: 10px 0px;
-}
-.caja .nada{ 
-    background-color: #7df1a7; 
-    height: 20px;
 
+.lista{
+    width: 90%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
-.colaboraciones{ 
-    background-color: #c0ffd7;
-    margin-top: 80px;
-    text-align: center;
-}
-.colaboraciones h3 { 
-    padding: 15px 0px ;
-    font-size: 25px;
-    word-spacing: 10px;
+.item-open{ 
+    list-style: none;
+    overflow: hidden; 
+    width: 100%; 
+    text-align: left;
+    padding: 0px;
+    margin: 0px;
+    cursor: pointer;
 } 
 
-.colaboraciones .area-marcas{ 
-    background-color: #c0ffd7;
+.item-boton{ 
     display: flex;
-    justify-content: space-around;
-    padding: 20px 0px;
+    align-items: center;
+    gap: 1em;
+    width: 100%;
+    padding-left: 20px;
+    margin-top: 5px;
+    background-color: #B5F7CD;
+    border-radius: 50px;
+}
+.item-boton a{
+    margin: 5px;
+}
+.item-boton:hover{ 
+    background: #4BAA6E;
+    border-radius: 50px;
 }
 
-.marca img{ 
-    margin-bottom: 20px;
-    width: 170px;
-    height: 100px;
-    margin-bottom: 25px;
-}
-.marca a { 
-    text-decoration: none ;
+.nav-link{ 
     color: black;
-    border-radius: 60px;
-    background-color: white;
-    padding: 15px 50px;
+    display: block;
+    text-decoration: none;
+    margin: 0px;
+  
+} 
+.lista_dentro{ 
+    text-align: left;
+    list-style: none;
 }
-.colaboraciones .vacio { 
-    background-color: #c0ffd7;
-    height: 20px;
+.lista_show{
+    width: 100%;
+    margin-left: 60px;
+    border-left: 3px solid white;
+    height: 0;
+}
+.nav-link-dentro{ 
+    text-decoration: none;
+}
+.nav-link-dentro:hover{ 
+    border-radius: 10px;
+    padding-left: 20px;
+}
+.formulario2{
+    border: 1px solid #4BAA6E;
+    border-radius: 5px;
+    padding: 75px;
+    margin: 20px;
+    margin-bottom: 30px;
+    padding: 2%;
+    align-items: center;
+}
+.info{
+    gap: 5%;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    padding-bottom: 5%;
+    padding-left: 2%;
+}
+.info button{
+    margin-left: 35%;
+    background-color: #4BAA6E;
+    width: 40%;
+    height: 10%;
+    justify-content: center;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.msj input{
+    margin-bottom: 2%;
+    border: black solid 1px ;
+    border-radius: 20px;
+}
+.msj .y{
+    width: 85%;
+}
+.msj textarea{
+    height: 40%;
+    border: black solid 1px ;
+    border-radius: 20px;
+}
+
+.hr{
+    width: 40%;
+    border: 1px solid #4BAA6E;
+    
+}
+
+/* Media Queries para Responsividad */
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+    main {
+        grid-template-columns: 1fr; /* Una columna para móviles */
+    }
+
+    main .filtros {
+        font-size: 18px; /* Ajuste del tamaño de fuente */
+    }
+
+    nav {
+        position: relative; /* Cambia de fijo a relativo */
+        margin-left: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .info {
+        grid-template-columns: 1fr; /* Una columna para info */
+        gap: 10px; /* Espaciado adicional */
+        padding-left: 5%;
+    }
+
+    .info button {
+        margin-left: 0; /* Centrar el botón */
+        width: 80%; /* Más ancho en móviles */
+    }
+
+    .formulario2 {
+        padding: 5%; /* Ajuste de padding */
+        margin: 10px; /* Reducir márgenes */
+    }
+
+    .msj .y {
+        width: 100%; /* Ocupa todo el ancho */
+    }
+
+    .hr {
+        width: 80%; /* Más ancho en móviles */
+    }
+}
+
+/* Para pantallas medianas (tablets) */
+@media (max-width: 1024px) {
+    main {
+        grid-template-columns: 1fr 2fr; /* Dos columnas más equilibradas */
+    }
+
+    .info {
+        grid-template-columns: 30% 70%; /* Ajuste para tablets */
+    }
+
+    .formulario2 {
+        padding: 3%;
+    }
+
+    .info button {
+        margin-left: 25%; /* Ajuste del botón */
+        width: 50%;
+    }
 }
