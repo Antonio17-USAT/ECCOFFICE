@@ -11,7 +11,9 @@ main .filtros{
     width: 100%;
     text-align:left ;
     font-size: 25px;
-   
+    display: flex;
+    text-align: center;
+    justify-content: center;
 } 
 nav{ 
    padding-top: 5px;
@@ -85,22 +87,26 @@ nav{
     border-radius: 10px;
     padding-left: 20px;
 }
-
+/*-------------*/
 .texto{
-    gap: 5%;
-    padding: 2%;
+    padding: 10px 10px ;
+}
+.Titulo{ 
+    margin-top: 25px;
 }
 .box{
     border: 1px solid #4BAA6E;
     border-radius: 5px;
     padding: 15px;
     margin-bottom: 20px;
+    width: 80%;
+    text-align: justify;
 }
 
 .hr{
     border: 1px solid #4BAA6E;
     width: 40%;
-    border: 1px solid #4BAA6E;
+
 }
 
 /* Media Queries para Responsividad */

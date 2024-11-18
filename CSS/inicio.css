@@ -4,7 +4,7 @@ main{
 }
 .Titulos{ 
     text-align: center;
-    margin-top: 90px;
+    margin-top: 80px;
 }
 .Titulos h1{ 
     font-size: 40px;
@@ -19,23 +19,21 @@ main{
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    margin: 10px auto;
+    margin: 0px auto;
+    margin-top: 3%;
     width: 62%;
-    border: 2px solid black;
 }
-
 .imagenes{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 40%;
 }
 .imagenes #img{ 
+    display: flex;
     align-items: center;
     justify-content: center;
 }
-
 .img{
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.85);
     border-radius: 15px ;
@@ -43,63 +41,62 @@ main{
     object-fit: cover;
     filter: saturate(175%);
     display: flex;
-    border: 2px solid black;
-    width: 40%;
+    width: 60%;
 }
-
 .puntos{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 60%;
-    margin: 0 auto;
-    padding-left: 70px;
+    width: 90%;
+    margin: 0px auto;
 }
-
 .puntos p{
-    font-size: 100px;
-    font-weight: 500;
+    font-size: 80px;
+    font-weight: 400;
 }
-
 .puntos .bold{
     font-weight: 700;
-    margin-left: 10px;
-    margin-right: 10px;
-    color: black ;
+    color:#7df1a7  ;
 }
-
 .Ofertas{ 
     width: 90%;
+    max-width: 1800px;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 .Ofertas h2{ 
-    padding: 10px 90px;
+    padding: 0px 10px;
     animation-name: movimiento;
     animation-duration: 8s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
-    font-size: 30px;
+    font-size: 35px;
+    font-weight: bold;
+    max-width: 800px;
 } 
 @keyframes movimiento{
     from{ 
-        margin-left: 60%;
+        margin-left: 65%;
     }
     to{ 
-        margin-left: 0%;
+        margin-left: 7%;
     }
 }
 .contenedor{ 
     width: 95%;
-    margin: 0 auto;
+    margin: 0px auto;
     display: flex;
     justify-content: space-around;
+    max-width: 1500px;
+   
 }
 .caja{ 
     background-color: #7df1a7;
     margin-top: 10px;
     text-align: center;
     justify-content: center;
+    border: 2px solid black;
+    
 }
 .caja img{ 
     height: 300px;
@@ -122,39 +119,418 @@ main{
     height: 20px;
 
 }
-.colaboraciones{ 
-    background-color: #c0ffd7;
-    margin-top: 80px;
-    text-align: center;
+.colabo{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
 }
-.colaboraciones h3 { 
+.colabo h3 { 
     padding: 15px 0px ;
-    font-size: 35px;
+    font-size: 28px;
     word-spacing: 10px;
     font-weight: bold;
 } 
-
+.colaboraciones{ 
+    background-color: #c0ffd7;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
 .colaboraciones .area-marcas{ 
     background-color: #c0ffd7;
     display: flex;
-    justify-content: space-around;
-    padding: 20px 0px;
+    justify-content: space-between;
+    align-content: space-between ;
+    padding: 20px 20px;
+    gap: 80px;
 }
-
 .marca img{ 
-    margin-bottom: 20px;
     width: 240px;
     height: 130px;
-    margin-bottom: 25px;
-}
-.marca a { 
-    text-decoration: none ;
-    color: black;
-    border-radius: 60px;
-    background-color: white;
-    padding: 15px 50px;
+    margin-bottom: 0px;
 }
 .colaboraciones .vacio { 
     background-color: #c0ffd7;
     height: 20px;
 }
+/*-------- RESPONSIVE ----------*/
+
+@media (max-width:1152px) {
+    .marca img{ 
+        width: 215px;
+        height: 130px;
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .Titulos h1{ 
+        font-size: 70px;
+        font-weight: bold;
+    }
+    .Titulos p{ 
+        margin-top: 20px;
+        margin: 0 40px;
+        font-size: 35px;
+    }
+    .atras img{ 
+        width: 60px;
+    }
+    .adelante img{ 
+        width: 60px;
+    }
+    .imagenes{ 
+        padding: 0 0;
+        margin: 0 20px;
+    } 
+    .imagenes .img { 
+        margin: 0 0;
+        padding: 0 0;
+        width: 650px
+    }
+    .Ofertas h2{ 
+        font-size: 40px;
+        width: 150%;
+    }
+    @keyframes movimiento{
+        from{ 
+            margin-left: 42%;
+        }
+        to{ 
+            margin-left: 0%;
+        }
+    }
+    .contenedor{ 
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        width: 100%;
+    }
+    .caja img{ 
+        height: 180px;
+        width: 250px;
+        margin: 10px 10px;
+        border-radius: 50px;
+    }
+    .caja .espacio{ 
+        background-color: #848484;
+        margin-top: 10px;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        padding: 5px 0px;
+        height: auto;
+    } 
+    .espacio p{ 
+        font-size: 18px;
+        padding: 0 3px;
+        margin: 0  0 ;
+    }
+    .caja .nada{ 
+        background-color: #7df1a7; 
+        height: 20px;
+    }
+    .colaboraciones{ 
+        width: 95%;
+        margin: 30px auto;
+        margin-top: 5px;
+    }
+    .colaboraciones .area-marcas{ 
+        display: flex; 
+        gap: 25px;
+    } 
+}
+
+@media (max-width: 890px) {
+    .Titulos h1{ 
+        font-size: 50px;
+        font-weight: bold;
+    }
+    .Titulos p{ 
+        margin-top: 20px;
+        margin: 0 40px;
+        font-size: 25px;
+    }
+    .carrusel{
+        margin: 0 auto;
+        width: 95%;
+    }
+
+    .atras img{ 
+        width: 50px;
+    }
+    .adelante img{ 
+        width: 50px;
+    }
+    .imagenes{ 
+        padding: 0 0;
+        margin: 0 30px;
+    } 
+    .imagenes .img { 
+        margin: 0 0;
+        padding: 0 0;
+        width: 550px
+    } 
+    .Ofertas h2{ 
+        font-size: 30px;
+        width: 150%;
+    }
+    @keyframes movimiento{
+        from{ 
+            margin-left: 42%;
+        }
+        to{ 
+            margin-left: 0%;
+        }
+    }
+    .contenedor{ 
+        display: grid;
+        grid-template-columns: repeat(2, 45%);
+        width: 100%;
+    }
+    .caja img{ 
+        height: 180px;
+        width: 250px;
+        margin: 10px 10px;
+        border-radius: 50px;
+    }
+    .caja .espacio{ 
+        background-color: #848484;
+        margin-top: 10px;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        padding: 5px 0px;
+        height: auto;
+    } 
+    .espacio p{ 
+        font-size: 18px;
+        padding: 0 3px;
+        margin: 0  0 ;
+    }
+    .caja .nada{ 
+        background-color: #7df1a7; 
+        height: 20px;
+    }
+    .colaboraciones{ 
+        width: 95%;
+        margin: 30px auto;
+        margin-top: 5px;
+    }
+    .colaboraciones .area-marcas{ 
+        display: grid; 
+        grid-template-columns: repeat(3, auto);
+        grid-gap: 25px;
+    } 
+    .marca img { 
+        width: 180px;
+        grid-gap: 10px;
+    }
+}
+@media(max-width: 570px){ 
+    .Titulos{ 
+        text-align: center;
+        margin-top: 50px;
+    }
+    .Titulos h1{ 
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .Titulos p{ 
+        margin-top: 20px;
+        font-size: 15px;
+    }
+    .carrusel{
+        margin: 0 auto;
+        width: 95%;
+    }
+
+    .atras img{ 
+        width: 25px;
+    }
+    .adelante img{ 
+        width: 25px;
+    }
+    .imagenes{ 
+        padding: 0 0;
+        margin: 0 10px;
+    } 
+    .imagenes .img { 
+        margin: 0 0;
+        padding: 0 0;
+        width: 270px
+    } 
+    #puntos{ 
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .Ofertas{ 
+        width: 98%;
+        margin-top: 0px;
+    }
+    .Ofertas h2{ 
+        font-size: 18px;
+        width: 150%;
+    }
+    @keyframes movimiento{
+        from{ 
+            margin-left: 32%;
+        }
+        to{ 
+            margin-left: 0%;
+        }
+    }
+    .contenedor{ 
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        width: 100%;
+    }
+    .caja img{ 
+        height: 110px;
+        width: 140px;
+        margin: 10px 10px;
+        border-radius: 50px;
+    }
+    .caja .espacio{ 
+        background-color: #848484;
+        margin-top: 10px;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        padding: 5px 0px;
+        height: auto;
+    } 
+    .espacio p{ 
+        font-size: 12px;
+        padding: 0 3px;
+        margin: 0  0 ;
+    }
+    .caja .nada{ 
+        background-color: #7df1a7; 
+        height: 20px;
+    }
+    .colabo H3{ 
+        font-size: 17px;
+        font-weight: bold;
+    }
+    .colaboraciones{ 
+        width: 95%;
+        margin: 30px auto;
+        margin-top: 5px;
+    }
+    .colaboraciones .area-marcas{ 
+        display: grid;
+        grid-template-columns: repeat(1,auto);
+        grid-gap: 15px;
+    } 
+    .marca img { 
+        width: 180px;
+        grid-gap: 10px;
+    }
+}
+@media (max-width: 360px) {
+    .Titulos{
+        text-align: center;
+        margin-top: 50px;
+    }
+    .Titulos h1{ 
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .Titulos p { 
+        margin-top: 20px;
+        font-size: 15px;
+    }
+    .carrusel{
+        margin: 0 auto;
+        width: 95%;
+    }
+
+    .atras img{ 
+        width: 30px;
+    }
+    .adelante img{ 
+        width: 30px;
+    }
+    .imagenes{ 
+        padding: 0 0;
+        margin: 0 10px;
+    } 
+    .imagenes .img { 
+        margin: 0 0;
+        padding: 0 0;
+        width: 270px
+    } 
+
+    .Ofertas{ 
+        width: 98%;
+        margin-top: 0px;
+    }
+    .Ofertas h2{ 
+        font-size: 18px;
+        width: 150%;
+    }
+    @keyframes movimiento{
+        from{ 
+            margin-left: 32%;
+        }
+        to{ 
+            margin-left: 0%;
+        }
+    }
+    .contenedor{ 
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        width: 100%;
+    }
+    .caja{ 
+        width: 160px;
+        border: 2px solid black;
+    }
+    .contenedor .caja img{ 
+        height: 100px;
+        width: 130px;
+        margin: 5px 5px;
+        border-radius: 50px;
+        border: 2px solid black;
+    }
+    .caja .espacio{ 
+        background-color: #848484;
+        margin-top: 10px;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        padding: 5px 0px;
+        height: auto;
+    } 
+    .espacio p{ 
+        font-size: 12px;
+        padding: 0 0;
+        margin: 0  0 ;
+    }
+    .caja .nada{ 
+        background-color: #7df1a7; 
+        height: 20px;
+    }
+    .colabo H3{ 
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .colaboraciones{ 
+        width: 95%;
+        margin: 30px auto;
+        margin-top: 5px;
+    }
+    .colaboraciones .area-marcas{ 
+        display: grid; 
+        grid-gap: 15px;
+    } 
+    .marca img { 
+        width: 180px;
+        grid-gap: 10px;
+    }  
+} 
+
+
+

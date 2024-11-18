@@ -9,8 +9,8 @@ footer .caja-footer {
     grid-area: footer;
     display: grid;
     color: white;
-    margin-top: 100px;
-    padding: 0px 16px 80px 16px;
+    margin-top: 30px;
+    padding: 0px 16px 50px 16px;
     grid-template-columns: repeat(5,auto);
 }
 

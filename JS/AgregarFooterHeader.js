@@ -15,7 +15,7 @@ var htmldropdown = /*html*/`
                     Nosotros
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Nuestra Historia</a></li>
+                    <li><a class="dropdown-item" href="">Nuestra Historia</a></li>
                     <li><a class="dropdown-item" href="#">Mision y Visión</a></li>
                 </ul>
             </div>
@@ -66,9 +66,9 @@ var htmlHeader = /*html*/`
 </div>
 
 <div class="icons">
-    <a href="" class="icon"><img src="Img/carro-de-la-compra.png" alt="" class="carrito"></a>
-    <a href="#favoritos" class="icon"><img src="Img/amor.png" alt=""></a>
-    <a href="#perfil" class="icon"><img src="Img/perfil.png" alt="" class="perfil"></a>
+    <a href="" class="icon"><i class="fa-solid fa-cart-shopping fa-2xl"style="color: #000000;"></i></a>
+    <a href="listaDeseos.html" class="icon"><i class="fa-regular fa-heart fa-2xl"style="color: #000000;"></i></a>
+    <a href="perfilNuevo.html" class="icon"><i class="fa-regular fa-user fa-2xl" style="color: #000000;"></i></a>
 </div>
 </div>
 `
@@ -116,15 +116,15 @@ var htmlFooter = /*html*/`
             <div class="titulo-div">Redes Sociales</div>
             <div class="varios">
                 <li class="item">
-                    <img src="Img/facebook-brands-solid.svg" alt="">
+                    <i class="fa-brands fa-facebook fa-xl" style="color: #ffffff;"></i>
                     <span><a href="">Facebook</a></span>
                 </li>
                 <li class="item">
-                    <img src="Img/youtube-brands-solid.svg" alt="">
+                    <i class="fa-brands fa-youtube fa-xl" style="color: #ffffff;"></i>
                     <span><a href="">Youtube</a></span>
                 </li>
                 <li class="item">
-                    <img src="Img/instagram-brands-solid.svg" alt="" class="ig">
+                    <i class="fa-brands fa-instagram fa-xl" style="color: #ffffff;"></i>
                     <span><a href="">Instagram</a></span>
                  </li>
             </div>

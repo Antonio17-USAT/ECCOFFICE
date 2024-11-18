@@ -1,156 +1,56 @@
-
-/*Hasta aquí el header*/
-
 main{ 
-    grid-template-columns: repeat(1, auto);
-   
-    margin: 0 auto;
-}
-.Titulos{ 
-    text-align: center;
-    margin-top: 90px;
-}
-.Titulos h1{ 
-    font-size: 45px;
-}
-.Titulos p{ 
-    margin-top: 20px;
-    font-size: 25px;
-}
-.carrusel{
+    margin: 2% 2%;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
-    margin-top: 100px;
-    width: 100%;
-}
-
-.imagenes{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-left: 380px;
-}
-
-.img{
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.85);
-    border-radius: 15px ;
-    margin: 5px;
-    object-fit: cover;
-    filter: saturate(175%);
-    display: flex;
-    width: 70%;
-    height: 70%;
-
-}
-.puntos{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 90%;
-    margin: 0 auto;
-    padding-left: 70px;
-}
-
-.puntos p{
-    font-size: 100px;
-    font-weight: 500;
-}
-
-.puntos .bold{
-    font-weight: 700;
-    margin-left: 10px;
-    margin-right: 10px;
-    color: black ;
-}
-
-.Ofertas{ 
-    width: 90%;
-    margin: 0 auto;
-    margin-top: 50px;
-    
-}
-.Ofertas h2{ 
-    
-    padding: 10px 90px;
-    animation-name: movimiento;
-    animation-duration: 8s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-   
-} 
-@keyframes movimiento{
-    from{ 
-        margin-left: 65%;
-    }
-    to{ 
-        margin-left: 0%;
-    }
 }
 .contenedor{ 
+    margin: 10px 10px ;
+}
+.Titulo{ 
+    padding: 20px 10px ;
+}
+.formulario{ 
+    border: 1px solid #4BAA6E;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 900px;
+    height: 350px;
+} 
+.box{ 
     width: 95%;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
+    padding: 20px 20px ;
 }
-.caja{ 
-    background-color: #7df1a7;
-    margin-top: 20px;
-}
-.caja img{ 
-    height: 210px;
-    width: 285px;
-    margin: 10px 10px;
-    border-radius: 70px;
-}
-.caja .espacio{ 
-    background-color: #b3b3b3;
-    margin-top: 10px;
-    text-align: center;
-    font-size: 20px;
-    color: white;
-    font-weight: bolder;
-    padding: 10px 0px;
-}
-.caja .nada{ 
-    background-color: #7df1a7; 
-    height: 20px;
 
-}
-.colaboraciones{ 
-    background-color: #c0ffd7;
-    margin-top: 80px;
-    text-align: center;
-}
-.colaboraciones h3 { 
-    padding: 15px 0px ;
+.box label{ 
     font-size: 25px;
-    word-spacing: 10px;
-} 
-
-.colaboraciones .area-marcas{ 
-    background-color: #c0ffd7;
+    padding-bottom: 20px;
+    margin-right: 20px;
+}
+.box input { 
+    padding-right: 300px;
+    border-radius: 10px;
+}
+.btn-form{
     display: flex;
-    justify-content: space-around;
-    padding: 20px 0px;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0px ;
+    gap: 15px;
+} 
+.btn-form .CO{
+    border-radius: 50px;
+    padding: 5px 40px ;
+    background-color: #4baa6e;
+    color: white;
+    font-size: 20px;
 }
-
-.marca img{ 
-    margin-bottom: 20px;
-    width: 170px;
-    height: 100px;
-    margin-bottom: 25px;
-}
-.marca a { 
-    text-decoration: none ;
-    color: black;
-    border-radius: 60px;
-    background-color: white;
-    padding: 15px 50px;
-}
-.colaboraciones .vacio { 
-    background-color: #c0ffd7;
-    height: 20px;
+.btn-form .CA{
+    border-radius: 50px;
+    padding: 5px 40px ;
+    background-color: red;
+    color: white;
+    font-size: 20px;
 }

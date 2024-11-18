@@ -1,0 +1,80 @@
+main{ 
+    margin: 10px 10px;
+    display: grid;
+} 
+.contenedor{ 
+    border: 2px solid red;
+    padding: 10px 10px ;
+    display: grid;
+    grid-template-columns:65% 35%;
+} 
+.campos{ 
+    border: 2px solid blue;
+    padding: 10px 10px ;
+    margin: 0px 100px;
+}
+.campos .titulo{
+    padding: 10px 5px;
+}
+.campos .titulo H2{ 
+    font-weight: bolder;
+}
+.cont{ 
+    border: 3px solid #7df1a7;
+    padding: 10px 10px ;
+    margin-bottom: 15px;
+}
+.cont-campo H3{ 
+    font-style: italic;
+    font-weight: bold;
+}
+.cont-campo hr{ 
+    border: 1px solid #4BAA6E;
+    width: 90%;
+}
+.cont-datos{ 
+    display: grid;
+    grid-template-columns: 70% 30%;
+    
+}
+.datos{
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: 30% 70% ;
+}
+.tipo-dato{
+    border: 1px solid black;
+}
+.dato-oficial{ 
+    border: 1px solid palevioletred;
+}
+.boton{ 
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 30px;
+}
+.boton button{ 
+    border-radius: 50px;
+    padding: 5px 50px ;
+    background-color: #4baa6e;
+    color: white;
+    font-size: 20px;
+}
+.cont-producto{ 
+    display: grid;
+    grid-template-columns: 30% 50% 20% ;
+    border: 3px solid #7df1a7;
+    padding: 10px 10px ;
+    margin-bottom: 15px;
+}
+.cont-producto .img{
+    border: 1px solid black ;
+}
+.cont-producto .producto{ 
+    border: 1px solid black ;
+}
+.cont-producto .favicon{ 
+    border: 1px solid black ;
+}

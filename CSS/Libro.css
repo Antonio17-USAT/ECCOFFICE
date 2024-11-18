@@ -11,8 +11,10 @@ main .filtros{
     width: 100%;
     text-align:left ;
     font-size: 25px;
-   
-} 
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}  
 nav{ 
    padding-top: 5px;
    padding-bottom: 5px;
@@ -88,11 +90,11 @@ nav{
 .formulario2{
     border: 1px solid #4BAA6E;
     border-radius: 5px;
-    padding: 75px;
-    margin: 20px;
-    margin-bottom: 30px;
-    padding: 2%;
-    align-items: center;
+    padding: 20px 20px;
+    margin: 80px 10px;
+    width: 80%;
+    text-align: justify;
+    margin-top: 30px;
 }
 .info{
     gap: 5%;
@@ -101,16 +103,18 @@ nav{
     padding-bottom: 5%;
     padding-left: 2%;
 }
-.info button{
-    margin-left: 35%;
-    background-color: #4BAA6E;
-    width: 40%;
-    height: 10%;
+.boton{
+    display: flex;
+    text-align: center;
     justify-content: center;
+    margin-top: 60px;
+}
+.boton button{
+    border-radius: 50px;
+    padding: 5px 50px ;
+    background-color: #4baa6e;
     color: white;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
+    font-size: 20px;
 }
 
 .msj input{
@@ -125,6 +129,7 @@ nav{
     height: 40%;
     border: black solid 1px ;
     border-radius: 20px;
+    margin-bottom: 80px;
 }
 
 .hr{
