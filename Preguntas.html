@@ -5,106 +5,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas</title>
-    <link rel="stylesheet" href="CSS/Preguntas.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    
+
     <link rel="stylesheet" href="CSS/comun.css">
+    <link rel="stylesheet" href="CSS/Preguntas.css">
+    <link rel="stylesheet" href="CSS/filtros.css">
 </head>
 
 <body>
     <header class="header"></header>
     <div class="dropdown"></div>
     <main>
-        <div class="filtros">
-            <nav>
-                <ul class="lista">
-                    <li class="item-open">
-                        <div class="item-boton">
-                            <a href="" class="nav-link">Centro de ayuda</a>
-                        </div>
-                    </li>
-                    <li class="item-open">
-                        <div class="item-boton">
-                            <a href="" class="nav-link">Libro de Reclamaciones</a>
-                        </div>
-                        <ul class="lista_show">
-                            <li class="lista_dentro">
-                                <a href="" class="nav-link-dentro">Preguntas frecuentes</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="item-open">
-                        <div class="item-boton">
-                            <a href="" class="nav-link">Horarios de atención</a>
-                        </div>
-                    </li>
-                    <li class="item-open">
-                        <div class="item-boton">
-                            <a href="" class="nav-link">Políticas de privacidad</a>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-        </div>
         <div class="texto">
-            <div class="Titulo">
-                <h2>Preguntas Frecuentes</h2>
-            </div>
-          
-            <div class="box">
-                <h3>¿Como puedo realizar una compra?</h3>
-                <hr class="hr">
-                <p>Para realizar una compra, sigue estos pasos:
-                    <ol>
-                        <li>Navega por nuestro catálogo de productos y selecciona el artículo que deseas
-                            adquirir.</li>
-                        <li>Al seleccionar el producto, serás redirigido a completar la información de envío,
-                            proporcionando su dirección y cualquier dato adicional necesario.</li>
-                        <li>Ingresa los detalles de tu pago utilizando el método de tu preferencia.</li>
-                    </ol>
-                </p>
-                <h3>¿Como cancelar un pedido?</h3>
-                <hr class="hr">
-                <p>Si deseas cancelar un pedido, puedes hacerlo dentro de las primeras 24 horas después
-                    de la compra, antes de que el proceso de envío haya comenzado. Para cancelar tu
-                    pedido:
-                    <ol>
-                        <li>Dirígete a la sección "Compras" en tu cuenta.
-                        </li>
-                        <li>Encuentra el pedido que deseas cancelar y haz clic en "Cancelar pedido".
-                        </li>
-                        <li>Si no puedes realizar la cancelación desde tu cuenta, por favor, contáctanos a través
-                            de nuestro formulario de contacto o por teléfono lo antes posible.
-                        </li>
-                    </ol>
-                </p>
-                <h3>¿Como comunicarse con nosotros?</h3>
-                <hr class="hr">
-                <p>Puedes comunicarte con nosotros de las siguientes maneras:
-                    <p>Correo electrónico: Envíanos un mensaje a Eccoffice@gmail.com y nuestro equipo
-                        responderá a tu consulta en un plazo de 24 horas.</p>
-                    <p>Teléfono: Llama al +51 999 999 999 de lunes a viernes, de 9:00 a 18:00 horas.</p>
-                    <p>Formulario de contacto: Complete el formulario disponible en nuestra página de
-                        "Contáctanos" y te responderemos a la mayor brevedad posible.</p>
-                </p>
+            <div class="filtros"></div>
+            <div class="contenedor">
+                <div class="Titulo">
+                    <h2>Preguntas Frecuentes</h2>
+                </div>
+                <div class="box-cont">
+                    <div class="box">
+                        <div class="pregunta">
+                            <h3>¿Como puedo realizar una compra?</h3>
+                            <hr>
+                            <p>Para realizar una compra, sigue estos pasos:
+                            <ol>
+                                <li>Navega por nuestro catálogo de productos y selecciona el artículo que deseas
+                                    adquirir.</li>
+                                <li>Al seleccionar el producto, serás redirigido a completar la información de envío,
+                                    proporcionando su dirección y cualquier dato adicional necesario.</li>
+                                <li>Ingresa los detalles de tu pago utilizando el método de tu preferencia.</li>
+                            </ol>
+                            </p>
+                        </div>
+                        <div class="pregunta">
+                            <h3>¿Como cancelar un pedido?</h3>
+                            <hr class="hr">
+                            <p>Si deseas cancelar un pedido, puedes hacerlo dentro de las primeras 24 horas después
+                                de la compra, antes de que el proceso de envío haya comenzado. Para cancelar tu
+                                pedido:
+                            <ol>
+                                <li>Dirígete a la sección "Compras" en tu cuenta.
+                                </li>
+                                <li>Encuentra el pedido que deseas cancelar y haz clic en "Cancelar pedido".
+                                </li>
+                                <li>Si no puedes realizar la cancelación desde tu cuenta, por favor, contáctanos a
+                                    través
+                                    de nuestro formulario de contacto o por teléfono lo antes posible.
+                                </li>
+                            </ol>
+                            </p>
+                        </div>
+                        <div class="pregunta">
+                            <h3>¿Como comunicarse con nosotros?</h3>
+                            <hr class="hr">
+                            <p>Puedes comunicarte con nosotros de las siguientes maneras:
+                            <p>Correo electrónico: Envíanos un mensaje a Eccoffice@gmail.com y nuestro equipo
+                                responderá a tu consulta en un plazo de 24 horas.</p>
+                            <p>Teléfono: Llama al +51 999 999 999 de lunes a viernes, de 9:00 a 18:00 horas.</p>
+                            <p>Formulario de contacto: Complete el formulario disponible en nuestra página de
+                                "Contáctanos" y te responderemos a la mayor brevedad posible.</p>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
         </div>
-
     </main>
     <footer></footer>
     <div class="derechos">
         <h3>Todos los derechos reservados, © Lambayeque, Perú 2024</h3>
     </div>
+
+
+
+
     <!-- Se agrego -->
     <script src="JS/jquery-3.7.1.min.js"></script>
     <script src="JS/Preguntas.js"></script>
     <script src="JS/AgregarFooterHeader.js"></script>
-    
+    <script src="JS/AgregarFiltroAyuda.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-        <script src="https://kit.fontawesome.com/67c54f1aa1.js" crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/67c54f1aa1.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
