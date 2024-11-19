@@ -124,59 +124,99 @@ nav{
     color: white;
     font-size: 20px;
 }
-/* Media Queries para Responsividad */
 
-/* Para pantallas pequeñas (móviles) */
-@media (max-width: 600px) {
+/* Media query para pantallas menores o iguales a 1280px */
+@media screen and (max-width: 1280px) {
     main {
-        grid-template-columns: 1fr; /* Una sola columna para mayor adaptabilidad */
+        grid-template-columns: 1fr;
     }
-
+    main .filtros {
+        font-size: 22px;
+    }
     nav {
-        position: relative; /* Cambia de fijo a relativo */
-        margin-left: 0;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        width: 100%;
+        margin-left: 20px;
     }
-
     .box {
-        grid-template-columns: 1fr; /* Ajusta el contenido a una columna */
-    }
-
-    .filtros {
-        font-size: 18px; /* Reduce el tamaño del texto para pantallas pequeñas */
-    }
-
-    .item-boton {
-        padding-left: 10px; /* Ajusta márgenes y espacios */
-        gap: 0.5em;
-    }
-
-    .btnD {
-        width: 100%; /* Botón ocupa todo el ancho */
-        padding: 10px 15px; /* Reduce el tamaño de los botones */
+        width: 90%;
+        grid-template-columns: 70% 30%;
     }
 }
 
-/* Para pantallas medianas (tablets) */
-@media (max-width: 1024px) {
+/* Media query para pantallas menores o iguales a 890px */
+@media screen and (max-width: 890px) {
     main {
-        grid-template-columns: 1fr 2fr; /* Ajusta las proporciones del grid */
+        grid-template-columns: 1fr;
     }
-
+    main .filtros {
+        font-size: 20px;
+        flex-direction: column;
+    }
+    nav {
+        margin-left: 15px;
+        margin-top: 5%;
+    }
     .box {
-        grid-template-columns: 70% 30%; /* Proporción más ajustada para tablets */
+        width: 100%;
+        grid-template-columns: 1fr;
     }
-
-    .filtros {
-        font-size: 20px; /* Tamaño de fuente más cómodo para tablets */
+    .btnD {
+        font-size: 18px;
     }
+}
 
+/* Media query para pantallas menores o iguales a 570px */
+@media screen and (max-width: 570px) {
+    main .filtros {
+        font-size: 18px;
+        text-align: center;
+    }
     nav {
         margin-left: 10px;
-        margin-right: 10px;
+    }
+    .item-boton {
+        gap: 0.5em;
+        padding-left: 10px;
+    }
+    .box {
+        width: 100%;
+        padding: 10px;
+        grid-template-columns: 1fr;
+    }
+    .btnD {
+        padding: 5px 30px;
+        font-size: 16px;
+    }
+    .Titulo {
+        font-size: 18px;
     }
 }
 
+/* Media query para pantallas menores o iguales a 360px */
+@media screen and (max-width: 360px) {
+    main .filtros {
+        font-size: 16px;
+        flex-direction: column;
+    }
+    nav {
+        margin-left: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+    .item-boton {
+        gap: 0.3em;
+        padding-left: 5px;
+    }
+    .box {
+        width: 100%;
+        padding: 5px;
+        grid-template-columns: 1fr;
+    }
+    .btnD {
+        padding: 5px 20px;
+        font-size: 14px;
+    }
+    .Titulo {
+        font-size: 16px;
+    }
+}
 

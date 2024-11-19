@@ -103,57 +103,99 @@ nav{
     border: 1px solid #4BAA6E;
 }
 
-/* Media Queries para Responsividad */
+/*-------- RESPONSIVE ----------*/
 
-/* Para pantallas pequeñas (móviles) */
-@media (max-width: 600px) {
+@media (max-width: 1152px) {
     main {
-        grid-template-columns: 1fr; /* Diseño de una sola columna */
+        grid-template-columns: 100%; /* Colapsa las columnas en una sola */
+        gap: 20px;
     }
-
     main .filtros {
-        font-size: 18px; /* Tamaño de texto más pequeño */
+        font-size: 20px;
     }
-
     nav {
-        position: relative; /* Cambia de fijo a relativo */
-        margin: 10px 0;
-        width: 100%; /* Ajusta el ancho al 100% */
+        margin-left: 10px;
+        margin-right: 10px;
     }
-
+    .lista {
+        width: 100%;
+    }
     .item-boton {
-        padding-left: 10px;
-        gap: 0.5em;
-    }
-
-    .box {
-        padding: 10px; /* Reducir padding en móviles */
-    }
-
-    .hr {
-        width: 80%; /* Más ancho en móviles */
+        padding-left: 15px;
+        font-size: 16px;
     }
 }
 
-/* Para pantallas medianas (tablets) */
-@media (max-width: 1024px) {
+@media (max-width: 890px) {
     main {
-        grid-template-columns: 1fr 2fr; /* Ajuste para dos columnas */
+        grid-template-columns: 100%;
     }
-
     main .filtros {
-        font-size: 20px; /* Tamaño de texto más ajustado */
+        font-size: 18px;
     }
-
-    .box {
-        padding: 20px; /* Espaciado más amplio */
-    }
-
     nav {
+        position: static; /* Desancla el menú en pantallas pequeñas */
+        margin: 0 auto;
+        width: 95%;
+    }
+    .item-boton {
+        padding: 10px;
+        font-size: 14px;
+    }
+    .lista_dentro {
         margin-left: 20px;
     }
+    .box {
+        padding: 10px;
+    }
+}
 
+@media (max-width: 570px) {
+    nav {
+        padding-top: 10px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .item-boton {
+        font-size: 12px;
+        padding: 8px;
+    }
+    .nav-link {
+        font-size: 14px;
+    }
+    .lista_dentro {
+        margin-left: 10px;
+    }
+    .texto {
+        padding: 5%;
+    }
+    .box {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 360px) {
+    nav {
+        text-align: left;
+        padding: 5px;
+    }
+    .item-boton {
+        font-size: 10px;
+        padding: 5px;
+    }
+    .nav-link {
+        font-size: 12px;
+    }
+    .texto {
+        padding: 5%;
+        font-size: 12px;
+    }
+    .box {
+        font-size: 12px;
+        padding: 5px;
+    }
     .hr {
-        width: 60%; /* Ajuste del ancho */
+        width: 80%;
     }
 }

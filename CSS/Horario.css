@@ -108,58 +108,117 @@ nav{
     width: 40%;
 
 }
+/*-------- RESPONSIVE ----------*/
 
-/* Media Queries para Responsividad */
-
-/* Para pantallas pequeñas (móviles) */
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
     main {
-        grid-template-columns: 1fr; /* Diseño de una sola columna */
+        grid-template-columns: 30% 70%;
     }
-
-    main .filtros {
-        font-size: 18px; /* Tamaño de texto más pequeño */
+    .filtros {
+        font-size: 22px;
     }
-
-    nav {
-        position: relative; /* Cambia de fijo a relativo */
-        margin: 10px 0;
-        width: 100%; /* Ajusta el ancho al 100% */
-    }
-
-    .item-boton {
-        padding-left: 10px;
-        gap: 0.5em;
-    }
-
     .box {
-        padding: 10px; /* Reducir padding en móviles */
+        width: 90%;
     }
-
-    .hr {
-        width: 80%; /* Más ancho en móviles */
+    nav {
+        margin-left: 20px;
+        margin-top: 5%;
     }
 }
 
-/* Para pantallas medianas (tablets) */
-@media (max-width: 1024px) {
+@media (max-width: 992px) {
     main {
-        grid-template-columns: 1fr 2fr; /* Ajuste para dos columnas */
+        grid-template-columns: 35% 65%;
     }
-
-    main .filtros {
-        font-size: 20px; /* Tamaño de texto más ajustado */
+    .filtros {
+        font-size: 20px;
+        flex-direction: column;
+        align-items: flex-start;
     }
-
+    .item-boton {
+        padding-left: 10px;
+    }
     .box {
-        padding: 20px; /* Espaciado más amplio */
+        width: 95%;
     }
-
     nav {
-        margin-left: 20px;
+        margin-left: 10px;
+        position: relative;
     }
+    .Titulo {
+        font-size: 24px;
+        text-align: center;
+    }
+}
 
-    .hr {
-        width: 60%; /* Ajuste del ancho */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+    .filtros {
+        font-size: 18px;
+        text-align: center;
+    }
+    nav {
+        position: static;
+        margin: 10px 0;
+        width: 100%;
+    }
+    .item-boton {
+        gap: 0.5em;
+        padding-left: 5px;
+    }
+    .box {
+        width: 100%;
+    }
+    .Titulo {
+        margin-top: 15px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .filtros {
+        font-size: 16px;
+        justify-content: center;
+    }
+    .item-boton {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .box {
+        width: 100%;
+        padding: 10px;
+    }
+    .Titulo {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    nav {
+        padding-top: 5px;
+        margin: 5px 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 360px) {
+    .filtros {
+        font-size: 14px;
+    }
+    .item-boton {
+        font-size: 12px;
+        padding-left: 5px;
+    }
+    .Titulo {
+        font-size: 16px;
+        margin-top: 5px;
+    }
+    nav {
+        padding: 0;
+        margin: 0;
+    }
+    .box {
+        padding: 5px;
+        font-size: 14px;
     }
 }

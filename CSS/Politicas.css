@@ -109,57 +109,104 @@ nav{
 
 }
 
-/* Media Queries para Responsividad */
+/*-------- RESPONSIVE DESIGN ----------*/
 
-/* Para pantallas pequeñas (móviles) */
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
     main {
-        grid-template-columns: 1fr; /* Diseño de una sola columna */
+        grid-template-columns: 1fr; /* Cambia a una sola columna */
     }
-
-    main .filtros {
-        font-size: 18px; /* Tamaño de texto más pequeño */
-    }
-
     nav {
-        position: relative; /* Cambia de fijo a relativo */
-        margin: 10px 0;
-        width: 100%; /* Ajusta el ancho al 100% */
+        position: static; /* Ajusta el menú para que no sea fijo */
+        margin-left: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
-
-    .item-boton {
-        padding-left: 10px;
-        gap: 0.5em;
+    .lista {
+        width: 100%;
     }
-
     .box {
-        padding: 10px; /* Reducir padding en móviles */
-    }
-
-    .hr {
-        width: 80%; /* Más ancho en móviles */
+        width: 90%; /* Ajuste del ancho */
     }
 }
 
-/* Para pantallas medianas (tablets) */
-@media (max-width: 1024px) {
+@media (max-width: 992px) {
     main {
-        grid-template-columns: 1fr 2fr; /* Ajuste para dos columnas */
+        margin: 0 auto; /* Centra el contenido */
     }
-
-    main .filtros {
-        font-size: 20px; /* Tamaño de texto más ajustado */
+    .Titulo {
+        margin-top: 15px;
     }
-
     .box {
-        padding: 20px; /* Espaciado más amplio */
+        padding: 10px;
+        width: 95%;
     }
-
-    nav {
-        margin-left: 20px;
+    .texto {
+        padding: 5px;
     }
-
     .hr {
-        width: 60%; /* Ajuste del ancho */
+        width: 60%; /* Ajuste del ancho del separador */
+    }
+    .item-boton {
+        padding-left: 10px;
+        font-size: 14px; /* Ajuste del texto en las opciones */
+    }
+}
+
+@media (max-width: 768px) {
+    .texto {
+        font-size: 14px; /* Reduce el tamaño de fuente */
+    }
+    .item-boton {
+        gap: 0.5em; /* Menos espacio entre elementos */
+    }
+    .box {
+        width: 100%;
+    }
+    .nav-link {
+        font-size: 14px; /* Ajuste en los enlaces del menú */
+    }
+    .lista_show {
+        margin-left: 40px; /* Reduce la sangría */
+    }
+}
+
+@media (max-width: 576px) {
+    main .filtros {
+        font-size: 20px; /* Reduce tamaño de texto */
+    }
+    .Titulo h3 {
+        font-size: 20px; /* Ajusta el tamaño del título */
+    }
+    .box {
+        padding: 10px;
+        font-size: 14px;
+    }
+    .item-boton {
+        font-size: 12px; /* Ajuste del texto en los botones */
+    }
+    .hr {
+        width: 80%; /* Mayor ancho para pantallas pequeñas */
+    }
+}
+
+@media (max-width: 360px) {
+    main {
+        padding: 10px;
+    }
+    .Titulo h3 {
+        font-size: 18px;
+    }
+    .box {
+        padding: 8px;
+        font-size: 12px; /* Texto más pequeño */
+    }
+    .nav-link {
+        font-size: 12px;
+    }
+    .hr {
+        width: 100%; /* Separador ocupa todo el ancho */
+    }
+    .item-boton {
+        padding: 5px;
     }
 }

@@ -137,68 +137,112 @@ nav{
     border: 1px solid #4BAA6E;
     
 }
+/*-------- RESPONSIVE ----------*/
 
-/* Media Queries para Responsividad */
-
-/* Para pantallas pequeñas (móviles) */
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
     main {
-        grid-template-columns: 1fr; /* Una columna para móviles */
+        grid-template-columns: 30% 70%;
     }
-
-    main .filtros {
-        font-size: 18px; /* Ajuste del tamaño de fuente */
+    .filtros {
+        font-size: 22px;
     }
-
-    nav {
-        position: relative; /* Cambia de fijo a relativo */
-        margin-left: 0;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        width: 100%;
-    }
-
-    .info {
-        grid-template-columns: 1fr; /* Una columna para info */
-        gap: 10px; /* Espaciado adicional */
-        padding-left: 5%;
-    }
-
-    .info button {
-        margin-left: 0; /* Centrar el botón */
-        width: 80%; /* Más ancho en móviles */
-    }
-
     .formulario2 {
-        padding: 5%; /* Ajuste de padding */
-        margin: 10px; /* Reducir márgenes */
+        width: 90%;
+        margin: 50px auto;
     }
-
-    .msj .y {
-        width: 100%; /* Ocupa todo el ancho */
+    .info {
+        grid-template-columns: 25% 75%;
     }
-
-    .hr {
-        width: 80%; /* Más ancho en móviles */
+    .boton button {
+        font-size: 18px;
+        padding: 5px 40px;
     }
 }
 
-/* Para pantallas medianas (tablets) */
-@media (max-width: 1024px) {
+@media (max-width: 992px) {
     main {
-        grid-template-columns: 1fr 2fr; /* Dos columnas más equilibradas */
+        grid-template-columns: 1fr;
     }
-
-    .info {
-        grid-template-columns: 30% 70%; /* Ajuste para tablets */
+    .filtros {
+        font-size: 20px;
+        text-align: center;
+        justify-content: center;
     }
-
+    nav {
+        position: static;
+        margin: 20px 0;
+    }
     .formulario2 {
-        padding: 3%;
+        width: 95%;
+        padding: 15px;
     }
+    .info {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+    .msj textarea {
+        height: 30%;
+    }
+    .boton {
+        margin-top: 40px;
+    }
+    .boton button {
+        font-size: 16px;
+        padding: 5px 30px;
+    }
+}
 
-    .info button {
-        margin-left: 25%; /* Ajuste del botón */
-        width: 50%;
+@media (max-width: 768px) {
+    .filtros {
+        font-size: 18px;
+    }
+    .formulario2 {
+        width: 100%;
+        margin: 30px auto;
+    }
+    .info {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .msj input,
+    .msj textarea {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .boton button {
+        font-size: 14px;
+        padding: 5px 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .filtros {
+        font-size: 16px;
+    }
+    .formulario2 {
+        padding: 10px;
+    }
+    .msj textarea {
+        height: 25%;
+    }
+    .boton button {
+        font-size: 12px;
+        padding: 5px 15px;
+    }
+}
+
+@media (max-width: 360px) {
+    .filtros {
+        font-size: 14px;
+    }
+    .info {
+        padding: 5px;
+    }
+    .msj textarea {
+        height: 20%;
+    }
+    .boton button {
+        font-size: 10px;
+        padding: 5px 10px;
     }
 }
