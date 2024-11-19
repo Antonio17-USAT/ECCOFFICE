@@ -66,3 +66,108 @@ main{
     color: white;
     font-size: 20px;
 }
+
+/*-------- RESPONSIVE ----------*/
+
+@media (max-width: 1200px) {
+    .box {
+        width: 90%;
+    }
+    .subox {
+        grid-template-columns: 1fr; /* Cambia a una sola columna */
+        gap: 20px;
+    }
+    .palabras p {
+        font-size: 22px;
+    }
+    .cuadros label {
+        font-size: 28px;
+    }
+    .Texto .palabras {
+        padding-left: 40px;
+    }
+}
+
+@media (max-width: 992px) {
+    .Titulo H3 {
+        font-size: 30px;
+    }
+    .palabras p {
+        font-size: 20px;
+    }
+    .Texto .palabras {
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+    .cuadros label {
+        font-size: 25px;
+    }
+    .boton button, .botonC button {
+        font-size: 18px;
+        padding: 5px 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .subox {
+        gap: 15px;
+    }
+    .Titulo H3 {
+        font-size: 25px;
+    }
+    .palabras p {
+        font-size: 18px;
+    }
+    .Texto .palabras {
+        padding-left: 15px;
+        padding-right: 10px;
+    }
+    .box {
+        width: 100%;
+    }
+    .boton button, .botonC button {
+        font-size: 16px;
+        padding: 5px 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .Titulo H3 {
+        font-size: 22px;
+        text-align: center;
+    }
+    .palabras p {
+        font-size: 16px;
+    }
+    .Texto .palabras {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .cuadros label {
+        font-size: 22px;
+    }
+    .boton button, .botonC button {
+        font-size: 14px;
+        padding: 5px 15px;
+    }
+}
+
+@media (max-width: 360px) {
+    .Titulo H3 {
+        font-size: 20px;
+    }
+    .palabras p {
+        font-size: 14px;
+    }
+    .Texto .palabras {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .cuadros label {
+        font-size: 20px;
+    }
+    .boton button, .botonC button {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+}

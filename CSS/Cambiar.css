@@ -54,3 +54,152 @@ main{
     color: white;
     font-size: 20px;
 }
+
+main {
+    margin: 2% 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor {
+    margin: 10px 10px;
+}
+
+.Titulo {
+    padding: 20px 10px;
+}
+
+.formulario {
+    border: 1px solid #4BAA6E;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 900px;
+    height: 350px;
+}
+
+.box {
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px 20px;
+}
+
+.box label {
+    font-size: 25px;
+    padding-bottom: 20px;
+    margin-right: 20px;
+}
+
+.box input {
+    padding-right: 300px;
+    border-radius: 10px;
+}
+
+.btn-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0px;
+    gap: 15px;
+}
+
+.btn-form .CO {
+    border-radius: 50px;
+    padding: 5px 40px;
+    background-color: #4baa6e;
+    color: white;
+    font-size: 20px;
+}
+
+.btn-form .CA {
+    border-radius: 50px;
+    padding: 5px 40px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 1280px) {
+    .formulario {
+        width: 750px;
+        height: 300px;
+    }
+    .box label {
+        font-size: 20px;
+    }
+    .box input {
+        padding-right: 200px;
+    }
+    .btn-form .CO, .btn-form .CA {
+        padding: 5px 30px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 890px) {
+    .formulario {
+        width: 600px;
+        height: auto;
+    }
+    .box {
+        padding: 15px 10px;
+    }
+    .box label {
+        font-size: 18px;
+        margin-right: 10px;
+    }
+    .box input {
+        padding-right: 150px;
+        width: 100%;
+    }
+    .btn-form {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .btn-form .CO, .btn-form .CA {
+        padding: 5px 20px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 570px) {
+    .formulario {
+        width: 95%;
+        padding: 10px;
+    }
+    .box {
+        padding: 10px 5px;
+    }
+    .box label {
+        font-size: 16px;
+        margin-right: 5px;
+    }
+    .box input {
+        padding-right: 100px;
+        font-size: 14px;
+    }
+    .btn-form .CO, .btn-form .CA {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 360px) {
+    .formulario {
+        width: 100%;
+        padding: 5px;
+    }
+    .box label {
+        font-size: 14px;
+    }
+    .box input {
+        padding-right: 50px;
+        font-size: 12px;
+    }
+    .btn-form .CO, .btn-form .CA {
+        padding: 5px 5px;
+        font-size: 12px;
+    }
+}

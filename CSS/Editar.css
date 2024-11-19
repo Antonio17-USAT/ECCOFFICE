@@ -154,3 +154,163 @@ main{
     background-color: #c0ffd7;
     height: 20px;
 }
+
+/*-------- RESPONSIVE ----------*/
+
+@media (max-width: 1152px) {
+    .Titulos h1 {
+        font-size: 40px;
+    }
+    .Titulos p {
+        font-size: 22px;
+    }
+    .carrusel {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .imagenes {
+        margin-left: 100px;
+    }
+    .img {
+        width: 90%;
+        height: auto;
+    }
+    .puntos p {
+        font-size: 70px;
+    }
+    .Ofertas h2 {
+        padding: 10px 40px;
+        font-size: 25px;
+    }
+    .contenedor {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .caja img {
+        height: 180px;
+        width: 240px;
+    }
+    .colaboraciones h3 {
+        font-size: 22px;
+    }
+    .marca img {
+        width: 150px;
+        height: 90px;
+    }
+    .marca a {
+        padding: 10px 30px;
+    }
+}
+
+@media (max-width: 890px) {
+    .Titulos h1 {
+        font-size: 35px;
+    }
+    .Titulos p {
+        font-size: 18px;
+    }
+    .imagenes {
+        margin-left: 50px;
+    }
+    .img {
+        width: 80%;
+    }
+    .puntos p {
+        font-size: 50px;
+    }
+    .contenedor {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .caja img {
+        height: 150px;
+        width: 200px;
+    }
+    .colaboraciones h3 {
+        font-size: 20px;
+    }
+    .marca img {
+        width: 140px;
+        height: 80px;
+    }
+    .marca a {
+        padding: 8px 20px;
+    }
+}
+
+@media (max-width: 570px) {
+    .Titulos {
+        text-align: center;
+    }
+    .Titulos h1 {
+        font-size: 28px;
+    }
+    .Titulos p {
+        font-size: 15px;
+    }
+    .imagenes {
+        margin-left: 0;
+        align-items: center;
+    }
+    .img {
+        width: 100%;
+    }
+    .puntos p {
+        font-size: 40px;
+    }
+    .Ofertas h2 {
+        font-size: 18px;
+        padding: 5px 20px;
+    }
+    .contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+    .caja img {
+        height: 120px;
+        width: 160px;
+    }
+    .colaboraciones h3 {
+        font-size: 18px;
+    }
+    .marca img {
+        width: 120px;
+        height: 70px;
+    }
+    .marca a {
+        padding: 5px 15px;
+    }
+}
+
+@media (max-width: 360px) {
+    .Titulos h1 {
+        font-size: 24px;
+    }
+    .Titulos p {
+        font-size: 12px;
+    }
+    .img {
+        width: 100%;
+    }
+    .puntos p {
+        font-size: 30px;
+    }
+    .contenedor {
+        gap: 5px;
+    }
+    .caja img {
+        height: 100px;
+        width: 140px;
+    }
+    .colaboraciones h3 {
+        font-size: 16px;
+    }
+    .marca img {
+        width: 100px;
+        height: 60px;
+    }
+    .marca a {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+}

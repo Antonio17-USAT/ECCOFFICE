@@ -1,79 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body {
-    font-family: Arial, sans-serif;
-}
-
-.header {
-    background-color: #7df1a7;
-    padding: 10px 40px;
-    
-}
-
-.he1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.he1 .logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.he1 .logo-img {
-    height: 70px; /* Ajusta el tamaño de la imagen del logo según sea necesario */
-}
-
-.logo-text {
-    font-size: 40px;
-    font-style: italic;
-    color: black;
-    font-weight: bold;
-}
-
-.icons {
-    display: flex;
-    gap: 15px;
-    
-}
-
-.icon img {
-    height: 35px; 
-    width: 35px;
-    margin-right: 20px;
-}
-.icon .carrito{ 
-    height: 39px; 
-    width: 39px;
-}
-.icon .perfil{ 
-    height: 38px; 
-    width: 38px;
-}
-.he2{ 
-    background-color: #b5f7cd;
-    padding: 20px 200px;
-    display: flex;
-    justify-content: space-around;
-}
-.he2 .nav-link{ 
-    text-decoration: none;
-    font-size: 20px;
-    text-decoration: none; 
-    border-radius: 10px;
-    background-color: white;
-    color: black;
-    padding: 5px 15px ;
-    transition: all 1s ease;
-}
-
-/*Hasta aquí el header*/
 
 /*aqui es el main sin las listas*/
 main {
@@ -158,92 +83,127 @@ form {
     cursor: pointer;
     width: 45%;
 }
-/*Desde aquí el footer*/
-footer {
-    grid-area: footer;
-    background-color: #576d57;
-    display: grid;
-    grid-template-columns: repeat(5, auto);
-    padding: 1% 0 1% 5%;
-    color: white;
-    
-}
-footer .logo {
-    grid-template-rows: repeat(2,auto);
-}
-footer .logo-f{ 
-    margin-left: 12px;
-} 
 
-footer .logo-img{ 
-    height: 140px;
-    filter: invert(1);
-}
-footer .titulo-div { 
-    font-size: 20px;
-    font-weight: bold;
-    
-}
-.text-f .logo-text {
-    font-size: 25px;
-    font-style: italic;
-    color: white;
-    font-weight: bold;
-    padding-top: 30px;
-}
-.varios {
-    font-size: 18px;
-    list-style-type: none;
-}
-.varios li  { 
-    padding-top: 15px;
-} 
-.varios li a { 
-    color: white;
+/*-------- RESPONSIVE ----------*/
+
+@media (max-width: 1280px) {
+    main {
+        padding: 30px;
+    }
+
+    section {
+        width: 350px;
+    }
+
+    .infor input[type="text"],
+    .infor input[type="email"],
+    .infor input[type="password"],
+    .infor input[type="tel"] {
+        width: 60%;
+    }
+
+    .btnR,
+    .btnC {
+        padding: 8px 15px;
+        width: 48%;
+    }
 }
 
-.titulo-div {
-    font-size: 20px;
-    padding-left: 20px;
+@media (max-width: 890px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    section {
+        width: 300px;
+        padding: 15px;
+    }
+
+    .infor label {
+        width: 35%;
+    }
+
+    .infor input[type="text"],
+    .infor input[type="email"],
+    .infor input[type="password"],
+    .infor input[type="tel"] {
+        width: 60%;
+        padding: 6px;
+    }
+
+    .btnR,
+    .btnC {
+        padding: 8px;
+        font-size: 14px;
+        width: 48%;
+    }
 }
 
-.varios  {
-    padding-top: 10px;
+@media (max-width: 570px) {
+    main {
+        padding: 15px;
+    }
+
+    section {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .infor {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .infor label {
+        width: 100%;
+    }
+
+    .infor input[type="text"],
+    .infor input[type="email"],
+    .infor input[type="password"],
+    .infor input[type="tel"] {
+        width: 100%;
+    }
+
+    .btnR,
+    .btnC {
+        width: 100%;
+        padding: 8px;
+        margin-top: 10px;
+    }
+
+    .boton {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
 
-.varios a {
-    text-decoration: none;
-    color: #343434;
-    padding: 0px 5px;
-}
+@media (max-width: 360px) {
+    main {
+        padding: 10px;
+    }
 
-.varios li a:hover {
-    text-decoration: none;
-    background-color: white;
-    border-radius: 10px;
-    color: black;
-}
+    section {
+        padding: 5px;
+    }
 
-.varios .item{ 
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 18px;
-}
-.item img{ 
-    height: 25px;
-    filter: invert(1);
-} 
-.item span a{
-    color: white;
-}
-.item .ig{ 
-    height: 30px;
-}
-.derechos { 
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 10px 10px;
-}
+    section h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
 
+    .infor input[type="text"],
+    .infor input[type="email"],
+    .infor input[type="password"],
+    .infor input[type="tel"] {
+        padding: 5px;
+    }
+
+    .btnR,
+    .btnC {
+        font-size: 12px;
+        padding: 6px;
+    }
+}

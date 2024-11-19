@@ -169,3 +169,121 @@ section h2 {
     border-radius: 5px;
     cursor: pointer;
 }
+/* Media query para pantallas menores o iguales a 1280px */
+@media screen and (max-width: 1280px) {
+    main {
+        grid-template-columns: 30% 70%;
+    }
+    .productos {
+        flex-direction: column;
+        align-items: center;
+    }
+    section {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .barraBusqueda input {
+        width: 200px;
+    }
+    .btn-barra {
+        font-size: 0.9em;
+    }
+    .img {
+        width: 70px;
+    }
+}
+
+/* Media query para pantallas menores o iguales a 890px */
+@media screen and (max-width: 890px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+    .productos {
+        flex-direction: column;
+        padding: 10px;
+    }
+    section {
+        width: 90%;
+        margin-left: 5%;
+    }
+    .barraBusqueda {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .barraBusqueda input {
+        width: 150px;
+    }
+    .detallesArticulo {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .img {
+        width: 60px;
+    }
+    .btnD {
+        padding: 6px 10px;
+    }
+}
+
+/* Media query para pantallas menores o iguales a 570px */
+@media screen and (max-width: 570px) {
+    .productos {
+        flex-direction: column;
+        padding: 5px;
+    }
+    section {
+        width: 100%;
+        margin-left: 0;
+    }
+    .barraBusqueda {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .barraBusqueda input {
+        width: 100%;
+    }
+    .detallesArticulo {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .img {
+        width: 50px;
+    }
+    .btnD {
+        font-size: 0.8em;
+        padding: 5px 8px;
+    }
+}
+
+/* Media query para pantallas menores o iguales a 360px */
+@media screen and (max-width: 360px) {
+    .productos {
+        padding: 5px;
+    }
+    section {
+        width: 100%;
+    }
+    .barraBusqueda {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .barraBusqueda input {
+        width: 100%;
+        font-size: 0.9em;
+    }
+    .detallesArticulo {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .img {
+        width: 40px;
+    }
+    .infoP h3 {
+        font-size: 1em;
+    }
+    .btnD {
+        font-size: 0.8em;
+        padding: 4px 6px;
+    }
+}
