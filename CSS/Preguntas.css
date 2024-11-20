@@ -22,8 +22,7 @@ nav{
    margin-left: 30px;
    margin-top: 2%;
    margin-bottom: 5%;
-   position: fixed;
-  
+   border: 2px  solid black  ;
 }
 
 .lista{
@@ -107,9 +106,12 @@ nav{
     width: 40%;
 
 }
+.respuesta {
+    display: none; /* Oculta las respuestas por defecto */
+}
+
 
 /*-------- RESPONSIVE DESIGN ----------*/
-
 @media (max-width: 1200px) {
     main {
         grid-template-columns: 1fr; /* Cambia a una sola columna */
@@ -189,6 +191,9 @@ nav{
     }
     .Titulo h3 {
         font-size: 14px; /* Ajusta aún más el título */
+    }
+    nav{
+        
     }
     .box {
         padding: 8px;
