@@ -1,100 +1,16 @@
 
-/*Hasta aquí el header*/
-
 main{ 
-    grid-area: main; 
-    display: grid;
-    grid-template-columns: repeat(2, 25% 75%);  
-}
-main .filtros{ 
-    height: 100%;
-    width: 100%;
-    text-align:left ;
-    font-size: 25px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-} 
-nav{ 
-   padding-top: 5px;
-   padding-bottom: 5px;
-   width: auto;
-   margin-left: 30px;
-   margin-top: 2%;
-   margin-bottom: 5%;
-   position: fixed;
-  
+    margin: 10px 10px;
 }
 
-.lista{
-    width: 90%;
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-}
-.item-open{ 
-    list-style: none;
-    overflow: hidden; 
-    width: 100%; 
-    text-align: left;
-    padding: 0px;
-    margin: 0px;
-    cursor: pointer;
-} 
-
-.item-boton{ 
-    display: flex;
-    align-items: center;
-    gap: 1em;
-    width: 100%;
-    padding-left: 20px;
-    margin-top: 5px;
-    background-color: #B5F7CD;
-    border-radius: 50px;
-}
-.item-boton a{
-    margin: 5px;
-}
-.item-boton:hover{ 
-    background: #4BAA6E;
-    border-radius: 50px;
-}
-
-.nav-link{ 
-    color: black;
-    display: block;
-    text-decoration: none;
-    margin: 0px;
-  
-} 
-.lista_dentro{ 
-    text-align: left;
-    list-style: none;
-}
-.lista_show{
-    width: 100%;
-    margin-left: 60px;
-    border-left: 3px solid white;
-    height: 0;
-}
-.nav-link-dentro{ 
-    text-decoration: none;
-}
-.nav-link-dentro:hover{ 
-    border-radius: 10px;
-    padding-left: 20px;
-}
 /*-------------*/
 .texto{
-    padding: 10px 10px ;
-    margin: 10px 0px;
-    margin-bottom: 60px;
+    padding: 0px 30px ; 
 }
 .Titulo{ 
     margin-top: 25px;
+    width: 95%;
+    max-width: 1200px;
 }
 .box{
     border: 1px solid #4BAA6E;
@@ -102,34 +18,47 @@ nav{
     padding: 15px;
     width: 80%;
     text-align: justify;
+    max-width: 1200px;
+    margin: 15px 0;
 }
-.box p { 
-    padding: 0px 10px;
+
+.privacidad , .cookies{ 
+    margin-bottom: 5px;
 }
 
 .hr{
     border: 1px solid #4BAA6E;
-    width: 40%;
+    width: 45%;
 
 }
 
 /*-------- RESPONSIVE DESIGN ----------*/
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
     main {
-        grid-template-columns: 1fr; /* Cambia a una sola columna */
+        grid-template-columns: 1fr; 
     }
-    nav {
-        position: static; /* Ajusta el menú para que no sea fijo */
-        margin-left: 0;
-        margin-top: 10px;
-        margin-bottom: 10px;
+    .contenedor{ 
+        width: 70%;
+        display: grid;
     }
-    .lista {
-        width: 100%;
+    .filtros{ 
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        margin: 10px auto;
+        grid-gap: 20px ;
     }
-    .box {
-        width: 90%; /* Ajuste del ancho */
+    .texto{ 
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+    }
+    .caja-filtro button{
+        width: 190px;
+    }
+    .caja-filtro button a{ 
+        font-size: 14px;
     }
 }
 
@@ -157,60 +86,67 @@ nav{
 }
 
 @media (max-width: 768px) {
-    .texto {
-        font-size: 14px; /* Reduce el tamaño de fuente */
+    main {
+        grid-template-columns: 1fr; 
     }
-    .item-boton {
-        gap: 0.5em; /* Menos espacio entre elementos */
+    .contenedor{ 
+        width: 70%;
+        display: grid;
     }
-    .box {
-        width: 100%;
+    .filtros{ 
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        margin: 10px auto;
+        grid-gap: 20px ;
     }
-    .nav-link {
-        font-size: 14px; /* Ajuste en los enlaces del menú */
+    .texto{ 
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
     }
-    .lista_show {
-        margin-left: 40px; /* Reduce la sangría */
+
+    .caja-filtro button{
+        width: 190px;
+    }
+    .caja-filtro button a{ 
+        font-size: 14px;
     }
 }
 
-@media (max-width: 576px) {
-    main .filtros {
-        font-size: 20px; /* Reduce tamaño de texto */
+@media (max-width: 428px) {
+    main {
+        grid-template-columns: 1fr; 
     }
-    .Titulo h3 {
-        font-size: 20px; /* Ajusta el tamaño del título */
+    .contenedor{ 
+        width: 70%;
+        display: grid;
     }
-    .box {
-        padding: 10px;
-        font-size: 14px;
+    .filtros{ 
+        display: grid;
+        grid-template-columns: auto auto ;
+        grid-template-rows: auto auto auto;
+        margin: 10px auto;
+        grid-gap: 8px ;
     }
-    .item-boton {
-        font-size: 12px; /* Ajuste del texto en los botones */
+    .texto{ 
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
     }
-    .hr {
-        width: 80%; /* Mayor ancho para pantallas pequeñas */
+  
+    .caja-filtro button{
+        width: 180px;
+        padding: 6px 5px;
+    }
+    .caja-filtro button a{ 
+        font-size: 12px;
     }
 }
 
 @media (max-width: 360px) {
-    main {
-        padding: 10px;
-    }
-    .Titulo h3 {
-        font-size: 18px;
-    }
-    .box {
-        padding: 8px;
-        font-size: 12px; /* Texto más pequeño */
-    }
-    .nav-link {
-        font-size: 12px;
-    }
-    .hr {
-        width: 100%; /* Separador ocupa todo el ancho */
-    }
-    .item-boton {
-        padding: 5px;
+    .contenedor{ 
+        display: grid;
+        padding: 0px 0px;
     }
 }

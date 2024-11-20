@@ -1,32 +1,18 @@
 var htmlFiltros = /*html*/`
-<nav>
-    <ul class="lista">
-        <li class="item-open">
-            <div class="item-boton">
-                <a href="" class="nav-link">Centro de ayuda</a>
-            </div>
-        </li>
-        <li class="item-open">
-            <div class="item-boton">
-                <a href="" class="nav-link">Libro de Reclamaciones</a>
-            </div>
-        </li>
-        <li class="item-open">
-            <div class="item-boton">
-                <a href="" class="nav-link">Preguntas Frecuentes</a>
-            </div>
-        </li>
-        <li class="item-open">
-            <div class="item-boton">
-                <a href="" class="nav-link">Horarios de atención</a>
-            </div>
-        </li>
-        <li class="item-open">
-            <div class="item-boton">
-                <a href="" class="nav-link">Políticas de privacidad</a>
-            </div>
-        </li>
-    </ul>
-</nav>
+<div class="caja-filtro">
+<button><a href="">Centro de Ayuda</a></button>
+</div>
+<div class="caja-filtro">
+<button><a href="">Libro de Reclamaciones</a></button>
+</div>
+<div class="caja-filtro">
+<button><a href="">Preguntas Frecuentes</a></button>
+</div>
+<div class="caja-filtro">
+<button><a href="">Horario de Atención</a></button>
+</div>
+<div class="caja-filtro">
+<button><a href="">Politicas y privacidad</a></button>
+</div>
 `
 document.getElementsByClassName('filtros')[0].innerHTML = htmlFiltros
