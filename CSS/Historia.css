@@ -1,0 +1,53 @@
+main{ 
+    border: 1px solid black;
+    margin: 35.5px 15px;
+}
+.contenedor{ 
+    padding: 10px 30px ;
+    border: 2px solid black; 
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    
+}
+.caja-texto{ 
+    border: 2px solid black
+}
+.Titulo h2{ 
+    padding: 0px 15px ;
+    font-weight: bold;
+}
+.Text p{ 
+    padding: 0px 15px ;
+    text-align: justify;
+    font-size: 30px;
+    border: 2px solid black;
+    width: 100%;
+}
+.caja-componentes{ 
+    border: 2px solid black;
+    padding-right: 200px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    align-items: center;
+}
+.img{ 
+    display: flex; 
+    
+    padding: 0px 10px;
+    
+    border: 2px solid black;
+}
+
+.img img{ 
+    width: 600px;
+    height: 500px;
+}
+.botones{ 
+    display: flex;
+    
+}
