@@ -1,21 +1,17 @@
 main{ 
-    border: 1px solid black;
     margin: 35.5px 15px;
 }
 .contenedor{ 
     padding: 10px 30px ;
-    border: 2px solid black; 
     width: 80%;
+    max-width: 1400px;
     margin: 10px auto;
     display: flex;
     justify-content: center;
     align-items: center;
     justify-items: center;
-    
 }
-.caja-texto{ 
-    border: 2px solid black
-}
+
 .Titulo h2{ 
     padding: 0px 15px ;
     font-weight: bold;
@@ -23,31 +19,164 @@ main{
 .Text p{ 
     padding: 0px 15px ;
     text-align: justify;
-    font-size: 30px;
-    border: 2px solid black;
+    font-size: 28px;
     width: 100%;
 }
 .caja-componentes{ 
-    border: 2px solid black;
-    padding-right: 200px;
-    display: flex;
-    align-items: center;
+    grid-template-columns: 100%;
+    margin: 0 auto; 
+    padding: 0px ;
+    justify-content: center;
     justify-items: center;
+}
+.cont-img{ 
+    display: flex;;
     align-items: center;
+    justify-content: center;
+    justify-items: center; 
+    align-content: center;
 }
 .img{ 
     display: flex; 
-    
-    padding: 0px 10px;
-    
-    border: 2px solid black;
+    align-items: center;
+    justify-content: center;
+    justify-items: center; 
+    align-content: center;
+    padding: 20px 10px;
 }
 
 .img img{ 
-    width: 600px;
-    height: 500px;
+    width: 500px;
+    height: 350px;
 }
 .botones{ 
     display: flex;
-    
+    padding: 10px 0px;
+    gap: 20px;
+}
+.botones button{ 
+    border-radius: 50px;
+    padding: 5px 40px ;
+    background-color: #4baa6e;
+    font-size: 20px;
+}
+.botones button:hover{ 
+    background-color: white;
+    border-color:#4baa6e ;
+}
+.botones button a { 
+    text-decoration: none;
+    color: white;
+    color: black;
+}
+
+
+@media (max-width: 1280px) {
+    main {
+        grid-template-columns: 1fr; 
+    }
+    .contenedor{ 
+        width: 70%;
+        display: grid;
+    }
+    .img{ 
+        padding: 50px 10px;
+    }
+    .img img{ 
+        width: 800px;
+        height: 400px;
+    }
+    .botones button{ 
+        padding: 10px 40px ;
+    }
+
+}
+@media (max-width: 992px) {
+    main {
+        grid-template-columns: 1fr; 
+    }
+    .contenedor{ 
+        width: 60%;
+        display: grid;
+    }
+    .img{ 
+        padding: 50px 10px;
+    }
+    .img img{ 
+        width: 650px;
+        height: 400px;
+    }
+    .botones button{ 
+        padding: 10px 40px ;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr; 
+    }
+    .contenedor{ 
+        width: 60%;
+        display: grid;
+    }
+    .Text p{ 
+        font-size: 20px;
+    }
+    .img{ 
+        padding: 50px 10px;
+    }
+    .img img{ 
+        width: 380px;
+        height: 300px;
+    }
+    .botones button{ 
+        padding: 10px 30px ;
+        font-size: 15px;
+    }
+}
+@media (max-width: 428px) {
+    main {
+        grid-template-columns: 1fr; 
+    }
+    .contenedor{ 
+        width: 60%;
+        display: grid;
+    }
+    .Text p{ 
+        font-size: 20px;
+    }
+    .img{ 
+        padding: 50px 10px;
+    }
+    .img img{ 
+        width: 350px;
+        height: 300px;
+    }
+    .botones button{ 
+        padding: 10px 30px ;
+        font-size: 16px;
+    }
+}
+@media (max-width: 360px) {
+    main {
+        grid-template-columns: 1fr; 
+    }
+    .contenedor{ 
+        width: 60%;
+        display: grid;
+    }
+    .Text p{ 
+        font-size: 17px;
+    }
+    .img{ 
+        padding: 50px 10px;
+    }
+    .img img{ 
+        width: 300px;
+        height: 250px;
+    }
+    .botones button{ 
+        padding: 10px 30px ;
+        font-size: 13px;
+    }
 }
