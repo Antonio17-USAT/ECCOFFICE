@@ -10,10 +10,9 @@ footer .caja-footer {
     display: grid;
     color: white;
     margin-top: 30px;
-    padding: 0px 16px 50px 16px;
+    padding:10px 10px ;
     grid-template-columns: repeat(5,auto);
 }
-
 
 footer .logo-img{ 
     height: 140px;
@@ -82,8 +81,14 @@ footer .titulo-div {
 .derechos { 
     background-color: black;
     color: white;
+    display: flex;
     text-align: center;
-    padding: 10px 10px;
+    justify-content: center;
+}
+.derechos h3{
+    font-size: 20px;
+    padding: 6px 4px;
+    width: 550px;
 }
 
 @media(max-width:800px){ 

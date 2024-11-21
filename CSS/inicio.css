@@ -4,7 +4,7 @@ main{
 }
 .Titulos{ 
     text-align: center;
-    margin-top: 80px;
+    margin-top: 50px;
 }
 .Titulos h1{ 
     font-size: 40px;
@@ -19,7 +19,7 @@ main{
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    margin: 0px auto;
+    margin: 30px auto;
     margin-top: 3%;
     width: 62%;
 }
@@ -132,25 +132,25 @@ main{
     font-weight: bold;
 } 
 .colaboraciones{ 
-    background-color: #c0ffd7;
     margin-top: 10px;
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
 }
 .colaboraciones .area-marcas{ 
-    background-color: #c0ffd7;
     display: flex;
-    justify-content: space-between;
-    align-content: space-between ;
+    justify-content: center;
+    align-content: center ;
     padding: 20px 20px;
-    gap: 80px;
+    gap: 30px;
 }
-.marca img{ 
-    width: 240px;
-    height: 130px;
-    margin-bottom: 0px;
+.marca img {
+    width: 200px;
+    height: 150px;
+    border-radius: 50%;
+    transition: opacity 0.3s ease;
 }
+
 .colaboraciones .vacio { 
     background-color: #c0ffd7;
     height: 20px;

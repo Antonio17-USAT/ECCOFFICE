@@ -1,3 +1,8 @@
+body{ 
+    box-sizing: border-box;
+    margin: 0 0;
+}
+
 .header {
     background-color: #7df1a7;
     padding: 10px 10px;
@@ -47,7 +52,9 @@
     align-items: center;
     gap: 10px;
 }
-
+.logo .logo-text{ 
+    font-size: 30px;
+}
 .he1 .logo-img {
     height: 70px;
 }
@@ -80,7 +87,9 @@
     height: 38px; 
     width: 38px;
 }
- /* 2do header  */
+
+
+/* 2do header  */
 .dropdown{ 
     background-color: #b5f7cd;
     display: flex;
@@ -92,7 +101,6 @@
     align-items: center;
     width: 100%;
     max-width: 900px;
-   
 }
 .dropdown .btn{ 
     background-color: #b5f7cd;
@@ -112,6 +120,11 @@
 .dropdown .dropdown-menu a:hover{ 
     background-color: #7df1a7 ;
 }
+.enlace .btn{
+    font-size: 20px;
+}
+
+
 
 @media (max-width: 990px) {
     .he1 {
