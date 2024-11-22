@@ -1,0 +1,69 @@
+/* Barra lateral */
+.sidebar {
+    width: 250px;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    color: #ecf0f1;
+}
+
+.sidebar h2 {
+    margin: 0 0 20px;
+    font-size: 24px;
+    color: #ecf0f1;
+    text-align: center;
+    border-bottom: 2px solid #34495e;
+    padding-bottom: 10px;
+}
+
+/* Botones del menú */
+.menu-btn {
+    background-color:  #b5f7cd;
+    padding: 10px 0px;
+    border-radius: 20px;
+    width: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+}
+
+.menu-btn:hover {
+    background-color: #1abc9c;
+    color: white;
+}
+
+/* Botón desplegable */
+.dropdown-btn {
+    position: relative;
+}
+
+/* Submenú */
+.dropdown-content {
+    display: none;
+    flex-direction: column;
+    background-color: #34495e;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.submenu-btn {
+    color: #ecf0f1;
+    padding: 8px 10px;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.submenu-btn:hover {
+    background-color: #1abc9c;
+    color: white;
+}
+
+/* Mostrar el submenú cuando se activa */
+.show {
+    display: flex;
+}

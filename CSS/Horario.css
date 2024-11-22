@@ -1,4 +1,4 @@
-/*Hasta aquí el header*/
+/Hasta aquí el header/
 main{ 
     margin: 10px 10px;
 }
@@ -6,12 +6,13 @@ main{
     padding-bottom: 95px;
 }
 .texto{
-    padding: 15px 580px 0px 15px ; 
+    padding: 15px 400px 0px 15px ; 
     margin-top: 5px;
     
 }
 .texto .Titulo{ 
     padding-left: 12px;
+    padding-top: 4px;
 }
 .box{
     border-radius: 5px;
@@ -26,119 +27,132 @@ main{
 .caja{
     border: 1px solid #4BAA6E;
     padding: 10px 10px;
+    border-radius: 5px;
 }
 
-/*-------- RESPONSIVE ----------*/
+/-------- RESPONSIVE ----------/
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
     main {
-        grid-template-columns: 30% 70%;
+        grid-template-columns: 1fr; 
     }
-    .filtros {
-        font-size: 22px;
+    .contenedor{ 
+        width: 75%;
+        display: grid;
     }
-    .box {
-        width: 90%;
+    .filtros{ 
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        margin: 10px auto;
+        grid-gap: 20px ;
     }
-    nav {
-        margin-left: 20px;
-        margin-top: 5%;
+    .texto{ 
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        margin-left: 160px;
+    }
+    .caja-filtro button{
+        width: 190px;
+    }
+    .caja-filtro button a{ 
+        font-size: 14px;
     }
 }
 
 @media (max-width: 992px) {
     main {
-        grid-template-columns: 35% 65%;
+        margin: 0 auto; /* Centra el contenido */
     }
-    .filtros {
-        font-size: 20px;
-        flex-direction: column;
-        align-items: flex-start;
+    .Titulo {
+        margin-top: 15px;
+    }
+    .box {
+        padding: 10px;
+        width: 95%;
+    }
+    .texto {
+        padding: 5px;
+        width: 650px;
+        margin-left: 45px;
+
+    }
+    .hr {
+        width: 60%; /* Ajuste del ancho del separador */
     }
     .item-boton {
         padding-left: 10px;
-    }
-    .box {
-        width: 95%;
-    }
-    nav {
-        margin-left: 10px;
-        position: relative;
-    }
-    .Titulo {
-        font-size: 24px;
-        text-align: center;
+        font-size: 14px; /* Ajuste del texto en las opciones */
     }
 }
 
 @media (max-width: 768px) {
     main {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; 
     }
-    .filtros {
-        font-size: 18px;
-        text-align: center;
+    .contenedor{ 
+        width: 70%;
+        display: grid;
     }
-    nav {
-        position: static;
-        margin: 10px 0;
-        width: 100%;
+    .filtros{ 
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        margin: 10px auto;
+        grid-gap: 20px ;
     }
-    .item-boton {
-        gap: 0.5em;
-        padding-left: 5px;
+    .texto{ 
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
     }
-    .box {
-        width: 100%;
+
+    .caja-filtro button{
+        width: 190px;
     }
-    .Titulo {
-        margin-top: 15px;
-        font-size: 20px;
+    .caja-filtro button a{ 
+        font-size: 14px;
     }
 }
 
-@media (max-width: 576px) {
-    .filtros {
-        font-size: 16px;
+@media (max-width: 428px) {
+    main {
+        grid-template-columns: 1fr; 
+    }
+    .contenedor{ 
+        width: 70%;
+        display: grid;
+    }
+    .filtros{ 
+        display: grid;
+        grid-template-columns: auto auto ;
+        grid-template-rows: auto auto auto;
+        margin: 10px auto;
+        grid-gap: 8px ;
+    }
+    .texto{ 
+        align-content: center;
         justify-content: center;
+        justify-items: center;
+        width: 400px;
+        margin-left: 15px;
     }
-    .item-boton {
-        flex-wrap: wrap;
-        text-align: center;
+    .caja{
+        font-size: 12px;
     }
-    .box {
-        width: 100%;
-        padding: 10px;
+    .caja-filtro button{
+        width: 180px;
+        padding: 6px 5px;
     }
-    .Titulo {
-        font-size: 18px;
-        margin-top: 10px;
-    }
-    nav {
-        padding-top: 5px;
-        margin: 5px 0;
-        text-align: center;
+    .caja-filtro button a{ 
+        font-size: 12px;
     }
 }
 
 @media (max-width: 360px) {
-    .filtros {
-        font-size: 14px;
-    }
-    .item-boton {
-        font-size: 12px;
-        padding-left: 5px;
-    }
-    .Titulo {
-        font-size: 16px;
-        margin-top: 5px;
-    }
-    nav {
-        padding: 0;
-        margin: 0;
-    }
-    .box {
-        padding: 5px;
-        font-size: 14px;
+    .contenedor{ 
+        display: grid;
+        padding: 0px 0px;
     }
 }

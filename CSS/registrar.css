@@ -7,6 +7,7 @@ main {
     justify-content: center;
     align-items: center;
     padding: 40px;
+    margin: 27.5px;
 }
 
 section {
@@ -14,7 +15,7 @@ section {
     padding: 20px;
     border: 2px solid #98f5a9;
     border-radius: 8px;
-    width: 400px;
+    width: 700px;
     text-align: center;
     margin: 7.5px 0px ;
 }
@@ -31,14 +32,16 @@ form {
 
 .infor {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     width: 100%;
     margin-bottom: 15px;
 }
 
 .infor label {
     width: 30%;
-    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: bold;
 }
 
@@ -54,35 +57,30 @@ form {
 
 .genero {
     display: flex;
-    align-items: center;
+    justify-content:start ;
     gap: 17px;
 }
 
-.boton {
+.btn-form{
     display: flex;
-    justify-content: space-around;
-    width: 100%;
-    margin-top: 15px;
-}
-
-.btnR {
-    background-color: #4caf50;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0px ;
+    gap: 25px;
+} 
+.btn-form .CO{
+    border-radius: 50px;
+    padding: 5px 40px ;
+    background-color: #4baa6e;
     color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 45%;
+    font-size: 20px;
 }
-
-.btnC {
-    background-color: #f44336;
+.btn-form .CA{
+    border-radius: 50px;
+    padding: 5px 40px ;
+    background-color: red;
     color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 45%;
+    font-size: 20px;
 }
 
 /*-------- RESPONSIVE ----------*/

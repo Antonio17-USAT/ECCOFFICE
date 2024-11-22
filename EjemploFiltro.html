@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra Lateral de Filtros</title>
+    <link rel="stylesheet" href="Componentes/Ejemplofiltro.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Filtros</h2>
+        
+        <!-- Botón desplegable para Categorías -->
+        <div class="filter-group">
+            <button class="filter-btn" onclick="toggleDropdown('categories-dropdown')">
+                Categorías
+            </button>
+            <div id="categories-dropdown" class="dropdown-content">
+                <label><input type="checkbox" name="categoria" value="ropa"> Ropa</label>
+                <label><input type="checkbox" name="categoria" value="electronica"> Electrónica</label>
+                <label><input type="checkbox" name="categoria" value="hogar"> Hogar</label>
+            </div>
+        </div>
+
+        <!-- Botón desplegable para Precio -->
+        <div class="filter-group">
+            <button class="filter-btn" onclick="toggleDropdown('price-dropdown')">
+                Precio
+            </button>
+            <div id="price-dropdown" class="dropdown-content">
+                <label>Desde: <input type="number" name="precio-min" min="0" placeholder="0"></label>
+                <label>Hasta: <input type="number" name="precio-max" min="0" placeholder="5000"></label>
+            </div>
+        </div>
+
+        <!-- Botón desplegable para Marca -->
+        <div class="filter-group">
+            <button class="filter-btn" onclick="toggleDropdown('brand-dropdown')">
+                Marca
+            </button>
+            <div id="brand-dropdown" class="dropdown-content">
+                <label><input type="checkbox" name="marca" value="nike"> Nike</label>
+                <label><input type="checkbox" name="marca" value="samsung"> Samsung</label>
+                <label><input type="checkbox" name="marca" value="ikea"> IKEA</label>
+            </div>
+        </div>
+
+        <button class="apply-btn">Aplicar Filtros</button>
+    </div>
+
+    <script>
+        // Función para alternar el despliegue de los dropdowns
+        function toggleDropdown(id) {
+            const dropdown = document.getElementById(id);
+            dropdown.classList.toggle('show');
+        }
+
+        // Cierra los dropdowns si se hace clic fuera de ellos
+        window.onclick = function(event) {
+            if (!event.target.matches('.filter-btn')) {
+                const dropdowns = document.querySelectorAll('.dropdown-content');
+                dropdowns.forEach(dropdown => dropdown.classList.remove('show'));
+            }
+        }
+    </script>
+</body>
+</html>
