@@ -1,20 +1,23 @@
-/Hasta aquí el header/
-main{ 
+main {
     margin: 10px 10px;
 }
-.contenedor{ 
+
+.contenedor {
     padding-bottom: 95px;
 }
-.texto{
-    padding: 15px 400px 0px 15px ; 
+
+.texto {
+    padding: 15px 400px 0px 15px;
     margin-top: 5px;
-    
+
 }
-.texto .Titulo{ 
+
+.texto .Titulo {
     padding-left: 12px;
     padding-top: 4px;
 }
-.box{
+
+.box {
     border-radius: 5px;
     padding: 15px;
     width: 165%;
@@ -24,135 +27,157 @@ main{
     display: grid;
     grid-gap: 20px;
 }
-.caja{
+
+.caja {
     border: 1px solid #4BAA6E;
     padding: 10px 10px;
     border-radius: 5px;
 }
 
-/-------- RESPONSIVE ----------/
-
-@media (max-width: 1280px) {
+/-------- RESPONSIVE ----------/ @media (max-width: 1280px) {
     main {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
     }
-    .contenedor{ 
+
+    .contenedor {
         width: 75%;
         display: grid;
     }
-    .filtros{ 
+
+    .filtros {
         display: grid;
         grid-template-columns: auto auto auto;
         grid-template-rows: auto auto;
         margin: 10px auto;
-        grid-gap: 20px ;
+        grid-gap: 20px;
     }
-    .texto{ 
+
+    .texto {
         align-content: center;
         justify-content: center;
         justify-items: center;
         margin-left: 160px;
     }
-    .caja-filtro button{
+
+    .caja-filtro button {
         width: 190px;
     }
-    .caja-filtro button a{ 
+
+    .caja-filtro button a {
         font-size: 14px;
     }
 }
 
 @media (max-width: 992px) {
     main {
-        margin: 0 auto; /* Centra el contenido */
+        margin: 0 auto;
+        /* Centra el contenido */
     }
+
     .Titulo {
         margin-top: 15px;
     }
+
     .box {
         padding: 10px;
         width: 95%;
     }
+
     .texto {
         padding: 5px;
         width: 650px;
         margin-left: 45px;
 
     }
+
     .hr {
-        width: 60%; /* Ajuste del ancho del separador */
+        width: 60%;
+        /* Ajuste del ancho del separador */
     }
+
     .item-boton {
         padding-left: 10px;
-        font-size: 14px; /* Ajuste del texto en las opciones */
+        font-size: 14px;
+        /* Ajuste del texto en las opciones */
     }
 }
 
 @media (max-width: 768px) {
     main {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
     }
-    .contenedor{ 
+
+    .contenedor {
         width: 70%;
         display: grid;
     }
-    .filtros{ 
+
+    .filtros {
         display: grid;
         grid-template-columns: auto auto auto;
         grid-template-rows: auto auto;
         margin: 10px auto;
-        grid-gap: 20px ;
+        grid-gap: 20px;
     }
-    .texto{ 
+
+    .texto {
         align-content: center;
         justify-content: center;
         justify-items: center;
     }
 
-    .caja-filtro button{
+    .caja-filtro button {
         width: 190px;
     }
-    .caja-filtro button a{ 
+
+    .caja-filtro button a {
         font-size: 14px;
     }
 }
 
 @media (max-width: 428px) {
     main {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
     }
-    .contenedor{ 
+
+    .contenedor {
         width: 70%;
         display: grid;
     }
-    .filtros{ 
+
+    .filtros {
         display: grid;
-        grid-template-columns: auto auto ;
+        grid-template-columns: auto auto;
         grid-template-rows: auto auto auto;
         margin: 10px auto;
-        grid-gap: 8px ;
+        grid-gap: 8px;
     }
-    .texto{ 
+
+    .texto {
         align-content: center;
         justify-content: center;
         justify-items: center;
         width: 400px;
         margin-left: 15px;
     }
-    .caja{
+
+    .caja {
         font-size: 12px;
     }
-    .caja-filtro button{
+
+    .caja-filtro button {
         width: 180px;
         padding: 6px 5px;
     }
-    .caja-filtro button a{ 
+
+    .caja-filtro button a {
         font-size: 12px;
     }
 }
 
 @media (max-width: 360px) {
-    .contenedor{ 
+    .contenedor {
         display: grid;
-        padding: 0px 0px;
-    }
+        padding: 0px 0px;
+    }
 }
