@@ -1,139 +1,168 @@
-main{ 
-    grid-area: main; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.texto{
-    padding: 10px 10px ;
-    display: grid;
-    grid-template-columns: repeat(2,30% 70%);
-    margin: 40px 0px;
-  
-}
 
-.box-cont{
+main{ 
+    margin: 10px 10px;
+}
+.contenedor{
     display: flex;
-    align-items: center;
-    justify-content: center;
+}
+/*-------------*/
+.texto{
+    padding: 0px 30px ; 
 }
 .Titulo{ 
-    margin-top: 55px;
-    width: 50%;
-  
-    margin-left: 85px;
+    margin-top: 25px;
+    width: 95%;
+    max-width: 1200px;
 }
 .box{
     border: 1px solid #4BAA6E;
     border-radius: 5px;
     padding: 15px;
-    margin-bottom: 20px;
     width: 80%;
     text-align: justify;
     max-width: 1200px;
+    margin: 15px 0;
 }
 
 
 hr{
     border: 1px solid #4BAA6E;
-    width: 40%;
+    width: 45%;
 
 }
 
+/* Preguntas frecuentes*/
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    cursor: pointer;
+}
+.respuesta {
+    display: none;
+    padding: 5px 10px;
+    color: #555;
+}
+.pregunta {
+    font-weight: bold;
+    color: #333;
+}
+
+
 /*-------- RESPONSIVE DESIGN ----------*/
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
     main {
-        grid-template-columns: 1fr; /* Cambia a una sola columna */
+        grid-template-columns: 1fr; 
     }
-    main .filtros {
-        font-size: 20px; /* Ajusta el tamaño del texto */
+    .contenedor{ 
+        width: 70%;
+        display: grid;
     }
-    .box {
-        width: 90%; /* Reduce el ancho de la caja */
+    .filtros{ 
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        margin: 10px auto;
+        grid-gap: 20px ;
     }
-    nav {
-        position: static; /* Ajusta el menú para pantallas más pequeñas */
-        margin-left: 0;
-        margin-top: 10px;
+    .texto{ 
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+    }
+    .caja-filtro button{
+        width: 190px;
+    }
+    .caja-filtro button a{ 
+        font-size: 14px;
     }
 }
 
 @media (max-width: 992px) {
+    main {
+        margin: 0 auto; /* Centra el contenido */
+    }
     .Titulo {
         margin-top: 15px;
-        font-size: 18px; /* Ajusta el tamaño del título */
+    }
+    .box {
+        padding: 10px;
+        width: 95%;
     }
     .texto {
         padding: 5px;
-        font-size: 16px; /* Reduce el tamaño del texto */
-        grid-template-columns: 100%
     }
-
     .hr {
-        width: 60%; /* Ajusta el ancho del separador */
+        width: 60%; /* Ajuste del ancho del separador */
+    }
+    .item-boton {
+        padding-left: 10px;
+        font-size: 14px; /* Ajuste del texto en las opciones */
     }
 }
 
 @media (max-width: 768px) {
-    main .filtros {
-        font-size: 18px; /* Reduce más el texto */
-        text-align: center;
+    main {
+        grid-template-columns: 1fr; 
     }
-    .box {
-        width: 100%; /* Ajusta el ancho para que ocupe todo el espacio */
+    .contenedor{ 
+        width: 70%;
+        display: grid;
     }
-    .item-boton {
-        gap: 0.5em; /* Reduce el espacio entre elementos */
+    .filtros{ 
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        margin: 10px auto;
+        grid-gap: 20px ;
     }
-    .nav-link {
-        font-size: 14px; /* Ajusta el tamaño de los enlaces del menú */
+    .texto{ 
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
     }
-    .lista_show {
-        margin-left: 40px; /* Reduce la sangría */
+
+    .caja-filtro button{
+        width: 190px;
+    }
+    .caja-filtro button a{ 
+        font-size: 14px;
     }
 }
 
-@media (max-width: 576px) {
-    .Titulo h3 {
-        font-size: 16px; /* Reduce el tamaño del título */
+@media (max-width: 428px) {
+    main {
+        grid-template-columns: 1fr; 
     }
-    .box {
-        padding: 10px;
-        font-size: 14px; /* Ajusta el texto */
+    .contenedor{ 
+        width: 70%;
+        display: grid;
     }
-    .nav-link {
-        font-size: 12px; /* Reduce el texto del menú */
+    .filtros{ 
+        display: grid;
+        grid-template-columns: auto auto ;
+        grid-template-rows: auto auto auto;
+        margin: 10px auto;
+        grid-gap: 8px ;
     }
-    .hr {
-        width: 80%; /* Ajusta el ancho del separador */
+    .texto{ 
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
     }
-    .item-boton {
-        font-size: 12px; /* Ajusta el tamaño de los botones */
+  
+    .caja-filtro button{
+        width: 180px;
+        padding: 6px 5px;
+    }
+    .caja-filtro button a{ 
+        font-size: 12px;
     }
 }
 
 @media (max-width: 360px) {
-    main {
-        padding: 10px;
+    .contenedor{ 
+        display: grid;
+        padding: 0px 0px;
     }
-    .Titulo h3 {
-        font-size: 14px; /* Ajusta aún más el título */
-    }
-    nav{
-        
-    }
-    .box {
-        padding: 8px;
-        font-size: 12px; /* Ajusta el texto */
-    }
-    .nav-link {
-        font-size: 10px; /* Texto más pequeño para enlaces */
-    }
-    .hr {
-        width: 100%; /* Separador ocupa todo el ancho */
-    }
-    .item-boton {
-        padding: 5px;
-    }
 }
