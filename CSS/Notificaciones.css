@@ -7,6 +7,7 @@ main{
 .contenedor{ 
     padding: 20px 10px ;
     padding-bottom: 60px;
+    margin: 16px 0px 100px 0px;
 }
 .Titulo{ 
     margin-top: 10px;
@@ -17,180 +18,127 @@ main{
 }
 .box{ 
     border: 1px solid #4BAA6E;
-    width: 800px;
-    height: 1000px;
-    height: auto;
+    width: 700px;
+    padding: 10px 0 0 0 ;
 } 
 .subox{
     width: 95% ;
     margin: 10px auto ;
-    display: grid;
-    grid-template-columns: repeat(2, 50% 50%);  
+    display: grid;   
 }
 .Texto{
     padding: 0px 0px;
-} 
-.Texto .palabras{ 
-    padding: 10px 10px;
-    text-align: justify;
-    padding-left: 80px;
-}
-.palabras p { 
-    font-size: 25px;
-    width: 120%;
-}
-.cheks .cuadros{ 
-    padding: 10px 10px;
-    padding-left: 50px;
-    padding-bottom: 0px; 
-}
-.cuadros label { 
-    font-size: 31px;
-    height: 41px;
-    margin-bottom: 15px;
-    text-align: justify;
-    padding-top: 0px;
-}
-.boton , .botonC{ 
-    display: flex;
-    align-items: center;
+    display: grid;
+    align-content: center;
     justify-content: center;
-    padding: 15px 0px ;
+} 
+.cajita{ 
+    display: flex;
+    justify-content:center;
+    align-items: start;
+    justify-items: start;
+    gap: 100px;
+    width: 600px;
 }
-.boton button{
+.cajita p { 
+    width: 700px;
+    font-size: 25px;
+}
+.marca{ 
+    width: 400px;
+}
+input[type="checkbox"]{
+    transform: scale(2.0); 
+    margin: 10px; 
+}
+.marca label{ 
+    font-size: 25px;
+}
+.botones{ 
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 10px 0px;
+    gap: 50px;
+}
+.botones button{
     border-radius: 50px;
-    padding: 5px 40px ;
+    padding: 5px 30px ;
     background-color: #4baa6e;
     color: white;
     font-size: 20px;
 }
-.botonC button{ 
+.botones .C{ 
     border-radius: 50px;
-    padding: 5px 40px ;
+    padding: 5px 30px ;
     background-color: red;
     color: white;
     font-size: 20px;
 }
-
+.botones button:hover{ 
+    background-color: white;
+    border: 3px solid #b5f7cd ;
+    color: black;
+}
+.botones .C:hover{ 
+    background-color: white;
+    border: 3px solid red ;
+    color: black;
+}
 /*-------- RESPONSIVE ----------*/
 
 @media (max-width: 1280px) {
-    .box {
-        width: 90%;
-    }
-    .subox {
-        width: 600px;
-    }
-    .boton, .botonC{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 15px 0px ;
-        width: 300px;
-    }
-    .palabras p {
-        font-size: 22px;
-    }
-    .cuadros label {
-        font-size: 28px;
-    }
-    .Texto .palabras {
-        padding: 22px 10px;
-        padding-left: 40px;
-    }
-    .cheks .cuadros{ 
-        padding-left: 30px;
-        height: 77%;
-        width: 80%;
-    }
+
 }
 
 @media (max-width: 992px) {
-    .Titulo H3 {
-        font-size: 30px;
-    }
-    .palabras p {
-        font-size: 20px;
-    }
-    .Texto .palabras {
-        padding-left: 20px;
-        padding-right: 10px;
-    }
-    .box{
-        width: 700px;
-    }
-    
-    .cuadros label {
-        font-size: 25px;
-    }
-    .boton button, .botonC button {
-        font-size: 18px;
-        padding: 5px 30px;
-    }
+
 }
 
 @media (max-width: 768px) {
-    .subox {
-        gap: 15px;
-    }
-    .Titulo H3 {
-        font-size: 25px;
-    }
-    .palabras p {
-        font-size: 18px;
-    }
-    .Texto .palabras {
-        padding-left: 15px;
-        padding-right: 10px;
-    }
-    .box {
-        width: 100%;
-    }
-    .boton button, .botonC button {
-        font-size: 16px;
-        padding: 5px 20px;
-    }
+   
 }
 
-@media (max-width: 576px) {
-    .Titulo H3 {
-        font-size: 22px;
-        text-align: center;
+@media (max-width: 428px) {
+    .Titulo h3{ 
+        font-size: 25px;
     }
-    .palabras p {
-        font-size: 16px;
-        margin-bottom: 30px;
+    .box{ 
+        width: 380px;
     }
-    .Texto .palabras {
-        padding-left: 10px;
-        padding-right: 10px;
-        height: 77%;
-        width: 109%;
+    .Texto{
+        padding: 0px 0px;
+        display: grid;
+        align-content: center;
     }
-    .cheks .cuadros{ 
-        padding-left: 30px;
-        height: 77%;
-        width: 80%;
+    .cajita{ 
+        width: 300px;
+        gap: 10px;
     }
-    .cuadros label {  
-        font-size: 22px;
+    .cajita p { 
+        font-size: 15px;
+        width: 450px;
     }
-    .box{
-        width: 350px;
+    input[type="checkbox"]{
+        transform: scale(1.0); 
+        margin: 10px; 
     }
-    .subox{
-        width: 390px;
+    .marca label{ 
+        font-size: 15px;
     }
-    .boton button, .botonC button {
-        font-size: 14px;
-        padding: 5px 15px;
+    .botones button{
+        border-radius: 50px;
+        padding: 5px 30px ;
+        background-color: #4baa6e;
+        color: white;
+        font-size: 15px;
     }
-    .boton, .botonC{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 15px 0px ;
-        width: 140px;
+    .botones .C{ 
+        border-radius: 50px;
+        padding: 5px 30px ;
+        background-color: red;
+        color: white;
+        font-size: 15px;
     }
 }
 

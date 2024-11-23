@@ -3,45 +3,92 @@ main{
 }
 .contenedor{ 
     display: flex;
-    align-items: center;
     justify-content: center;
     justify-items: center;
     align-content: center;
-    border: 2px solid black;
+    margin: 30px 0px;
+    margin-bottom: 96px;
 }
+
 .productos{ 
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto;
+    padding: 5px 5px ;
+    justify-content: center;
+    grid-gap: 40px;
+   
 }
 .caja{
-    
     padding: 10px 10px;
+    margin-left: 30px;
+    margin-right: 50px;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto;
+    width: 800px;
+    
 } 
 .vacio { 
     background-color: #b5f7cd;
-    height: 40px;
+    padding: 10px 0px;
+    padding-left: 20px;
 }
 .icons-links{ 
     display: flex;
     justify-content: center;
     align-items: center;
     justify-items: center;
+    justify-content: space-around;
     align-content: center;
-    padding: 10px 10px;
+    padding: 0px 10px;
+    padding-top: 20px;
     gap: 20px;
+    border: 2px solid #b5f7cd ;
 }
 .icon{ 
     align-items: center;
     justify-content: center;
     justify-items: center;
 }
-.txt{ 
-    padding: 10px 5px;
+.cont{ 
+    display: flex;
+    border: 2px solid #b5f7cd ;
 }
+.texto{ 
+    display: flex;
+}
+.img{ 
+    margin: auto auto;
+}
+.img img{ 
+    width: 150px ;
+    height: 120px;
+}
+.product-espe{ 
+    display: grid;  
+    padding: 5px 30px; 
+    margin: auto auto;
+}
+.botones{ 
+ display: grid;
+ margin: 0 auto;
+ padding: 10px 0px;
+ grid-gap: 15px;
+}
+.botones button{
+    border-radius: 50px;
+    padding: 5px 30px ;
+    background-color: #4baa6e;
+    color: white;
+    font-size: 15px;
+}
+.botones button:hover{ 
+    background-color: white;
+    border: 3px solid #b5f7cd ;
+    color: black;
+}
+
 
 
 /*-------- RESPONSIVE DESIGN ----------*/
