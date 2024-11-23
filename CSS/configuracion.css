@@ -1,123 +1,46 @@
-
 /*Hasta aquí el header*/
-main{ 
-    grid-area: main; 
-    display: grid;
-    grid-template-columns: repeat(2, 25% 75%);  
+main {
+    padding: 10px 10px;
 }
-main .filtros{ 
-    height: 100%;
-    width: 100%;
-    text-align:left ;
-    font-size: 25px;
-   
-} 
-nav{ 
-   padding-top: 5px;
-   padding-bottom: 5px;
-   width: auto;
-   margin-left: 30px;
-   margin-top: 2%;
-   margin-bottom: 5%;
-   position: fixed;
-  
-}
-
-.lista{
-    width: 90%;
-    flex-direction: column;
+.contenedor {
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-}
-.item-open{ 
-    list-style: none;
-    overflow: hidden; 
-    width: 100%; 
-    text-align: left;
-    padding: 0px;
-    margin: 0px;
-    cursor: pointer;
+    justify-items: center;
+    align-content: center;
+    margin: 30px 0px;
+    margin-bottom: 96px;
 } 
-
-.item-boton{ 
-    display: flex;
-    align-items: center;
-    gap: 1em;
-    width: 100%;
-    padding-left: 20px;
-    margin-top: 5px;
-    background-color: #B5F7CD;
-    border-radius: 50px;
-}
-.item-boton a{
-    margin: 5px;
-}
-.item-boton:hover{ 
-    background: #4BAA6E;
-    border-radius: 50px;
-}
-
-.nav-link{ 
-    color: black;
-    display: block;
-    text-decoration: none;
-    margin: 0px;
-  
-} 
-.lista_dentro{ 
-    text-align: left;
-    list-style: none;
-}
-.lista_show{
-    width: 100%;
-    margin-left: 60px;
-    border-left: 3px solid white;
-    height: 0;
-}
-.nav-link-dentro{ 
-    text-decoration: none;
-}
-.nav-link-dentro:hover{ 
-    border-radius: 10px;
-    padding-left: 20px;
-}
-
-/*aqui es el main sin las listas*/
 .productos {
-    display: flex;
-    padding: 20px;
+    padding: 0px;
+    width: 890px;
 }
-
 section {
-    width: 60%;
-    margin-left: 5%;
+    width: 91%;
+    margin-left: 3.3%;
+    margin-top: 0px;
 }
 
 .editarP, .editarC {
     border-radius: 5px;
     padding: 15px;
-    margin-bottom: 20px;
 }
-.editarP h2{
+.editarP h4{   
     width: 100%;
 }
-.editarC h2 {
+.editarC h4 {
     width: 54%;
 }
-.editarP h2, .editarC h2 {
+.editarP h4, .editarC h4 {
     background-color: #B5F7CD;
     margin-bottom: 15px;
     padding: 10px 20px;
-    height: 45px;
-    font-size:20px;
+    height: 56px;
+    font-size:24px;
     margin-bottom: 0;
 }
 
 .info {
-    border: 1px solid #4BAA6E;
+    border: 2px solid #B5F7CD;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -129,31 +52,39 @@ section {
     flex-direction: column;
     gap: 5px;
 }
-
-.editar {
-    background-color: #4BAA6E;
-    color: white;
-    border: none;
-    padding: 8px 12px;
-    border-radius: 5px;
-    cursor: pointer;
+#editar{
+    margin-left: 265px;
+    padding: 5px 70px;
+    margin: 0 164px;
+    grid-gap: 15px;
 }
-
+#btn{
+    padding: 5px 10px;
+    width: 186px;  
+}
 .botones {
-    gap: 15px;
-    justify-content: center;
-    padding: 15px;
-    margin: 15px;
+    width: 54%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    padding-top: 10px;
 }
 
-.btn {
-    background-color: #4BAA6E;
+.botones button {
+    border-radius: 50px;
+    background-color: #4baa6e;
     color: white;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-} 
+    font-size: 15px;
+}
+
+.botones button:hover {
+    background-color: white;
+    border: 3px solid #b5f7cd;
+    color: black;
+}
+
+
 /* Media query para pantallas menores o iguales a 1280px */
 @media screen and (max-width: 1280px) {
     main {
