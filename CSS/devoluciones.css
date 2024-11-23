@@ -1,101 +1,28 @@
-
 /*Hasta aquí el header*/
-main{ 
-    grid-area: main; 
-    display: grid;
-    grid-template-columns: repeat(2, 25% 75%);  
-}
-main .filtros{ 
-    height: 100%;
-    width: 100%;
-    text-align:left ;
-    font-size: 25px;
-   
-} 
-nav{ 
-   padding-top: 5px;
-   padding-bottom: 5px;
-   width: auto;
-   margin-left: 30px;
-   margin-top: 2%;
-   margin-bottom: 5%;
-   position: fixed;
-  
+main {
+    padding: 10px 10px;
 }
 
-.lista{
-    width: 90%;
-    flex-direction: column;
+.contenedor {
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-}
-.item-open{ 
-    list-style: none;
-    overflow: hidden; 
-    width: 100%; 
-    text-align: left;
-    padding: 0px;
-    margin: 0px;
-    cursor: pointer;
-} 
-
-.item-boton{ 
-    display: flex;
-    align-items: center;
-    gap: 1em;
-    width: 100%;
-    padding-left: 20px;
-    margin-top: 5px;
-    background-color: #B5F7CD;
-    border-radius: 50px;
-}
-.item-boton a{
-    margin: 5px;
-}
-.item-boton:hover{ 
-    background: #4BAA6E;
-    border-radius: 50px;
+    justify-items: center;
+    align-content: center;
+    margin: 30px 0px;
+    margin-bottom: 96px;
 }
 
-.nav-link{ 
-    color: black;
-    display: block;
-    text-decoration: none;
-    margin: 0px;
-  
-} 
-.lista_dentro{ 
-    text-align: left;
-    list-style: none;
-}
-.lista_show{
-    width: 100%;
-    margin-left: 60px;
-    border-left: 3px solid white;
-    height: 0;
-}
-.nav-link-dentro{ 
-    text-decoration: none;
-}
-.nav-link-dentro:hover{ 
-    border-radius: 10px;
-    padding-left: 20px;
-}
-/*aqui es el main sin las listas*/
 .productos {
-    display: flex;
-    padding: 20px;
+    padding: 0px;
+    width: 890px;
 }
+
 section {
-    width: 75%;
+    width: 87.5%;
     margin-left: 5%;
+    margin-top: 0px;
 }
-hr{
-    border: 1px solid #4BAA6E;
-}
+
 section h2 {
     margin-bottom: 20px;
     color: #333;
@@ -126,28 +53,32 @@ section h2 {
 }
 
 .articulo {
-    border: 1px solid #4BAA6E;
+    border: 2px solid #4BAA6E;
     border-radius: 5px;
     padding: 15px;
     margin-bottom: 20px;
+}
+
+hr {
+    margin-top: 0px;
+    border: 2px solid #4BAA6E;
 }
 
 .info {
     display: flex;
     justify-content: space-between;
     color: #666;
-    margin-bottom: 10px;
+    height: 25px;
 }
 
 .detalles {
-    padding-top: 15px;
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 
-.img{
-    width: 80px;
+.detalles .img {
+    width: 120px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
@@ -161,31 +92,51 @@ section h2 {
     color: #333;
 }
 
-.btnD {
-    background-color: #4BAA6E;
+.botones {
+    display: grid;
+    margin: 0 auto;
+    padding: 10px 0px;
+    padding-top: 50px;
+    grid-gap: 15px;
+}
+
+.botones button {
+    border-radius: 50px;
+    padding: 5px 70px;
+    background-color: #4baa6e;
     color: white;
-    border: none;
-    padding: 8px 12px;
-    border-radius: 5px;
-    cursor: pointer;
+    font-size: 15px;
+}
+
+.botones button:hover {
+    background-color: white;
+    border: 3px solid #b5f7cd;
+    color: black;
 }
 
 @media (max-width: 1280px) {
     main {
-        grid-template-columns: repeat(2, 50%); /* Ajuste para pantallas grandes */
+        grid-template-columns: repeat(2, 50%);
+        /* Ajuste para pantallas grandes */
     }
+
     .productos {
-        padding: 15px; /* Reducir espacio en pantallas grandes */
+        padding: 15px;
+        /* Reducir espacio en pantallas grandes */
     }
+
     .barraBusqueda input {
         width: 200px;
     }
+
     .item-boton {
         padding-left: 15px;
     }
+
     section h2 {
         font-size: 30px;
     }
+
     .articulo {
         padding: 10px;
     }
@@ -195,13 +146,16 @@ section h2 {
     .item-boton {
         padding-left: 10px;
     }
+
     section {
         margin-left: 2%;
         width: 80%;
     }
+
     .articulo {
         border-radius: 10px;
     }
+
     .btn-barra {
         padding: 5px;
     }
@@ -209,29 +163,39 @@ section h2 {
 
 @media (max-width: 890px) {
     main {
-        grid-template-columns: 1fr; /* Una sola columna */
+        grid-template-columns: 1fr;
+        /* Una sola columna */
     }
+
     nav {
         margin-left: 0;
         width: 100%;
-        position: relative; /* Para evitar solapamientos */
+        position: relative;
+        /* Para evitar solapamientos */
     }
+
     .productos {
-        flex-direction: column; /* Cambiar a diseño vertical */
+        flex-direction: column;
+        /* Cambiar a diseño vertical */
     }
+
     .barraBusqueda {
         flex-direction: column;
         gap: 5px;
     }
+
     .barraBusqueda input {
         width: 100%;
     }
+
     .btn-barra {
         width: 100%;
     }
+
     .articulo {
         padding: 5px;
     }
+
     .detalles {
         flex-direction: column;
         gap: 10px;
@@ -240,19 +204,24 @@ section h2 {
 
 @media (max-width: 570px) {
     .item-boton {
-        flex-direction: column; /* Botones apilados */
+        flex-direction: column;
+        /* Botones apilados */
         padding: 5px;
         gap: 5px;
     }
+
     .productos {
         padding: 10px;
     }
+
     section h2 {
         font-size: 20px;
     }
+
     .articulo {
         border: none;
     }
+
     .btnD {
         width: 100%;
     }
@@ -263,13 +232,16 @@ section h2 {
         font-size: 14px;
         padding: 5px;
     }
+
     .btn-barra {
         padding: 3px;
         font-size: 14px;
     }
+
     .item-boton {
         padding: 5px;
     }
+
     .articulo {
         padding: 5px;
         font-size: 14px;
