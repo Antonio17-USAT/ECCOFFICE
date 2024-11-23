@@ -37,16 +37,21 @@ main{
 }
 .palabras p { 
     font-size: 25px;
+    width: 120%;
 }
 .cheks .cuadros{ 
-    padding: 10px 0px;
+    padding: 10px 10px;
     padding-left: 50px;
-    padding-bottom: 26px; 
+    padding-bottom: 0px; 
 }
 .cuadros label { 
     font-size: 31px;
+    height: 41px;
+    margin-bottom: 15px;
+    text-align: justify;
+    padding-top: 0px;
 }
-.boton , .botonC{
+.boton , .botonC{ 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -69,13 +74,19 @@ main{
 
 /*-------- RESPONSIVE ----------*/
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
     .box {
         width: 90%;
     }
     .subox {
-        grid-template-columns: 1fr; /* Cambia a una sola columna */
-        gap: 20px;
+        width: 600px;
+    }
+    .boton, .botonC{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 0px ;
+        width: 300px;
     }
     .palabras p {
         font-size: 22px;
@@ -84,7 +95,13 @@ main{
         font-size: 28px;
     }
     .Texto .palabras {
+        padding: 22px 10px;
         padding-left: 40px;
+    }
+    .cheks .cuadros{ 
+        padding-left: 30px;
+        height: 77%;
+        width: 80%;
     }
 }
 
@@ -99,6 +116,10 @@ main{
         padding-left: 20px;
         padding-right: 10px;
     }
+    .box{
+        width: 700px;
+    }
+    
     .cuadros label {
         font-size: 25px;
     }
@@ -138,17 +159,38 @@ main{
     }
     .palabras p {
         font-size: 16px;
+        margin-bottom: 30px;
     }
     .Texto .palabras {
         padding-left: 10px;
         padding-right: 10px;
+        height: 77%;
+        width: 109%;
     }
-    .cuadros label {
+    .cheks .cuadros{ 
+        padding-left: 30px;
+        height: 77%;
+        width: 80%;
+    }
+    .cuadros label {  
         font-size: 22px;
+    }
+    .box{
+        width: 350px;
+    }
+    .subox{
+        width: 390px;
     }
     .boton button, .botonC button {
         font-size: 14px;
         padding: 5px 15px;
+    }
+    .boton, .botonC{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 0px ;
+        width: 140px;
     }
 }
 
@@ -164,10 +206,16 @@ main{
         padding-right: 5px;
     }
     .cuadros label {
-        font-size: 20px;
+        font-size: 18px;
     }
     .boton button, .botonC button {
         font-size: 12px;
         padding: 5px 10px;
+    }
+    .box{
+        width: 330px;
+    }
+    .subox{
+        width: 320px;
     }
 }
