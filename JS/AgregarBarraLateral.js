@@ -6,7 +6,7 @@ var htmlBarraLateral = /*html*/`
             <a href="subpagina1.html" class="submenu-btn">Detalle Pedido</a>
         </div>
     </div>
-    <button class="S"><a href="pagina2.html">Lista de Deseos</a></button>
+    <button class="S"><a href="">Lista de Deseos</a></button>
     <button class="S"><a href="pagina4.html">Devoluciones</a></button>
     <button class="S"><a href="pagina4.html">Configuración</a></button>
    
