@@ -1,0 +1,149 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    margin: 0 auto;
+    min-height: 100vh; /* Esto asegura que el contenido ocupe al menos la altura de la ventana */
+}
+
+.contenedor {
+    align-items: center;
+    padding: 2%;
+    margin: 30px 0px;
+    margin-bottom: 96px;
+    border-radius: 5px;
+    border: 1px solid #4BAA6E;
+    max-width: 1200px;
+    max-height: 1200px;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 2%;
+    padding: 25px;
+}
+.titulo{
+    margin-top: 20px;
+}
+.TD,.TI{
+    padding-bottom: 2px;
+}
+.TD{
+    text-align: end;
+}
+.fotoI{
+    width: 150px;
+    float: left;
+    height: 150px;
+    margin: 15px;
+    border-radius: 5px;
+}
+.fotoD{
+    width: 150px;
+    float: right;
+    height: 150px;
+    margin: 15px;
+    
+    border-radius: 5px;
+}
+.info p{
+    text-align: justify;
+    margin: 2px;
+}
+
+/* Para pantallas menores a 1280px */
+@media (max-width: 1280px) {
+    .contenedor {
+        grid-template-rows: repeat(3, auto); /* Mantiene las 3 filas */
+        grid-gap: 1.5%; /* Reduce el espacio entre los elementos */
+        padding: 1.5%; /* Ajusta el padding */
+        max-width: 1000px; /* Limita el ancho máximo */
+    }
+    .fotoI, .fotoD {
+        width: 120px; /* Reduce el tamaño de las imágenes */
+        height: 120px;
+    }
+}
+
+/* Para pantallas menores a 990px */
+@media (max-width: 990px) {
+    main {
+        flex-direction: column; /* Apila el contenido */
+        padding: 5%;
+    }
+    .contenedor {
+        grid-template-rows: repeat(4, auto); /* Añade más espacio entre elementos */
+        grid-gap: 2%;
+        padding: 1%;
+    }
+    .fotoI, .fotoD {
+        width: 100px; /* Imágenes más pequeñas */
+        height: 100px;
+    }
+    .info p {
+        font-size: 0.95em; /* Ajusta el tamaño del texto */
+    }
+}
+
+/* Para pantallas menores a 728px */
+@media (max-width: 728px) {
+    main {
+        flex-direction: column;
+        padding: 5%;
+    }
+    .contenedor {
+        grid-template-rows: repeat(4, auto);
+        grid-gap: 1.5%;
+        max-width: 90%; /* Reduce el ancho máximo */
+    }
+    .fotoI, .fotoD {
+        width: 90px;
+        height: 90px;
+    }
+    .info p {
+        font-size: 0.9em; /* Texto aún más pequeño */
+    }
+}
+
+/* Para pantallas menores a 428px */
+@media (max-width: 428px) {
+    main {
+        flex-direction: column;
+        padding: 3%;
+    }
+    .contenedor {
+        grid-template-rows: repeat(5, auto);
+        grid-gap: 1%;
+        max-width: 100%; /* Ocupa todo el ancho disponible */
+        padding: 2%;
+    }
+    .fotoI, .fotoD {
+        width: 80px;
+        height: 80px;
+        margin: 10px; /* Espaciado reducido */
+    }
+    .info p {
+        font-size: 0.85em; /* Ajuste adicional del texto */
+    }
+}
+
+/* Para pantallas menores a 360px */
+@media (max-width: 360px) {
+    main {
+        flex-direction: column;
+        padding: 2%;
+    }
+    .contenedor {
+        grid-template-rows: repeat(6, auto);
+        grid-gap: 0.5%;
+        max-width: 100%;
+        padding: 2%;
+    }
+    .fotoI, .fotoD {
+        width: 70px;
+        height: 70px;
+        margin: 8px;
+    }
+    .info p {
+        font-size: 0.8em; /* Texto compacto */
+    }
+}
