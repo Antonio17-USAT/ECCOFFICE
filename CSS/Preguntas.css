@@ -76,13 +76,14 @@ hr{
         align-content: center;
         justify-content: center;
         justify-items: center;
+        width: 85%;
     }
     .Titulo {
         margin-top: 20px;
     }
     .box {
         padding: 10px;
-        width: 100%;
+        width: 101%;
         max-width: 1000px;
     }
     hr {
@@ -109,14 +110,14 @@ hr{
         font-size: 18px;
     }
     .box {
-        padding: 10px;
-        width: 95%;
+        width: 100%;
     }
     hr {
         width: 70%; 
     }
     .texto {
         padding: 5px;
+        width: 750px;
     }
 }
 
@@ -175,6 +176,7 @@ hr{
         align-content: center;
         justify-content: center;
         justify-items: center;
+        width: 370px;
     }
     .Titulo {
         font-size: 16px;
@@ -183,6 +185,12 @@ hr{
     .box {
         padding: 8px;
         border-radius: 4px;
+    }
+    .preg{
+        font-size: 19px;
+    }
+    .respuesta{
+        font-size: 16px;
     }
     hr {
         width: 90%;

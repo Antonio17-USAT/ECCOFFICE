@@ -1,5 +1,3 @@
-
-
 /*aqui es el main sin las listas*/
 main {
     flex: 1;
@@ -41,8 +39,9 @@ form {
     width: 30%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:right;
     font-weight: bold;
+    padding-right: 30px;
 }
 
 .infor input[type="text"],
@@ -57,16 +56,16 @@ form {
 
 .genero {
     display: flex;
-    justify-content:start ;
-    gap: 17px;
+    justify-content:left ;
+    gap: 20px;
 }
-
 .btn-form{
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 15px 0px ;
     gap: 25px;
+    
 } 
 .btn-form .CO{
     border-radius: 50px;
@@ -91,7 +90,7 @@ form {
     }
 
     section {
-        width: 350px;
+        width: 600px;
     }
 
     .infor input[type="text"],
@@ -100,12 +99,13 @@ form {
     .infor input[type="tel"] {
         width: 60%;
     }
-
-    .btnR,
-    .btnC {
-        padding: 8px 15px;
-        width: 48%;
-    }
+    .btn-form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 0px ;
+        gap: 10px;
+    } 
 }
 
 @media (max-width: 890px) {
@@ -116,7 +116,7 @@ form {
     }
 
     section {
-        width: 300px;
+        width: 500px;
         padding: 15px;
     }
 
@@ -132,12 +132,13 @@ form {
         padding: 6px;
     }
 
-    .btnR,
-    .btnC {
-        padding: 8px;
-        font-size: 14px;
-        width: 48%;
-    }
+    .btn-form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 0px ;
+        gap: 25px;
+    } 
 }
 
 @media (max-width: 570px) {
@@ -146,13 +147,15 @@ form {
     }
 
     section {
-        width: 90%;
+        width: 110%;
         padding: 10px;
     }
 
     .infor {
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
         align-items: flex-start;
+        font-size: 20px;
     }
 
     .infor label {
@@ -164,18 +167,30 @@ form {
     .infor input[type="password"],
     .infor input[type="tel"] {
         width: 100%;
+
     }
 
-    .btnR,
-    .btnC {
-        width: 100%;
-        padding: 8px;
-        margin-top: 10px;
-    }
-
-    .boton {
+    .genero{
+        display: flex;
         flex-direction: column;
-        gap: 10px;
+        align-items: flex-start;
+        gap: 0px;
+        width: 310px;
+    }
+    .myf{
+        margin-left: 20px;
+        margin-top: -20px;
+    }
+    .btn-form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 0px ;
+        width: 100%;
+    } 
+    .btn-form .CO,.btn-form .CA{
+        padding: 5px 25px ;
+        font-size: 20px;
     }
 }
 
