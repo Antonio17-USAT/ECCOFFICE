@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Devolucion</title>
-    <link rel="stylesheet" href="CSS/devoluciones.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="CSS/comun.css">
+    <link rel="stylesheet" href="CSS/Barra-Lateral.css">
+    <link rel="stylesheet" href="CSS/devoluciones.css">
 </head>
 
 <body>
@@ -16,122 +17,90 @@
     <div class="dropdown"></div>
     <main>
         <!-- de inmedio -->
-        <div class="filtros">
-            <nav>
-                <ul class="lista">
-                    <li class="item-open">
-                        <div class="item-boton">
-                            <a href="" class="nav-link">Perfil</a>
-                        </div>
-                    </li>
-                    <li class="item-open">
-                        <div class="item-boton">
-                            <a href="" class="nav-link">Compras</a>
-                        </div>
-                        <ul class="lista_show">
-                            <li class="lista_dentro">
-                                <a href="" class="nav-link-dentro">Detalle de pedido</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="item-open">
-                        <div class="item-boton">
-                            <a href="" class="nav-link">Lista de deseos</a>
-                        </div>
-                    </li>
-                    <li class="item-open">
-                        <div class="item-boton">
-                            <a href="" class="nav-link">Devolucion</a>
-                        </div>
-                    </li>
-                    <li class="item-open">
-                        <div class="item-boton">
-                            <a href="" class="nav-link">Configuracion</a>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <div class="productos">
-            <section >
-                <h2>Devoluciones</h2>
-                <div class="barraBusqueda">
-                    <label for="">CODIGO :</label>
-                    <input type="text" placeholder="Buscar por CODIGO">
-                    <button class="btn-barra">Buscar</button>
-                </div>
+        <div class="contenedor">
+            <div class="sidebar"></div>
+            <div class="productos">
+                <div class="caja">
+                    <h2>Devoluciones</h2>
+                    <div class="barraBusqueda">
+                        <label for="">CODIGO :</label>
+                        <input type="text" placeholder="Buscar por CODIGO" class="barra">
+                        <button class="btn-barra">Buscar</button>
+                    </div>
 
-                <div class="articulo">
-                    <div class="info">
-                        <p>(CANCELADO)</p>
-                        <p>CODIGO : 04</p>
-                        <p>Fecha: 04/01/2024</p>
-                    </div>
-                    <hr>
-                    <div class="detalles">
-                        <img src="img/clips.jpg" alt="Notas adhesivas" class="img">
-                        <div class="infoP">
-                            <h3>Notas adhesivas</h3>
-                            <p>Realizadas a base de carton reciclado</p>
-                            <p>$ 99.99</p>
+                    <div class="articulo">
+                        <div class="info">
+                            <p>(CANCELADO)</p>
+                            <p>CODIGO : 04</p>
+                            <p>Fecha: 04/01/2024</p>
                         </div>
-                        <button class="btnD">Detalles</button>
-                    </div>
-                </div>
-                <div class="articulo">
-                    <div class="info">
-                        <p>(CANCELADO)</p>
-                        <p>CODIGO : 03</p>
-                        <p>Fecha: 03/01/2024</p>
-                    </div>
-                    <hr>
-                    <div class="detalles">
-                        <img src="img/Carpeta-en-carton-reciclado.webp" alt="Notas adhesivas" class="img">
-                        <div class="infoP">
-                            <h3>Notas adhesivas</h3>
-                            <p>Realizadas a base de carton reciclado</p>
-                            <p>$ 99.99</p>
+                        <hr>
+                        <div class="detalles">
+                            <img src="img/clips.jpg" alt="Clips" class="img">
+                            <div class="infoP">
+                                <h3>Gancho Doble Clip</h3>
+                                <p>Realizadas a base de metal reciclado</p>
+                                <p>$ 10.00</p>
+                            </div>
+                            <button class="btnD">Detalles</button>
                         </div>
-                        <button class="btnD">Detalles</button>
                     </div>
-                </div>
-                <div class="articulo">
-                    <div class="info">
-                        <p>(CANCELADO)</p>
-                        <p>CODIGO : 02</p>
-                        <p>Fecha: 02/01/2024</p>
-                    </div>
-                    <hr>
-                    <div class="detalles">
-                        <img src="img/notas adhseivas.jpg" alt="Notas adhesivas" class="img">
-                        <div class="infoP">
-                            <h3>Notas adhesivas</h3>
-                            <p>Realizadas a base de papel reciclado</p>
-                            <p>$ 99.99</p>
+                    <div class="articulo">
+                        <div class="info">
+                            <p>(CANCELADO)</p>
+                            <p>CODIGO : 03</p>
+                            <p>Fecha: 03/01/2024</p>
                         </div>
-                        <button class="btnD">Detalles</button>
-                    </div>
-                </div>
-        
-                <div class="articulo">
-                    <div class="info">
-                        <p>(CANCELADO)</p>
-                        <p>CODIGO : 01</p>
-                        <p>Fecha: 01/01/2024</p>
-                    </div>
-                    <hr>
-                    <div class="detalles">
-                        <img src="img/archivadores_carton.jpg" alt="Archivadores" class="img">
-                        <div class="infoP">
-                            <h3>Archivadores</h3>
-                            <p>Realizados a base cartón reciclado</p>
-                            <p>$ 99.99</p>
+                        <hr>
+                        <div class="detalles">
+                            <img src="img/Carpeta-en-carton-reciclado.webp" alt="Notas adhesivas" class="img">
+                            <div class="infoP">
+                                <h3>Carpeta de Cartón</h3>
+                                <p>Realizadas a base de carton reciclado</p>
+                                <p>$ 15.00</p>
+                            </div>
+                            <button class="btnD">Detalles</button>
                         </div>
-                        <button class="btnD">Detalles</button>
                     </div>
-                </div>
-            </section>
+                    <div class="articulo">
+                        <div class="info">
+                            <p>(CANCELADO)</p>
+                            <p>CODIGO : 02</p>
+                            <p>Fecha: 02/01/2024</p>
+                        </div>
+                        <hr>
+                        <div class="detalles">
+                            <img src="img/notas adhseivas.jpg" alt="Notas adhesivas" class="img">
+                            <div class="infoP">
+                                <h3>Notas adhesivas</h3>
+                                <p>Realizadas a base de papel reciclado</p>
+                                <p>$ 5.00</p>
+                            </div>
+                            <button class="btnD">Detalles</button>
+                        </div>
+                    </div>
+            
+                    <div class="articulo">
+                        <div class="info">
+                            <p>(CANCELADO)</p>
+                            <p>CODIGO : 01</p>
+                            <p>Fecha: 01/01/2024</p>
+                        </div>
+                        <hr>
+                        <div class="detalles">
+                            <img src="img/archivadores_carton.jpg" alt="Archivadores" class="img">
+                            <div class="infoP">
+                                <h3>Archivadores</h3>
+                                <p>Realizados a base cartón y metal reciclado</p>
+                                <p>$ 20.00</p>
+                            </div>
+                            <button class="btnD">Detalles</button>
+                        </div>
+                    </div>
+                </div>  
+            </div>
         </div>
+        
     </main>
     <footer></footer>
     <div class="derechos">
@@ -149,6 +118,21 @@
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"></script>
     <script src="JS/AgregarFooterHeader.js"></script>
+    <script src="JS/AgregarBarraLateral.js"></script>
+    <script>
+        // Obtener todos los botones desplegables
+        const dropdownButtons = document.querySelectorAll('.dropdown-btn');
+
+        // Agregar un evento de clic para mostrar u ocultar el submenú
+        dropdownButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                const dropdownContent = this.nextElementSibling;
+
+                // Alternar la visibilidad del submenú
+                dropdownContent.classList.toggle('show');
+            });
+        });
+    </script>
     <script src="https://kit.fontawesome.com/67c54f1aa1.js" crossorigin="anonymous"></script>
 </body>
 
