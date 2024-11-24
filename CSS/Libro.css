@@ -75,8 +75,8 @@ main{
         grid-template-columns: 1fr; 
     }
     .contenedor{ 
-        width: 70%;
-        display: grid;
+        width: 100%;
+        display: grid; 
     }
     .filtros{ 
         display: grid;
@@ -85,11 +85,9 @@ main{
         margin: 10px auto;
         grid-gap: 20px ;
     }
-    .texto{ 
-        align-content: center;
-        justify-content: center;
-        justify-items: center;
-        margin-left: 130px;
+    .formulario2{
+        border: 1px solid #4BAA6E;
+        margin-left: 50px;
     }
     .caja-filtro button{
         width: 190px;
@@ -103,6 +101,10 @@ main{
     main {
         margin: 0 auto; /* Centra el contenido */
     }
+    .contenedor{ 
+        width: 100%;
+        display: grid; 
+    }
     .Titulo {
         margin-top: 15px;
     }
@@ -115,6 +117,10 @@ main{
         width: 400px;
         margin-right: 350px;
     }
+    .formulario2{
+        border: 1px solid #4BAA6E;
+        margin-left: 70px;
+    }
     .hr {
         width: 60%; /* Ajuste del ancho del separador */
     }
@@ -124,7 +130,7 @@ main{
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
     main {
         grid-template-columns: 1fr; 
     }
@@ -139,10 +145,11 @@ main{
         margin: 10px auto;
         grid-gap: 20px ;
     }
+ 
     .texto{ 
-        align-content: center;
-        justify-content: center;
-        justify-items: center;
+      padding: 0px;
+        width: 400px;
+        margin-right: 350px;
     }
 
     .caja-filtro button{
@@ -153,7 +160,7 @@ main{
     }
 }
 
-@media (max-width: 428px) {
+@media (max-width: 429px) {
     main {
         grid-template-columns: 1fr; 
     }
@@ -175,6 +182,10 @@ main{
         width: 250px;
         margin-left: 210px;
     }
+    .formulario2{
+        border: 1px solid #4BAA6E;
+        margin-left: 150px;
+    }
     .info{
         display: grid;
         grid-template-columns: 50% 50%;
@@ -183,9 +194,9 @@ main{
     .msj{
         width: 180px;
     }
-    .caja-filtro button{
-        width: 180px;
-        padding: 6px 5px;
+    .botones button{
+        width: 150px;
+        padding: 6px 0px;
     }
     .caja-filtro button a{ 
         font-size: 12px;
@@ -205,7 +216,7 @@ main{
         grid-template-columns: auto auto ;
         grid-template-rows: auto auto auto;
         margin: 10px auto;
-        grid-gap: 5px ;
+        grid-gap: 3px ;
     }
     .texto{ 
         align-content: center;
