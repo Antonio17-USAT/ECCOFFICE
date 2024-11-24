@@ -26,7 +26,6 @@ main {
     padding-top: 0px;
     margin-right: 80px;
 }
-
 .botones button {
     border-radius: 50px;
     padding: 5px 70px;
@@ -84,7 +83,7 @@ hr{
     font-size: 14px;
     color: #333;
 }
-.contacto1 p{
+.contacto1 p, .contacto2 p{
     text-align: center;
     width: 52%;
 }
@@ -96,3 +95,166 @@ hr{
 #redes{
     width: 250px;
 }
+@media (max-width: 1280px) {
+    .texto {
+        margin-right: 190px;
+        padding: 0 100px;
+    }
+    .formulario2 {
+        margin-left: 30%;
+        width: 65%;
+    }
+    .informacion {
+        margin-left: 250px;
+        width: 60%;
+    }
+}
+
+@media (max-width: 992px) {
+    .texto {
+        padding: 0 50px;
+    }
+    .formulario2 {
+        font-size: 14px;
+        margin-left: 40%;
+        width: 70%;
+    }
+    .caja.aceptar {
+        margin: 0 75px;
+        margin-top: -40px;
+        height: 30px;        
+    }
+    .botones {
+        width: 147px;
+        margin-left: 35px;
+    }
+    .informacion {
+        margin-left: 80px;
+        width: 80%;
+    }
+    .botones button {
+        padding: 5px 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .texto {
+        padding: 0 30px;
+    }
+    .formulario2 {
+        margin-left: 30%;
+        width: 80%;
+    }
+    .info {
+        padding-left: 0;
+    }
+    .info .p {
+        text-align: left;
+    }
+    .info .msj {
+        text-align: left;
+    }
+    .caja.aceptar {
+        margin-left: 75px;
+    }
+    .informacion {
+        margin-left: 20px;
+        width: 90%;
+    }
+}
+@media (max-width: 576px) {
+    main {
+        width: 100%;
+        border: 6px solid black;
+    }
+    .formulario2 {
+        margin-left: 0; /* Quita el margen izquierdo fijo */
+        margin-right: 0; /* Asegura que esté centrado */
+        width: 220%; /* Ocupa el 90% del ancho */
+    }
+
+    .info {
+        font-size: 11px;
+        gap: 15px;
+    }
+
+    .msj .y {
+        width: 84%; 
+    }
+    .botones{
+        width: 59%; 
+        margin-left: 10px;
+        
+    }
+    .caja.aceptar {
+        margin-left:130%;
+        padding-top: 10px;
+    }
+    .informacion {
+        margin-left: 0;
+        width: 100%; 
+    }
+
+    #boton{
+        padding-left: 0;
+    }
+    #redes{
+        width: 100%;
+    }
+    .contacto1, 
+    .contacto2{
+        width:100%;
+        flex-direction: column;
+        align-items: center;
+        font-size: 12px; /* Ajusta el tamaño de la fuente */
+    }
+}
+/* Estilo adicional para dispositivos menores a 360px */
+@media (max-width: 391px) {
+    main {
+        width: 100%;
+        border: 6px solid black;
+    }
+    .formulario2 {
+        margin-left: 0; /* Quita el margen izquierdo fijo */
+        margin-right: 0; /* Asegura que esté centrado */
+        width: 290%; /* Ocupa el 90% del ancho */
+    }
+
+    .info {
+        font-size: 11px;
+        gap: 15px;
+    }
+
+    .msj .y {
+        width: 84%; 
+    }
+    .botones{
+        width: 59%; 
+        margin-left: 10px;
+        
+    }
+    .caja.aceptar {
+        margin-left:130%;
+        padding-top: 10px;
+    }
+    .informacion {
+        margin-left: 0;
+        width: 100%; 
+    }
+
+    #boton{
+        padding-left: 0;
+    }
+    #redes{
+        width: 110%;
+    }
+    .contacto1, 
+    .contacto2{
+        width:100%;
+        flex-direction: column;
+        align-items: center;
+        font-size: 12px; /* Ajusta el tamaño de la fuente */
+    }
+}
+
