@@ -4,75 +4,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Libro reclamos</title>
-
+    <title>Contacto</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="CSS/comun.css">
-    <link rel="stylesheet" href="CSS/Filtros-Centro-Ayuuda.css">
-    <link rel="stylesheet" href="CSS/Libro.css">
+    <link rel="stylesheet" href="CSS/contacto.css">
 </head>
 
 <body>
     <header class="header"></header>
     <div class="dropdown"></div>
-
     <main>
+        <!-- de inmedio -->
         <div class="contenedor">
-            <div class="filtros"></div>
             <div class="texto">
                 <div class="formulario2">
                     <div class="Titulo">
-                        <h3><strong> Libro de Reclamaciones</strong></h3>
+                        <h3><strong>Contacta con nosotros</strong></h3>
                     </div>
-                    
+
                     <hr class="hr">
                     <div class="info">
                         <div class="p">
                             <p>Nombres</p>
                             <p>Correo</p>
-                            <p>Dirección</p>
                             <p>Telefono</p>
-                            <p>Id de Compra</p>
-                            <p>Descripcion del producto</p>
-                            <p>Motivo del reclamo</p>
-                            
-                            <div class="botones">
-                                <button>Enviar</button>
-                            </div>
-                            
+                            <p>Mensaje</p>
+
                         </div>
                         <div class="msj">
                             <input type="text" class="y"><br>
                             <input class="y" type="email" name="correo" id="Correo"><br>
-                            <input type="text" class="y"><br>
                             <input type="text" name="telefono" id="Telefono" class="y"><br>
-                            <input type="text" name="Id" id="Id" class="y"><br>
-                            <input type="text" class="y"><br>
                             <textarea name="Motivo" id="Motivo" class="y"></textarea>
+                        </div>
+                        <div class="caja aceptar">
+                            <input type="checkbox" id="terminos">
+                            <label for="terminos">Acepta términos de privacidad</label>
+                        </div>
+                        <div class="botones">
+                            <button>Enviar</button>
                         </div>
                     </div>
                 </div>
             </div>
+            <hr>
+            <div class="informacion">
+                <div class="contacto1">
+                    <p><strong>Escríbenos al WhatsApp:</strong> +51 999 999 999</p>
+
+                    <p><strong>Envíanos un correo:</strong> Eccoffice@gmail.com</p>
+                </div>
+                <div class="contacto2">
+                    <p><strong>Ubícanos en:</strong> Av San Josemaría Escrivá de Balaguer 855</p>
+                    <div class="botones" id="boton">
+                        <button id="redes">Redes Sociales</button>
+                    </div>
+                </div>
+            </div>
         </div>
-
     </main>
-
-
     <footer></footer>
     <div class="derechos">
         <h3>Todos los derechos reservados, © Lambayeque, Perú 2024</h3>
     </div>
-
-    
     <!-- Se agrego -->
     <script src="JS/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="JS/AgregarFooterHeader.js"></script>
-    <script src="JS/AgregarFiltroAyuda.js"></script>
     <script src="https://kit.fontawesome.com/67c54f1aa1.js" crossorigin="anonymous"></script>
 </body>
 

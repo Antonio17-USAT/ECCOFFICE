@@ -27,14 +27,27 @@ main{
     justify-content: center;
     margin-top: 60px;
 }
-.boton button{
-    border-radius: 50px;
-    padding: 5px 50px ;
-    background-color: #4baa6e;
-    color: white;
-    font-size: 20px;
+.botones {
+    display: grid;
+    margin: 0 auto;
+    padding: 10px 0px;
+    padding-top: 50px;
+    grid-gap: 15px;
 }
 
+.botones button {
+    border-radius: 50px;
+    padding: 5px 70px;
+    background-color: #4baa6e;
+    color: white;
+    font-size: 15px;
+}
+
+.botones button:hover {
+    background-color: white;
+    border: 3px solid #b5f7cd;
+    color: black;
+}
 .msj input{
     margin-bottom: 5%;
     border: black solid 1px ;
@@ -55,7 +68,7 @@ main{
     border: 1px solid #4BAA6E;
     
 }
-/-------- RESPONSIVE ----------/
+/*-------- RESPONSIVE ----------*/
 
 @media (max-width: 1280px) {
     main {
@@ -206,6 +219,6 @@ main{
         grid-template-columns: 50% 50%;
     }
     .msj{
-        width: 160px;
-    }
+        width:160px;
+    }
 }
