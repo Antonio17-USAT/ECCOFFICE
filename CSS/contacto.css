@@ -1,0 +1,98 @@
+main {
+    padding: 10px 10px;
+}
+.texto{
+    padding: 0px 350px 0px 15px ;
+}
+.formulario2{
+    margin-bottom: 20px;
+    border: 1px solid #4BAA6E;
+    border-radius: 5px;
+    padding: 20px 20px;
+    margin-left: 42%;
+    width: 50%;
+    text-align: justify;
+    margin-top: 30px;
+}
+.info{
+    gap: 5%;
+    display: grid;
+    grid-template-columns: 15% 95%;
+    padding-bottom: 5%;
+    padding-left: 2%;
+}
+.botones {
+    margin: 0 auto;
+    padding-top: 0px;
+    margin-right: 80px;
+}
+
+.botones button {
+    border-radius: 50px;
+    padding: 5px 70px;
+    background-color: #4baa6e;
+    color: white;
+    font-size: 15px;
+}
+
+.botones button:hover {
+    background-color: white;
+    border: 3px solid #b5f7cd;
+    color: black;
+}
+.msj input{
+    margin-bottom: 5%;
+    border: black solid 1px ;
+    border-radius: 20px;
+}
+.msj .y{
+    width: 85%;
+}
+.msj textarea{
+    height: 40%;
+    border: black solid 1px ;
+    border-radius: 20px;
+    margin-bottom: 80px;
+}
+.caja.aceptar {
+    width: 212px;
+    margin-left: 110px;
+    align-items: end;
+}
+
+.caja.aceptar label {
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+.hr{
+    width: 40%;
+    border: 1px solid #4BAA6E;  
+}
+hr{
+    margin: 0 auto;
+    width: 50%;
+}
+.informacion {
+    padding-top: 20px;
+    display: grid;
+    margin-left: 410px;
+    width: 49%;
+}
+.contacto1,.contacto2{
+    display: flex;
+    font-size: 14px;
+    color: #333;
+}
+.contacto1 p{
+    text-align: center;
+    width: 52%;
+}
+#boton {
+    padding-left: 110px;
+    margin:0px;
+    margin-bottom: 20px;
+}
+#redes{
+    width: 250px;
+}
