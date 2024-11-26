@@ -110,9 +110,9 @@ input[type="text"] {
         align-items: center;
         font-size: 15px;
     }
-    .btn-form {
-        flex-direction: column;
-        gap: 15px;
+    .btn-form{
+        display: grid;
+        grid-template-columns: repeat(2,auto);
     }
 }
 
@@ -146,6 +146,10 @@ input[type="text"] {
         font-size: 18px;
         padding: 10px 25px;
     }
+    .btn-form{
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+    }
 }
 
 @media (max-width: 768px) {
@@ -175,13 +179,14 @@ input[type="text"] {
         gap: 18px;
         font-size: 15px;
     }
-    .btn-form {
-        flex-direction: column;
-        gap: 10px;
-    }
+    
     .btn-form button {
         font-size: 15px;
         padding: 8px 20px;
+    }
+    .btn-form{
+        display: grid;
+        grid-template-columns: repeat(2,auto);
     }
 }
 
@@ -214,6 +219,10 @@ input[type="text"] {
     .btn-form button {
         font-size: 12px;
         padding: 8px 15px;
+    }
+    .btn-form{
+        display: grid;
+        grid-template-columns: repeat(2,auto);
     }
 }
 
@@ -248,5 +257,9 @@ input[type="text"] {
     .btn-form button {
         font-size: 11px;
         padding: 5px 10px;
+    }
+    .btn-form{
+        display: grid;
+        grid-template-columns: repeat(2,auto);
     }
 }

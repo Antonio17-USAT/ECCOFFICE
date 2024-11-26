@@ -18,7 +18,11 @@
     <main>
         <!-- de inmedio -->
         <div class="contenedor">
-            <div class="sidebar"></div>
+            <button class="toggle-sidebar btn d-lg-none" style="background-color: var(--teal-500); color: black; border: 1px solid black;">
+                ☰ Menú
+            </button>
+
+            <div class="sidebar" id="sidebar"></div>
             <div class="productos">
                 <section>
                     <h2>Devoluciones</h2>
@@ -122,6 +126,7 @@
         </script>
     <script src="JS/AgregarFooterHeader.js"></script>
     <script src="JS/AgregarBarraLateral.js"></script>
+    <script src="menuMostrar"></script>
     <script>
         // Obtener todos los botones desplegables
         const dropdownButtons = document.querySelectorAll('.dropdown-btn');

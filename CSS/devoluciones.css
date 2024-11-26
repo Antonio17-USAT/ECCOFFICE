@@ -113,137 +113,38 @@ hr {
     border: 3px solid #b5f7cd;
     color: black;
 }
-
-@media (max-width: 1280px) {
-    main {
-        grid-template-columns: repeat(2, 50%);
-        /* Ajuste para pantallas grandes */
-    }
-
-    .productos {
-        padding: 15px;
-        /* Reducir espacio en pantallas grandes */
-    }
-
-    .barraBusqueda input {
-        width: 200px;
-    }
-
-    .item-boton {
-        padding-left: 15px;
-    }
-
-    section h2 {
-        font-size: 30px;
-    }
-
-    .articulo {
-        padding: 10px;
-    }
+/*
+Añadir en las paginas de esta rama: para el color del menu
+*/
+:root {
+    --teal-500: #7df1a7; /* Color para teal-500 */
 }
 
-@media (max-width: 1152px) {
-    .item-boton {
-        padding-left: 10px;
+@media (max-width: 768px) {
+    .sidebar {
+        display: none; /* Oculta la barra lateral por defecto */
+        position: fixed; /* Mantiene la barra fija en la pantalla */
+        top: 0;
+        left: 0;
+        height: 100vh; /* Ocupa toda la altura visible */
+        width: 250px;
+        background-color: #f8f9fa;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        padding: 20px;
+        overflow-y: auto; /* Permite el scroll si el contenido excede */
     }
 
-    section {
-        margin-left: 2%;
-        width: 80%;
+    .sidebar.show {
+        display: block; /* Muestra la barra lateral cuando tiene la clase "show" */
     }
 
-    .articulo {
-        border-radius: 10px;
-    }
-
-    .btn-barra {
-        padding: 5px;
-    }
-}
-
-@media (max-width: 890px) {
-    main {
-        grid-template-columns: 1fr;
-        /* Una sola columna */
-    }
-
-    nav {
-        margin-left: 0;
-        width: 100%;
-        position: relative;
-        /* Para evitar solapamientos */
-    }
-
-    .productos {
+    .contenedor {
         flex-direction: column;
-        /* Cambiar a diseño vertical */
+        align-items: stretch;
     }
 
-    .barraBusqueda {
-        flex-direction: column;
-        gap: 5px;
-    }
-
-    .barraBusqueda input {
-        width: 100%;
-    }
-
-    .btn-barra {
-        width: 100%;
-    }
-
-    .articulo {
-        padding: 5px;
-    }
-
-    .detalles {
-        flex-direction: column;
-        gap: 10px;
-    }
-}
-
-@media (max-width: 570px) {
-    .item-boton {
-        flex-direction: column;
-        /* Botones apilados */
-        padding: 5px;
-        gap: 5px;
-    }
-
-    .productos {
-        padding: 10px;
-    }
-
-    section h2 {
-        font-size: 20px;
-    }
-
-    .articulo {
-        border: none;
-    }
-
-    .btnD {
-        width: 100%;
-    }
-}
-
-@media (max-width: 360px) {
-    .barraBusqueda input {
-        font-size: 14px;
-        padding: 5px;
-    }
-
-    .btn-barra {
-        padding: 3px;
-        font-size: 14px;
-    }
-
-    .item-boton {
-        padding: 5px;
-    }
-
-    .articulo {
-        padding: 5px;
-        font-size: 14px;
+    .toggle-sidebar {
+        margin-bottom: 15px;
     }
 }
