@@ -18,7 +18,11 @@
     <main>
         <!-- de inmedio -->
         <div class="contenedor">
-            <div class="sidebar"></div>
+            <button class="toggle-sidebar btn d-lg-none" style="background-color: var(--teal-500); color: black; border: 1px solid black;">
+                ☰ Menú
+            </button>
+            
+            <div class="sidebar" id="sidebar">
             <div class="productos">
                 <div class="caja">
                     <h2>Lista de Deseos</h2>
@@ -93,6 +97,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous">
     </script>
+    <script src="menuMostrar"></script>
     <script src="JS/AgregarFooterHeader.js"></script>
     <script src="JS/AgregarBarraLateral.js"></script>
     <script>
@@ -110,6 +115,7 @@
         });
     </script>
     <script src="https://kit.fontawesome.com/67c54f1aa1.js" crossorigin="anonymous"></script>
+    
 </body>
 
 </html>

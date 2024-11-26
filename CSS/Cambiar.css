@@ -136,6 +136,10 @@ main {
         padding: 5px 30px;
         font-size: 18px;
     }
+    .btn-form{
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+    }
 }
 
 @media (max-width: 890px) {
@@ -162,6 +166,10 @@ main {
         padding: 5px 20px;
         font-size: 16px;
     }
+    .btn-form{
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+    }
 }
 
 @media (max-width: 570px) {
@@ -184,6 +192,10 @@ main {
         padding: 5px 10px;
         font-size: 14px;
     }
+    .btn-form{
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+    }
 }
 
 @media (max-width: 360px) {
@@ -201,5 +213,9 @@ main {
     .btn-form .CO, .btn-form .CA {
         padding: 5px 5px;
         font-size: 12px;
+    }
+    .btn-form{
+        display: grid;
+        grid-template-columns: repeat(2,auto);
     }
 }
