@@ -16,51 +16,56 @@
     <div class="dropdown"></div>
     <main>
         <!-- de inmedio -->
-        <div class="contenedor">
-            <div class="texto">
-                <div class="formulario2">
-                    <div class="Titulo">
-                        <h3><strong>Contacta con nosotros</strong></h3>
+        <section>
+            <h2>Contacta con nosotros</h2>
+            <form action="#">
+                <div class="infor">
+                    <label id="Usuario" for="nombres" name="Usuario" maxlength="20" placeholder="Usuario (máx. 12 caracteres)">Nombres</label>
+                    <input type="text" id="nombre" name="nombres" required placeholder="Ingrese su nombre">
+                </div>
+
+                <div class="infor">
+                    <label for="correo">Correo</label>
+                    <input type="email" id="correo" name="correo" required placeholder="Ingrese su correo">
+                </div>
+
+                <div class="infor">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="Telefono" name="telefono" placeholder="Ingrese su número telefónico">
+                </div>
+                <div class="infor">
+                    <label for="telefono">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje"></textarea>
+                </div>
+
+                <div class="others">
+                    <div class="check">
+                        <input class="checkbox" type="checkbox" name="" id="">
+                        <label for="">Acepta término de privacidad</label>
                     </div>
-
-                    <hr class="hr">
-                    <div class="info">
-                        <div class="p">
-                            <p>Nombres</p>
-                            <p>Correo</p>
-                            <p>Telefono</p>
-                            <p>Mensaje</p>
-
-                        </div>
-                        <div class="msj">
-                            <input type="text" class="y"><br>
-                            <input class="y" type="email" name="correo" id="Correo"><br>
-                            <input type="text" name="telefono" id="Telefono" class="y"><br>
-                            <textarea name="Motivo" id="Motivo" class="y"></textarea>
-                        </div>
-                        <div class="caja aceptar">
-                            <input type="checkbox" id="terminos">
-                            <label for="terminos">Acepta términos de privacidad</label>
-                        </div>
-                        <div class="botones">
-                            <button>Enviar</button>
-                        </div>
+                    <div class="btn-form">
+                        <button type="submit" id="submit" class="CO">Enviar</button>
                     </div>
                 </div>
+
+            </form>
+        </section>
+        <hr>
+        <div class="datos">
+            <div>
+                <label class="t" for="">Escribenos al WhatsApp</label>
+                <label for=""> +51 999 999 999</label>
             </div>
-            <hr>
-            <div class="informacion">
-                <div class="contacto1">
-                    <p><strong>Escríbenos al WhatsApp:</strong> +51 999 999 999</p>
-
-                    <p><strong>Envíanos un correo:</strong> Eccoffice@gmail.com</p>
-                </div>
-                <div class="contacto2">
-                    <p><strong>Ubícanos en:</strong> Av San Josemaría Escrivá de Balaguer 855</p>
-                    <div class="botones" id="boton">
-                        <button id="redes">Redes Sociales</button>
-                    </div>
-                </div>
+            <div>
+                <label class="t" for="">Envianos un correo</label>
+                <label for="">Eccoffice@gmail.com</label>
+            </div>
+            <div>
+                <label class="t" for="">Ubicanos en</label>
+                <label for="">Av. San Josemaría Escriva de Balaguer 855</label>
+            </div>
+            <div class="btn-form">
+                <button type="submit" class="CO">Redes Sociales</button>
             </div>
         </div>
     </main>
@@ -75,6 +80,7 @@
         </script>
     <script src="JS/AgregarFooterHeader.js"></script>
     <script src="https://kit.fontawesome.com/67c54f1aa1.js" crossorigin="anonymous"></script>
+    <script src="JS/Editar.js"></script>
 </body>
 
 </html>

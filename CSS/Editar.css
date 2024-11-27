@@ -4,7 +4,6 @@ main {
     align-items: center;
     padding: 10px;
     margin: 0 auto;
-    min-height: 100vh; /* Asegura altura completa */
 }
 
 .user, .gender, .address, .movil, .postal {
@@ -20,6 +19,7 @@ main {
     padding: 25px;
     margin: 30px 0;
     border-radius: 5px;
+    background-color: #f9f9f9;
     border: 1px solid #4BAA6E;
     width: 600px;
     max-height: 1200px;
@@ -74,7 +74,14 @@ input[type="text"] {
 }
 
 .btn-form button:hover {
-    background-color: #2f2fe8;
+    background-color: white;
+    color: black;
+}
+.btn-form .verde:hover{ 
+    border: 2px solid  #4baa6e;
+}
+.btn-form .rojo:hover{ 
+    border: 2px solid red ;
 }
 
 .contenedor div p {

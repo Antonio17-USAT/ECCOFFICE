@@ -1,260 +1,246 @@
 main {
-    padding: 10px 10px;
-}
-.texto{
-    padding: 0px 350px 0px 15px ;
-}
-.formulario2{
-    margin-bottom: 20px;
-    border: 1px solid #4BAA6E;
-    border-radius: 5px;
-    padding: 20px 20px;
-    margin-left: 42%;
-    width: 50%;
-    text-align: justify;
-    margin-top: 30px;
-}
-.info{
-    gap: 5%;
     display: grid;
-    grid-template-columns: 15% 95%;
-    padding-bottom: 5%;
-    padding-left: 2%;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    margin: 27.5px;
 }
-.botones {
-    margin: 0 auto;
-    padding-top: 0px;
-    margin-right: 80px;
+
+section {
+    display: grid;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 2px solid #98f5a9;
+    border-radius: 8px;
+    width: 700px;
+    text-align: center;
+    margin: 7.5px 0px ;
 }
-.botones button {
+
+section h2 {
+    margin-bottom: 15px;
+}
+
+form {
+    display: grid;
+}
+
+.infor {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.infor label {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content:right;
+    font-weight: bold;
+    padding-right: 30px;
+}
+
+.infor input[type="text"],
+.infor input[type="email"],
+.infor input[type="tel"] {
+    width: 65%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+#mensaje{ 
+    width: 425px;
+    height: 200px;
+    padding: 10px 10px;
+    margin: 25px 0px;
+}
+.others{ 
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    gap: 100px;
+}
+.check{ 
+    display: flex;
+    gap: 20px;
+}
+.checkbox{ 
+    transform: scale(2);
+}
+
+
+.btn-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0px ;
+    gap: 25px;
+    
+} 
+.btn-form button{
     border-radius: 50px;
-    padding: 5px 70px;
+    padding: 5px 30px ;
     background-color: #4baa6e;
     color: white;
-    font-size: 15px;
+    font-size: 20px;
 }
-
-.botones button:hover {
+.btn-form .CO{
+    border-radius: 50px;
+    padding: 5px 40px ;
+    background-color: #4baa6e;
+    color: white;
+    font-size: 20px;
+}
+.btn-form .CO:hover{ 
     background-color: white;
-    border: 3px solid #b5f7cd;
+    border: 3px solid #b5f7cd ;
     color: black;
 }
-.msj input{
-    margin-bottom: 5%;
-    border: black solid 1px ;
-    border-radius: 20px;
+hr{ 
+    margin-top: 20px;
+    border: 1px solid #4baa6e ;
 }
-.msj .y{
-    width: 85%;
-}
-.msj textarea{
-    height: 40%;
-    border: black solid 1px ;
-    border-radius: 20px;
-    margin-bottom: 80px;
-}
-.caja.aceptar {
-    width: 212px;
-    margin-left: 110px;
-    align-items: end;
-}
-
-.caja.aceptar label {
-    margin-left: 10px;
-    font-size: 13px;
-}
-
-.hr{
-    width: 40%;
-    border: 1px solid #4BAA6E;  
-}
-hr{
-    margin: 0 auto;
-    width: 50%;
-}
-.informacion {
-    padding-top: 20px;
+.datos{ 
     display: grid;
-    margin-left: 410px;
-    width: 49%;
+    grid-template-columns: 50% 50%;
+    grid-gap: 20px;
 }
-.contacto1,.contacto2{
-    display: flex;
-    font-size: 14px;
-    color: #333;
+.t{ 
+    font-weight: bold;
 }
-.contacto1 p, .contacto2 p{
-    text-align: center;
-    width: 52%;
-}
-#boton {
-    padding-left: 110px;
-    margin:0px;
-    margin-bottom: 20px;
-}
-#redes{
-    width: 250px;
-}
+
+/*-------- RESPONSIVE ----------*/
+
 @media (max-width: 1280px) {
-    .texto {
-        margin-right: 190px;
-        padding: 0 100px;
-    }
-    .formulario2 {
-        margin-left: 30%;
-        width: 65%;
-    }
-    .informacion {
-        margin-left: 250px;
-        width: 60%;
+    .datos{ 
+        grid-gap: 5px;
     }
 }
 
-@media (max-width: 992px) {
-    .texto {
-        padding: 0 50px;
+
+@media (max-width: 429px) {
+    main{
+        width: 85%;
+        margin: 0 auto;
     }
-    .formulario2 {
+    section{ 
+        width: 400px;
+        margin: 0 auto;
+    }
+    form{ 
+        width: auto;
+    }
+    .infor {
+        display: grid;
+        width: 100%;
+        margin-bottom: 15px;
+
+    }
+    .infor label {
+        text-align: start;
+        margin-left: 5px;
+        justify-content: start;
+    }
+    .infor input[type="text"],
+    .infor input[type="email"],
+    .infor input[type="tel"] {
+        width: 160%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    #mensaje{ 
+        width: 340px;
+        height: 200px;
+        padding: 10px 10px;
+        margin: 25px 0px;
+    }
+    .others{ 
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+        gap: 20px;
+    }
+    .check{ 
+        display: flex;
+        width: 200px;
+       gap: 5px;
+    }
+    .check label{ 
         font-size: 14px;
-        margin-left: 40%;
-        width: 70%;
     }
-    .caja.aceptar {
-        margin: 0 75px;
-        margin-top: -40px;
-        height: 30px;        
-    }
-    .botones {
-        width: 147px;
-        margin-left: 35px;
-    }
-    .informacion {
-        margin-left: 80px;
-        width: 80%;
-    }
-    .botones button {
-        padding: 5px 50px;
+    .btn-form .CO{
+        border-radius: 50px;
+        padding: 5px 30px ;
+        background-color: #4baa6e;
+        color: white;
+        font-size: 15px;
     }
 }
 
-@media (max-width: 768px) {
-    .texto {
-        padding: 0 30px;
-    }
-    .formulario2 {
-        margin-left: 30%;
-        width: 80%;
-    }
-    .info {
-        padding-left: 0;
-    }
-    .info .p {
-        text-align: left;
-    }
-    .info .msj {
-        text-align: left;
-    }
-    .caja.aceptar {
-        margin-left: 75px;
-    }
-    .informacion {
-        margin-left: 20px;
-        width: 90%;
-    }
-}
-@media (max-width: 576px) {
-    main {
-        width: 100%;
-        border: 6px solid black;
-    }
-    .formulario2 {
-        margin-left: 0; /* Quita el margen izquierdo fijo */
-        margin-right: 0; /* Asegura que esté centrado */
-        width: 220%; /* Ocupa el 90% del ancho */
-    }
-
-    .info {
-        font-size: 11px;
-        gap: 15px;
-    }
-
-    .msj .y {
-        width: 84%; 
-    }
-    .botones{
-        width: 59%; 
-        margin-left: 10px;
-        
-    }
-    .caja.aceptar {
-        margin-left:130%;
-        padding-top: 10px;
-    }
-    .informacion {
-        margin-left: 0;
-        width: 100%; 
-    }
-
-    #boton{
-        padding-left: 0;
-    }
-    #redes{
-        width: 100%;
-    }
-    .contacto1, 
-    .contacto2{
-        width:100%;
-        flex-direction: column;
-        align-items: center;
-        font-size: 12px; /* Ajusta el tamaño de la fuente */
-    }
-}
-/* Estilo adicional para dispositivos menores a 360px */
 @media (max-width: 391px) {
-    main {
+    main{
+        width: 85%;
+        margin: 0 auto;
+    }
+    section{ 
+        width: 350px;
+        margin: 0 auto;
+    }
+    form{ 
+        width: auto;
+    }
+    .infor {
+        display: grid;
         width: 100%;
-        border: 6px solid black;
-    }
-    .formulario2 {
-        margin-left: 0; /* Quita el margen izquierdo fijo */
-        margin-right: 0; /* Asegura que esté centrado */
-        width: 290%; /* Ocupa el 90% del ancho */
-    }
+        margin-bottom: 15px;
 
-    .info {
-        font-size: 11px;
-        gap: 15px;
     }
-
-    .msj .y {
-        width: 84%; 
+    .infor label {
+        text-align: start;
+        margin-left: 5px;
+        justify-content: start;
     }
-    .botones{
-        width: 59%; 
-        margin-left: 10px;
-        
+    .infor input[type="text"],
+    .infor input[type="email"],
+    .infor input[type="tel"] {
+        width: 145%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
     }
-    .caja.aceptar {
-        margin-left:130%;
-        padding-top: 10px;
+    #mensaje{ 
+        width: 310px;
+        height: 200px;
+        padding: 10px 10px;
+        margin: 25px 0px;
     }
-    .informacion {
-        margin-left: 0;
-        width: 100%; 
-    }
-
-    #boton{
-        padding-left: 0;
-    }
-    #redes{
-        width: 110%;
-    }
-    .contacto1, 
-    .contacto2{
-        width:100%;
-        flex-direction: column;
+    .others{ 
+        display: flex;
+        justify-content: center;
+        justify-items: center;
         align-items: center;
-        font-size: 12px; /* Ajusta el tamaño de la fuente */
+        align-content: center;
+        gap: 20px;
+    }
+    .check{ 
+        display: flex;
+        width: 200px;
+       gap: 5px;
+    }
+    .check label{ 
+        font-size: 14px;
+    }
+    .btn-form .CO{
+        border-radius: 50px;
+        padding: 5px 25px ;
+        background-color: #4baa6e;
+        color: white;
+        font-size: 15px;
     }
 }
-
