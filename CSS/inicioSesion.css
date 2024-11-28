@@ -48,3 +48,98 @@ main {
 .opc button:hover {
     background-color: #ada7a7;
 }
+@media (max-width: 1280px) {
+    .contenedor {
+        margin-left: 15%;
+        gap: 150px;
+    }
+    .contenedor img {
+        width: 350px;
+    }
+    .opc h1 {
+        font-size: 28px;
+    }
+}
+@media (max-width: 1115px) {
+    .contenedor {
+        margin-left: 13%;
+        gap: 150px;
+    }
+    .contenedor img {
+        width: 350px;
+    }
+    .opc h1 {
+        font-size: 28px;
+    }
+}
+/* Resolución: max-width 990px */
+@media (max-width: 990px) {
+    .contenedor {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        margin-left: 0;
+    }
+    .contenedor img {
+        width: 300px;
+    }
+    .opc h1 {
+        font-size: 25px;
+    }
+    .opc button {
+        font-size: 14px;
+    }
+}
+
+/* Resolución: max-width 768px */
+@media (max-width: 768px) {
+    .contenedor img {
+        width: 250px;
+    }
+    .opc h1 {
+        font-size: 22px;
+    }
+    .opc button {
+        padding: 8px;
+    }
+}
+
+/* Resolución: max-width 428px */
+@media (max-width: 428px) {
+    main {
+        padding: 5px;
+    }
+    .contenedor img {
+        width: 200px;
+    }
+    .opc {
+        max-width: 300px;
+    }
+    .opc h1 {
+        font-size: 20px;
+    }
+    .opc p {
+        font-size: 14px;
+    }
+    .opc button {
+        font-size: 12px;
+        padding: 6px;
+    }
+}
+
+/* Resolución: max-width 360px */
+@media (max-width: 360px) {
+    .contenedor img {
+        width: 180px;
+    }
+    .opc h1 {
+        font-size: 18px;
+    }
+    .opc p {
+        font-size: 12px;
+    }
+    .opc button {
+        font-size: 10px;
+        padding: 5px;
+    }
+}
