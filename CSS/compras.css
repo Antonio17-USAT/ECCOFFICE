@@ -104,38 +104,151 @@ hr{
     border-radius: 5px;
     cursor: pointer;
 }
-/*
-Añadir en las paginas de esta rama: para el color del menu
-*/
-:root {
-    --teal-500: #7df1a7; /* Color para teal-500 */
+
+/* Responsividad */
+
+/* Resolución: 1280px */
+@media (max-width: 1280px) {
+    .productos {
+        width: 70%;
+    }
+    .caja {
+        width: 700px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .barraBusqueda .barra {
+        width: 400px;
+    }
+    .img {
+        width: 130px;
+    }
+    .btnD {
+        padding: 6px 10px;
+    }
 }
 
-@media (max-width: 768px) {
-    .sidebar {
-        display: none; /* Oculta la barra lateral por defecto */
-        position: fixed; /* Mantiene la barra fija en la pantalla */
-        top: 0;
-        left: 0;
-        height: 100vh; /* Ocupa toda la altura visible */
-        width: 250px;
-        background-color: #f8f9fa;
-        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-        z-index: 1000;
-        padding: 20px;
-        overflow-y: auto; /* Permite el scroll si el contenido excede */
-    }
-
-    .sidebar.show {
-        display: block; /* Muestra la barra lateral cuando tiene la clase "show" */
-    }
-
+/* Resolución: 990px */
+@media (max-width: 990px) {
     .contenedor {
         flex-direction: column;
-        align-items: stretch;
+        align-items: center;
     }
-
-    .toggle-sidebar {
-        margin-bottom: 15px;
+    .productos {
+        width: 90%;
+    }
+    .caja {
+        width: 100%;
+        margin: 0;
+    }
+    .barraBusqueda {
+        display: grid;
+        grid-template-columns: 10% 70% 20%;
+        gap: 5px;
+    }
+    .barraBusqueda .barra {
+        width: 100%;
+    }
+    .info-a {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+        font-size: 20px;
+    }
+    .detallesArticulo {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .img {
+        width: 120px;
+    }
+    .btnD {
+        padding: 6px 8px;
+        font-size: 18px;
     }
 }
+
+/* Resolución: 728px */
+@media (max-width: 768px) {
+    .productos {
+        width: 100%;
+        padding: 10px;
+    }
+    .caja {
+        width: 95%;
+    }
+    .barraBusqueda {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .barraBusqueda .barra {
+        width: 100%;
+    }
+    .articulo {
+        padding: 10px;
+    }
+    .detallesArticulo {
+        flex-direction: column;
+        align-items: center;
+    }
+    .img {
+        width: 100px;
+    }
+    .btnD {
+        padding: 5px 10px;
+        font-size: 18px;
+    }
+}
+
+/* Resolución: 428px */
+@media (max-width: 428px) {
+    .productos {
+        padding: 5px;
+    }
+    .caja {
+        padding: 5px;
+        width: 100%;
+    }
+    .articulo {
+        padding: 8px;
+    }
+    .info-a {
+        gap: 18px;
+    }
+    .detallesArticulo {
+        gap: 10px;
+    }
+    .img {
+        width: 80px;
+    }
+    .btnD {
+        padding: 4px 8px;
+        font-size: 16px;
+    }
+}
+
+/* Resolución: 360px */
+@media (max-width: 360px) {
+    .productos {
+        padding: 0;
+    }
+    .caja {
+        padding: 5px;
+    }
+    .barraBusqueda .barra {
+        font-size: 0.9em;
+    }
+    .articulo {
+        padding: 5px;
+    }
+    .img {
+        width: 100px;
+    }
+    .btnD {
+        padding: 3px 5px;
+        font-size: 14px;
+    }
+}
+

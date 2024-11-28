@@ -88,66 +88,159 @@ main{
     border: 3px solid #b5f7cd ;
     color: black;
 }
-/*
-Añadir en las paginas de esta rama: para el color del menu
-*/
-:root {
-    --teal-500: #7df1a7; /* Color para teal-500 */
+
+/* Responsividad */
+
+/* Resolución: 1280px */
+@media (max-width: 1280px) {
+    .productos {
+        width: 70%;
+    }
+    .caja {
+        width: 700px;
+    }
+    .img img {
+        width: 150px;
+        height: 120px;
+    }
+    .botones button {
+        padding: 8px 35px;
+        font-size: 16px;
+    }
 }
 
-
-
-@media (max-width: 768px) {
-    .sidebar {
-        display: none; /* Oculta la barra lateral por defecto */
-        position: fixed; /* Mantiene la barra fija en la pantalla */
-        top: 0;
-        left: 0;
-        height: 100vh; /* Ocupa toda la altura visible */
-        width: 250px;
-        background-color: #f8f9fa;
-        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-        z-index: 1000;
-        padding: 20px;
-        overflow-y: auto; /* Permite el scroll si el contenido excede */
-    }
-
-    .sidebar.show {
-        display: block; /* Muestra la barra lateral cuando tiene la clase "show" */
-    }
-
+/* Resolución: 990px */
+@media (max-width: 990px) {
     .contenedor {
         flex-direction: column;
-        align-items: stretch;
+        align-items: center;
     }
-
-    .toggle-sidebar {
-        margin-bottom: 15px;
+    .productos {
+        width: 80%;
+    }
+    .caja {
+        width: 90%;
+    }
+    .icons-links {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 15px;
+    }
+    .icon {
+        width: 45%;
+        text-align: center;
+    }
+    .botones {
+        grid-template-columns: 1fr;
+    }
+    .botones button {
+        padding: 6px 30px;
+        font-size: 14px;
     }
 }
 
-
-
-
-
-/*-------- RESPONSIVE DESIGN ----------*/
-
-@media (max-width: 1200px) {
-    
-}
-
-@media (max-width: 992px) {
-   
-}
-
+/* Resolución: 728px */
 @media (max-width: 768px) {
-   
+    .contenedor{
+        padding-right: 10%;
+    }
+    .productos {
+        width: 100%;
+        padding: 10px;
+    }
+    .caja {
+        width: 100%;
+    }
+    .vacio {
+        font-size: 14px;
+    }
+    .icons-links {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 15px;
+    }
+    .icon {
+        width: 45%;
+        text-align: center;
+    }
+    
+    .img img {
+        width: 120px;
+        height: 100px;
+    }
+    .botones {
+        grid-template-columns: 1fr;
+    }
+    .botones button {
+        padding: 6px 30px;
+        font-size: 14px;
+    }
 }
 
-@media (max-width: 576px) {
-   
+/* Resolución: 428px */
+@media (max-width: 428px) {
+    .contenedor{
+        padding-right: 10%;
+    }
+    .productos {
+        padding: 5px;
+    }
+    .caja {
+        width: 100%;
+    }
+    .vacio {
+        font-size: 13px;
+    }
+    .icons-links {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 15px;
+    }
+    .icon {
+        width: 45%;
+        text-align: center;
+    }
+    .cont {
+        flex-direction: column;
+    }
+    .img img {
+        width: 100px;
+        height: 80px;
+    }
+    .botones button {
+        padding: 4px 20px;
+        font-size: 14px;
+    }
 }
 
+/* Resolución: 360px */
 @media (max-width: 360px) {
-
+    .productos {
+        padding: 0;
+    }
+    .caja {
+        width: 100%;
+    }
+    .vacio {
+        font-size: 12px;
+    }
+    .icons-links {
+        padding: 5px 0;
+        gap: 8px;
+    }
+    .icon {
+        width: 100%;
+        text-align: center;
+    }
+    .cont {
+        flex-direction: column;
+    }
+    .img img {
+        width: 90px;
+        height: 70px;
+    }
+    .botones button {
+        padding: 3px 18px;
+        font-size: 11px;
+    }
 }
