@@ -3,13 +3,11 @@ main{
     display: grid;
 } 
 .contenedor{ 
-    border: 2px solid red;
     padding: 10px 10px ;
     display: grid;
     grid-template-columns:65% 35%;
 } 
 .campos{ 
-    border: 2px solid blue;
     padding: 10px 10px ;
     margin: 0px 100px;
 }
@@ -38,18 +36,11 @@ main{
     
 }
 .datos{
-    border: 2px solid black;
     display: grid;
     grid-template-columns: 30% 70% ;
 }
-.tipo-dato{
-    border: 1px solid black;
-}
-.dato-oficial{ 
-    border: 1px solid palevioletred;
-}
+
 .boton{ 
-    border: 2px solid black;
     display: flex;
     justify-content: center;
     align-items: end;
@@ -63,18 +54,35 @@ main{
     font-size: 20px;
 }
 .cont-producto{ 
-    display: grid;
-    grid-template-columns: 30% 50% 20% ;
+    display: flex;
     border: 3px solid #7df1a7;
     padding: 10px 10px ;
     margin-bottom: 15px;
 }
-.cont-producto .img{
-    border: 1px solid black ;
+
+.cont-producto .img img{
+    border: 3px solid #7df1a7  ;
+    width: 200px ;
 }
 .cont-producto .producto{ 
-    border: 1px solid black ;
+    align-content: center;
+    width: 600px;
+    padding: 0px 20px;
 }
 .cont-producto .favicon{ 
-    border: 1px solid black ;
+    display: flex;
+    align-content: center;
+    width: 200px;
+    gap: 20px;
+    align-items: end;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+.number{ 
+    font-size: 30px;
+}
+.c { 
+    border-radius: 50%;
+    border: 2px solid black;
+    padding: 10px 10px;
 }
