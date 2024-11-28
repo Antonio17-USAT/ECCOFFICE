@@ -97,7 +97,24 @@ main{
         width: 70%;
     }
     .caja {
-        width: 700px;
+        width: 800px;
+    }
+    .img img {
+        width: 150px;
+        height: 120px;
+    }
+    .botones button {
+        padding: 8px 35px;
+        font-size: 16px;
+    }
+}
+/* Resolución: 1280px */
+@media (max-width: 1114px) {
+    .productos {
+        width: 80%;
+    }
+    .caja {
+        width: 800px;
     }
     .img img {
         width: 150px;
@@ -111,36 +128,6 @@ main{
 
 /* Resolución: 990px */
 @media (max-width: 990px) {
-    .contenedor {
-        flex-direction: column;
-        align-items: center;
-    }
-    .productos {
-        width: 80%;
-    }
-    .caja {
-        width: 90%;
-    }
-    .icons-links {
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        gap: 15px;
-    }
-    .icon {
-        width: 45%;
-        text-align: center;
-    }
-    .botones {
-        grid-template-columns: 1fr;
-    }
-    .botones button {
-        padding: 6px 30px;
-        font-size: 14px;
-    }
-}
-
-/* Resolución: 728px */
-@media (max-width: 768px) {
     .contenedor{
         padding-right: 10%;
     }
@@ -150,6 +137,44 @@ main{
     }
     .caja {
         width: 100%;
+    }
+    .vacio {
+        font-size: 14px;
+    }
+    .icons-links {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+    .icon {
+        width: 45%;
+        text-align: center;
+    }
+    
+    .img img {
+        width: 120px;
+        height: 100px;
+    }
+    .botones {
+        grid-template-columns: 1fr;
+    }
+    .botones button {
+        padding: 6px 30px;
+        font-size: 18px;
+    }
+}
+
+/* Resolución: 768px */
+@media (max-width: 768px) {
+    .contenedor{
+        padding-right: 10%;
+    }
+    .productos {
+        width: 100%;
+        padding: 10px;
+    }
+    .caja {
+        width: 105%;
     }
     .vacio {
         font-size: 14px;
@@ -173,7 +198,7 @@ main{
     }
     .botones button {
         padding: 6px 30px;
-        font-size: 14px;
+        font-size: 15px;
     }
 }
 
@@ -209,12 +234,15 @@ main{
     }
     .botones button {
         padding: 4px 20px;
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 
 /* Resolución: 360px */
 @media (max-width: 360px) {
+    .contenedor{
+        padding-right: 15%;
+    }
     .productos {
         padding: 0;
     }
@@ -225,11 +253,12 @@ main{
         font-size: 12px;
     }
     .icons-links {
-        padding: 5px 0;
-        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 15px;
     }
     .icon {
-        width: 100%;
+        width: 45%;
         text-align: center;
     }
     .cont {
@@ -241,6 +270,6 @@ main{
     }
     .botones button {
         padding: 3px 18px;
-        font-size: 11px;
+        font-size: 14px;
     }
 }
