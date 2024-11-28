@@ -85,39 +85,4 @@ main {
     color: black;
 }
 
-/*
-Añadir en las paginas de esta rama: para el color del menu
-*/
-:root {
-    --teal-500: #7df1a7; /* Color para teal-500 */
-}
-
-@media (max-width: 768px) {
-    .sidebar {
-        display: none; /* Oculta la barra lateral por defecto */
-        position: fixed; /* Mantiene la barra fija en la pantalla */
-        top: 0;
-        left: 0;
-        height: 100vh; /* Ocupa toda la altura visible */
-        width: 250px;
-        background-color: #f8f9fa;
-        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-        z-index: 1000;
-        padding: 20px;
-        overflow-y: auto; /* Permite el scroll si el contenido excede */
-    }
-
-    .sidebar.show {
-        display: block; /* Muestra la barra lateral cuando tiene la clase "show" */
-    }
-
-    .contenedor {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .toggle-sidebar {
-        margin-bottom: 15px;
-    }
-}
 
