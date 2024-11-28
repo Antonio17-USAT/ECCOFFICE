@@ -14,7 +14,7 @@ main {
     padding: 0px;
     width: 890px;
 }
-section {
+.sec {
     width: 91%;
     margin-left: 3.3%;
     margin-top: 0px;
@@ -44,13 +44,16 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
-    
+    padding: 10px; 
+}
+.perfil{
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    padding: 10px; 
 }
 .labels, .infoC {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+    width: 140px;
 }
 #editar{
     margin-left: 265px;
@@ -83,6 +86,142 @@ section {
     border: 3px solid #b5f7cd;
     color: black;
 }
+.boton {
+    width: 54%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    padding-top: 10px;
+}
 
+.boton button {
+    border-radius: 50px;
+    background-color: #4baa6e;
+    color: white;
+    font-size: 15px;
+}
 
+.boton button:hover {
+    background-color: white;
+    border: 3px solid #b5f7cd;
+    color: black;
+}
+
+/* Resolución: 1280px */
+@media (max-width: 1114px) {
+    .productos {
+        width: 60%;
+    }
+    .sec {
+        width: 750px;
+    }
+    .editarC h4{
+        width: 60%;
+    }
+    .botones {
+        width: 60%;
+    }
+}
+
+/* Resolución: 990px */
+@media (max-width: 990px) {
+    .contenedor{
+        padding-right: 10%;
+    }
+    .productos {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-left: 100px;
+    }
+    .sec {
+        width: 640px;
+    }
+    .editarC h4{
+        width: 75%;
+    }
+    .boton{
+        width: 250px;
+    }
+    #editar{
+        margin-left: 40px;
+    }
+    .botones {
+        width: 75%;
+    }
+}
+
+/* Resolución: 768px */
+@media (max-width: 768px) {
+    .contenedor{
+        padding-right: 10%;
+    }
+    .productos {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-left: 70px;
+    }
+    .sec {
+        width: 650px;
+    }
+    .editarC h4{
+        width: 67%;
+    }
+    .boton{
+        padding-right: 350px;
+    }
+    .botones {
+        width: 67%;
+    }
+}
+
+/* Resolución: 428px */
+@media (max-width: 428px) {
+    .productos {
+        display: flex;
+        justify-content: center;
+        width: 111%;
+        padding-right: 80px;
+    }
+    .sec {
+        width: 420px;
+    }
+    .editarC h4{
+        width: 100%;
+    }
+    .boton{
+        margin-left: 50px;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .botones {
+        width: 104%;
+    }
+}
+
+/* Resolución: 360px */
+@media (max-width: 360px) {
+    .productos {
+        display: flex;
+        justify-content: center;
+        width: 112%;
+    }
+    .sec {
+        width: 380px;
+    }
+    .botones {
+        display: flex;
+        flex-direction: column;
+        width: 104%;
+    }
+    .botones button{
+        margin-bottom: 10px;
+    }
+}
 

@@ -153,7 +153,10 @@ form {
         width: 60%;
         padding: 6px;
     }
-
+    .genero{
+        width: 250px;
+    }
+    
     .btn-form{
         display: flex;
         align-items: center;
@@ -177,11 +180,11 @@ form {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .infor label {
-        width: 100%;
+        width: 80%;
     }
 
     .infor input[type="text"],
@@ -189,19 +192,20 @@ form {
     .infor input[type="password"],
     .infor input[type="tel"] {
         width: 100%;
+        font-size: 16px;
 
     }
-
     .genero{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: 0px;
-        width: 310px;
+        gap: 10px;
+        width: 100%;
+        font-size: 16px;
     }
     .myf{
-        margin-left: 20px;
-        margin-top: -20px;
+        margin-left: 30px;
+        margin-top: -30px;
     }
     .btn-form{
         display: flex;
@@ -229,17 +233,21 @@ form {
         font-size: 18px;
         
     }
-
+    .infor{
+        font-size: 14px;
+    }
     .infor input[type="text"],
     .infor input[type="email"],
     .infor input[type="password"],
     .infor input[type="tel"] {
         padding: 5px;
+        font-size: 14px;
     }
-
-    .btnR,
-    .btnC {
-        font-size: 12px;
+    .genero{
+        font-size: 14px;
+    }
+    .btn-form .CO, .btn-form .CA {
+        font-size: 18px;
         padding: 6px;
     }
 }

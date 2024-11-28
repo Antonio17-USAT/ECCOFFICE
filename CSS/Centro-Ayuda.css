@@ -112,6 +112,7 @@ main{
     .contenedor {
         width: 90%;
         display: grid;
+        
     }
     .texto {
         align-content: center;
@@ -199,7 +200,7 @@ main{
     }
 }
 
-@media (max-width: 428px) {
+@media (max-width: 429px) {
     .contenedor {
         display: grid;
         padding: 0;
@@ -208,9 +209,11 @@ main{
         align-content: center;
         justify-content: center;
         justify-items: center;
-        width: 95%;
+        width: 67%;
         padding: 5px;
         padding-left: 0px;
+        margin-left: 0px;
+        
     }
     .texto .Titulo {
         font-size: 12px;
@@ -218,11 +221,12 @@ main{
     }
   
     .box {
+        width: 100%;
         grid-gap: 5px;
         padding: 5px;
     }
     .caja {
-        width: 355px;
+        width: 405px;
     }
     .hr {
         width: 100%;
@@ -262,7 +266,7 @@ main{
         padding: 5px;
     }
     .caja {
-        width: 355px;
+        width: 395px;
     }
     .hr {
         width: 100%;
