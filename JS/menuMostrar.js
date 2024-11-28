@@ -4,13 +4,13 @@ document.addEventListener('DOMContentLoaded', function () {
     const closeSidebarButton = sidebar.querySelector('.close-sidebar');
 
     function isMobileView() {
-        return window.innerWidth <= 768; // Verifica si está en vista móvil
+        return window.innerWidth <= 992; // Verifica si está en vista móvil
     }
 
-    // Mostrar la barra lateral al hacer clic en el botón "Menú"
+    // Alternar la barra lateral al hacer clic en el botón "Menú"
     toggleSidebarButton.addEventListener('click', function () {
         if (isMobileView()) {
-            sidebar.classList.add('show'); // Agrega la clase "show" para mostrar el sidebar
+            sidebar.classList.toggle('show'); // Alterna entre mostrar y ocultar la barra lateral
         }
     });
 

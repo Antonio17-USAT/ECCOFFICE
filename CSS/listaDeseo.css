@@ -85,39 +85,137 @@ main {
     color: black;
 }
 
-/*
-Añadir en las paginas de esta rama: para el color del menu
-*/
-:root {
-    --teal-500: #7df1a7; /* Color para teal-500 */
+/* Responsividad */
+
+/* Resolución: 1280px */
+@media (max-width: 1280px) {
+    .productos {
+        width: 80%;
+    }
+    .caja {
+        width: 75%;
+    }
+    .img {
+        width: 120px;
+        height: 100px;
+    }
+    .botones button {
+        padding: 5px 50px;
+        font-size: 16px;
+    }
 }
 
+/* Resolución: 990px */
+@media (max-width: 990px) {
+   
+    .productos {
+        width: 90%;
+    }
+    .caja {
+        width: 100%;
+    }
+    
+    .img {
+        width: 150px;
+        height: 120px;
+    }
+    .botones {
+        grid-template-columns: 1fr 0.3fr;
+    }
+    .botones button {
+        padding: 6px 60px;
+        font-size: 14px;
+    }
+    
+}
+
+/* Resolución: 728px */
 @media (max-width: 768px) {
-    .sidebar {
-        display: none; /* Oculta la barra lateral por defecto */
-        position: fixed; /* Mantiene la barra fija en la pantalla */
-        top: 0;
-        left: 0;
-        height: 100vh; /* Ocupa toda la altura visible */
-        width: 250px;
-        background-color: #f8f9fa;
-        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-        z-index: 1000;
-        padding: 20px;
-        overflow-y: auto; /* Permite el scroll si el contenido excede */
+    .productos {
+        width: 90%;
     }
-
-    .sidebar.show {
-        display: block; /* Muestra la barra lateral cuando tiene la clase "show" */
+    .caja {
+        width: 100%;
     }
+    
+    .img {
+        width: 150px;
+        height: 120px;
+    }
+    .botones {
+        grid-template-columns: 1fr 0.1fr;
+        
+    }
+    .botones button {
+        padding: 6px 60px;
+        font-size: 18px;
+    }
+}
 
-    .contenedor {
+/* Resolución: 428px */
+@media (max-width: 428px) {
+    .productos {
+        padding: 5px;
+    }
+    .caja {
+        width: 100%;
+    }
+    .detalles {
         flex-direction: column;
-        align-items: stretch;
+        align-items: center;
     }
+    .img {
+        width: 150px;
+        height: 120px;
+        margin-bottom: 5px;
+    }
+    .botones{
+        display: grid;
+        grid-template-columns: auto;
+        align-self: center;
+        align-items: center;
+        justify-items: center;
+        padding-top: 0%;
+    }
+    .botones button {
+        font-size: 18px;
+    }
+    .infoP{
+        margin-bottom: 0px;
+    }
+}
 
-    .toggle-sidebar {
-        margin-bottom: 15px;
+/* Resolución: 360px */
+@media (max-width: 360px) {
+    .productos {
+        padding: 5px;
+    }
+    .caja {
+        width: 100%;
+    }
+    .detalles {
+        flex-direction: column;
+        align-items: center;
+    }
+    .img {
+        width: 150px;
+        height: 120px;
+        margin-bottom: 5px;
+    }
+    .botones{
+        display: grid;
+        grid-template-columns: auto;
+        align-self: center;
+        align-items: center;
+        justify-items: center;
+        padding-top: 0%;
+    }
+    .botones button {
+        font-size: 18px;
+    }
+    .infoP{
+        margin-bottom: 0px;
+        padding-left: 10%;
     }
 }
 
