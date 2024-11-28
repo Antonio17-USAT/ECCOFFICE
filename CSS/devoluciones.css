@@ -1,4 +1,3 @@
-/*Hasta aquí el header*/
 main {
     padding: 10px 10px;
 }
@@ -112,4 +111,232 @@ hr {
     background-color: white;
     border: 3px solid #b5f7cd;
     color: black;
+}
+
+/* Responsividad */
+
+/* Resolución: 1280px */
+@media (max-width: 1280px) {
+    .productos {
+        width: 80%;
+    }
+    section {
+        width: 700px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .barraBusqueda input {
+        width: 400px;
+    }
+    .detalles .img {
+        width: 100px;
+    }
+    .botones button {
+        padding: 5px 50px;
+        font-size: 14px;
+    }
+}
+
+/* Resolución: 990px */
+@media (max-width: 990px) {
+    .contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+    .productos {
+        width: 90%;
+    }
+    section {
+        width: 100%;
+        margin: 0;
+    }
+    .barraBusqueda {
+        display: grid;
+        grid-template-columns: 10% 70% 20%;
+        gap: 5px;
+    }
+    .barraBusqueda input {
+        width: 100%;
+    }
+    .articulo{
+        grid-template-columns: repeat(3, auto);
+    }
+
+    .detalles .img {
+        width: 90px;
+    }
+    .botones button {
+        padding: 5px 40px;
+        font-size: 13px;
+    }
+}
+
+/* Resolución: 768px */
+@media (max-width: 768px) {
+    .productos {
+        width: 90%;
+        padding: 10px;
+        
+    }
+    .info{
+        border: #333 solid 1px;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+        font-size: 15px;
+    }
+    section {
+        width: 95%;
+    }
+    .barraBusqueda {
+        display: grid;
+        grid-template-columns: 15% 65% 20%;
+        gap: 10px;
+    }
+    
+    .barraBusqueda input {
+        width: 95%;
+    }
+    .articulo {
+        padding: 10px;
+        
+    }
+    .detalles {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .detalles .img {
+        width: 100px;
+    }
+    .botones{
+        border: #333 solid 1px;
+        display: grid;
+        grid-template-columns: auto;
+        align-self: center;
+        align-items: center;
+        justify-items: center;
+        padding-top: 0%;
+    }
+    .botones button {
+        padding: 5px 30px;
+        font-size: 18px;
+        
+    }
+}
+
+/* Resolución: 390px */
+@media (max-width: 390px) {
+    .productos {
+        padding: 5px;
+    }
+    .info{
+        border: #333 solid 1px;
+        display: grid;
+        grid-template-columns: repeat(3, 33.33%);
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        font-size: 10px;
+    }
+    section {
+        width: 90%;
+    }
+    .barraBusqueda {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .barraBusqueda input {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+    .detalles {
+        flex-direction: column;
+        align-items: center;
+    }
+    .detalles .img {
+        width: 70px;
+    }
+    .botones{
+        border: #333 solid 1px;
+        display: grid;
+        grid-template-columns: auto;
+        align-self: center;
+        align-items: center;
+        justify-items: center;
+        padding-top: 0%;
+    }
+    .botones button {
+        padding: 5px 25px;
+        font-size: 11px;
+    }
+}
+
+/* Resolución: 428px */
+@media (max-width: 428px) {
+    .productos {
+        padding: 5px;
+    }
+    section {
+        width: 100%;
+    }
+    .barraBusqueda {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .barraBusqueda input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .detalles {
+        flex-direction: column;
+        align-items: center;
+    }
+    .detalles .img {
+        width: 70px;
+    }
+    .botones{
+        border: #333 solid 1px;
+        display: grid;
+        grid-template-columns: auto;
+        align-self: center;
+        align-items: center;
+        justify-items: center;
+        padding-top: 0%;
+    }
+    .botones button {
+        padding: 5px 25px;
+        font-size: 11px;
+    }
+}
+
+/* Resolución: 360px */
+@media (max-width: 360px) {
+    .productos {
+        padding: 5px;
+    }
+    section {
+        width: 100%;
+    }
+    .barraBusqueda {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .barraBusqueda input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .detalles {
+        flex-direction: column;
+        align-items: center;
+    }
+    .detalles .img {
+        width: 60px;
+    }
+    .botones button {
+        padding: 5px 20px;
+        font-size: 10px;
+    }
 }

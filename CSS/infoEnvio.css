@@ -1,0 +1,253 @@
+/*aqui es el main sin las listas*/
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    margin: 27.5px;
+}
+
+section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 2px solid #98f5a9;
+    border-radius: 8px;
+    width: 700px;
+    text-align: center;
+    margin: 7.5px 0px ;
+}
+
+section h2 {
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.infor {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.infor label {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content:right;
+    font-weight: bold;
+    padding-right: 30px;
+}
+
+.infor input[type="text"],
+.infor input[type="email"],
+.infor input[type="password"],
+.infor input[type="tel"] {
+    width: 65%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.genero {
+    display: flex;
+    justify-content:left ;
+    gap: 20px;
+}
+.checkbox{
+    transform: scale(2);
+    margin-left: 10px;
+    margin-right: 15px;
+}
+.btn-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0px ;
+    gap: 25px;
+    
+} 
+.btn-form button{
+    border-radius: 50px;
+    padding: 5px 30px ;
+    background-color: #4baa6e;
+    color: white;
+    font-size: 20px;
+}
+.btn-form .CO{
+    border-radius: 50px;
+    padding: 5px 40px ;
+    background-color: #4baa6e;
+    color: white;
+    font-size: 20px;
+}
+.btn-form .CO:hover{ 
+    background-color: white;
+    border: 3px solid #b5f7cd ;
+    color: black;
+}
+.btn-form .CA{
+    border-radius: 50px;
+    padding: 5px 40px ;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+}
+.btn-form .CA:hover{ 
+    background-color: white;
+    border: 3px solid red ;
+    color: black; 
+}
+
+/*-------- RESPONSIVE ----------*/
+
+@media (max-width: 1280px) {
+    main {
+        padding: 30px;
+    }
+
+    section {
+        width: 600px;
+    }
+
+    .infor input[type="text"],
+    .infor input[type="email"],
+    .infor input[type="password"],
+    .infor input[type="tel"] {
+        width: 60%;
+    }
+    .btn-form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 0px ;
+        gap: 10px;
+    } 
+}
+
+@media (max-width: 890px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    section {
+        width: 500px;
+        padding: 15px;
+    }
+
+    .infor label {
+        width: 35%;
+    }
+
+    .infor input[type="text"],
+    .infor input[type="email"],
+    .infor input[type="password"],
+    .infor input[type="tel"] {
+        width: 60%;
+        padding: 6px;
+    }
+    .genero{
+        width: 250px;
+    }
+    
+    .btn-form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 0px ;
+        gap: 25px;
+    } 
+}
+
+@media (max-width: 570px) {
+    main {
+        padding: 15px;
+    }
+
+    section {
+        width: 110%;
+        padding: 10px;
+    }
+
+    .infor {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        font-size: 16px;
+    }
+
+    .infor label {
+        width: 80%;
+    }
+
+    .infor input[type="text"],
+    .infor input[type="email"],
+    .infor input[type="password"],
+    .infor input[type="tel"] {
+        width: 100%;
+        font-size: 16px;
+
+    }
+    .genero{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        width: 100%;
+        font-size: 16px;
+    }
+    .myf{
+        margin-left: 30px;
+        margin-top: -30px;
+    }
+    .btn-form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 0px ;
+        width: 100%;
+    } 
+    .btn-form .CO,.btn-form .CA{
+        padding: 5px 25px ;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 360px) {
+    main {
+        padding: 10px;
+    }
+
+    section {
+        padding: 5px;
+    }
+
+    section h2 {
+        font-size: 18px;
+        
+    }
+    .infor{
+        font-size: 14px;
+    }
+    .infor input[type="text"],
+    .infor input[type="email"],
+    .infor input[type="password"],
+    .infor input[type="tel"] {
+        padding: 5px;
+        font-size: 14px;
+    }
+    .genero{
+        font-size: 14px;
+    }
+    .btn-form .CO, .btn-form .CA {
+        font-size: 18px;
+        padding: 6px;
+    }
+}
