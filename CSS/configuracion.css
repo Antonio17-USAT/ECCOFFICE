@@ -85,117 +85,39 @@ section {
 }
 
 
-/* Media query para pantallas menores o iguales a 1280px */
-@media screen and (max-width: 1280px) {
-    main {
-        grid-template-columns: 30% 70%;
-    }
-    .productos {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
-    section {
-        width: 70%;
-        margin-left: 10%;
-    }
-    .editarP h2, .editarC h2 {
-        font-size: 18px;
-        height: auto;
-    }
-    .info {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .botones {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
+
+/*
+Añadir en las paginas de esta rama: para el color del menu
+*/
+:root {
+    --teal-500: #7df1a7; /* Color para teal-500 */
 }
 
-/* Media query para pantallas menores o iguales a 890px */
-@media screen and (max-width: 890px) {
-    main {
-        grid-template-columns: 1fr;
+@media (max-width: 768px) {
+    .sidebar {
+        display: none; /* Oculta la barra lateral por defecto */
+        position: fixed; /* Mantiene la barra fija en la pantalla */
+        top: 0;
+        left: 0;
+        height: 100vh; /* Ocupa toda la altura visible */
+        width: 250px;
+        background-color: #f8f9fa;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        padding: 20px;
+        overflow-y: auto; /* Permite el scroll si el contenido excede */
     }
-    .productos {
-        padding: 5px;
-    }
-    section {
-        width: 80%;
-        margin-left: 10%;
-    }
-    .editarP h2, .editarC h2 {
-        font-size: 16px;
-        padding: 8px 15px;
-    }
-    .info {
-        flex-direction: column;
-        gap: 10px;
-    }
-    .botones {
-        flex-direction: column;
-        gap: 10px;
-    }
-    .btn {
-        font-size: 0.9em;
-        padding: 6px 10px;
-    }
-}
 
-/* Media query para pantallas menores o iguales a 570px */
-@media screen and (max-width: 570px) {
-    main {
-        grid-template-columns: 1fr;
+    .sidebar.show {
+        display: block; /* Muestra la barra lateral cuando tiene la clase "show" */
     }
-    .productos {
-        flex-direction: column;
-        padding: 5px;
-    }
-    section {
-        width: 90%;
-        margin-left: 5%;
-    }
-    .editarP h2, .editarC h2 {
-        font-size: 14px;
-        padding: 6px 10px;
-    }
-    .info {
-        flex-direction: column;
-        gap: 8px;
-    }
-    .labels, .infoC {
-        gap: 3px;
-    }
-    .btn {
-        font-size: 0.8em;
-        padding: 5px 8px;
-    }
-}
 
-/* Media query para pantallas menores o iguales a 360px */
-@media screen and (max-width: 360px) {
-    .productos {
-        padding: 5px;
-    }
-    section {
-        width: 100%;
-        margin-left: 0;
-    }
-    .editarP h2, .editarC h2 {
-        font-size: 12px;
-        padding: 4px 8px;
-    }
-    .info {
+    .contenedor {
         flex-direction: column;
-        gap: 5px;
+        align-items: stretch;
     }
-    .labels, .infoC {
-        gap: 2px;
-    }
-    .btn {
-        font-size: 0.7em;
-        padding: 4px 6px;
+
+    .toggle-sidebar {
+        margin-bottom: 15px;
     }
 }
