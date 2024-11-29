@@ -1,3 +1,4 @@
+/*Hasta aquí el header*/
 main {
     padding: 10px 10px;
 }
@@ -133,7 +134,7 @@ hr {
     }
     .botones button {
         padding: 5px 50px;
-        font-size: 14px;
+        font-size: 20px;
     }
 }
 
@@ -152,14 +153,17 @@ hr {
     }
     .barraBusqueda {
         display: grid;
-        grid-template-columns: 10% 70% 20%;
+        grid-template-columns: 15% 65% 20%;
         gap: 5px;
+        font-size: 20px;
     }
     .barraBusqueda input {
         width: 100%;
     }
     .articulo{
         grid-template-columns: repeat(3, auto);
+        font-size: 20px;
+        
     }
 
     .detalles .img {
@@ -167,7 +171,7 @@ hr {
     }
     .botones button {
         padding: 5px 40px;
-        font-size: 13px;
+        font-size: 22px;
     }
 }
 
@@ -179,13 +183,12 @@ hr {
         
     }
     .info{
-        border: #333 solid 1px;
         display: grid;
         grid-template-columns: repeat(3, auto);
         flex-direction: column;
         align-items: flex-start;
         gap: 5px;
-        font-size: 15px;
+        font-size: 20px;
     }
     section {
         width: 95%;
@@ -209,10 +212,9 @@ hr {
         
     }
     .detalles .img {
-        width: 100px;
+        width: 150px;
     }
     .botones{
-        border: #333 solid 1px;
         display: grid;
         grid-template-columns: auto;
         align-self: center;
@@ -222,10 +224,58 @@ hr {
     }
     .botones button {
         padding: 5px 30px;
-        font-size: 18px;
+        font-size: 20px;
         
     }
 }
+
+
+/* Resolución: 428px */
+@media (max-width: 428px) {
+    .productos {
+        padding: 5px;
+    }
+    section {
+        width: 100%;
+    }
+    .barraBusqueda {
+        display: grid;
+        grid-template-columns: 25% 55% 20%;
+        gap: 5px;
+        font-size: 18px;
+    }
+    .barraBusqueda input {
+        width: 100%;
+    }
+    .info{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+        font-size: 15px;
+    }
+    .detalles {
+        flex-direction: column;
+        align-items: center;
+    }
+    .detalles .img {
+        width: 70px;
+    }
+    .botones{
+        display: grid;
+        grid-template-columns: auto;
+        align-self: center;
+        align-items: center;
+        justify-items: center;
+        padding-top: 0%;
+    }
+    .botones button {
+        padding: 5px 25px;
+        font-size: 18px;
+    }
+}
+
 
 /* Resolución: 390px */
 @media (max-width: 390px) {
@@ -233,7 +283,6 @@ hr {
         padding: 5px;
     }
     .info{
-        border: #333 solid 1px;
         display: grid;
         grid-template-columns: repeat(3, 33.33%);
         flex-direction: column;
@@ -245,12 +294,12 @@ hr {
         width: 90%;
     }
     .barraBusqueda {
-        flex-direction: column;
-        align-items: stretch;
+        display: grid;
+        grid-template-columns: 15% 65% 20%;
+        
     }
     .barraBusqueda input {
         width: 90%;
-        margin-bottom: 10px;
     }
     .detalles {
         flex-direction: column;
@@ -260,7 +309,6 @@ hr {
         width: 70px;
     }
     .botones{
-        border: #333 solid 1px;
         display: grid;
         grid-template-columns: auto;
         align-self: center;
@@ -270,35 +318,45 @@ hr {
     }
     .botones button {
         padding: 5px 25px;
-        font-size: 11px;
+        font-size: 17px;
     }
 }
-
-/* Resolución: 428px */
-@media (max-width: 428px) {
+/*Resolución: 375px*/
+@media (max-width: 376px) {
     .productos {
         padding: 5px;
     }
+    .info{
+        display: grid;
+        grid-template-columns: repeat(3, 33.33%);
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        font-size: 12px;
+    }
+    .infoP{
+        font-size: 15px;
+    }
     section {
-        width: 100%;
+        width: 90%;
     }
     .barraBusqueda {
-        flex-direction: column;
-        align-items: stretch;
+        display: grid;
+        grid-template-columns: 24% 56% 20%;
+        font-size: 15px;
+        
     }
     .barraBusqueda input {
         width: 100%;
-        margin-bottom: 10px;
     }
     .detalles {
         flex-direction: column;
         align-items: center;
     }
     .detalles .img {
-        width: 70px;
+        width: 100px;
     }
     .botones{
-        border: #333 solid 1px;
         display: grid;
         grid-template-columns: auto;
         align-self: center;
@@ -308,25 +366,27 @@ hr {
     }
     .botones button {
         padding: 5px 25px;
-        font-size: 11px;
+        font-size: 15px;
     }
 }
-
 /* Resolución: 360px */
 @media (max-width: 360px) {
     .productos {
         padding: 5px;
     }
+    .info{
+        font-size: 12px;
+    }
     section {
         width: 100%;
     }
     .barraBusqueda {
-        flex-direction: column;
-        align-items: stretch;
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
+        gap: 5px;
     }
     .barraBusqueda input {
         width: 100%;
-        margin-bottom: 10px;
     }
     .detalles {
         flex-direction: column;
@@ -337,6 +397,7 @@ hr {
     }
     .botones button {
         padding: 5px 20px;
-        font-size: 10px;
+        font-size: 15px;
     }
 }
+
