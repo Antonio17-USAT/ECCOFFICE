@@ -51,6 +51,7 @@ main{
 }
 .botones{ 
     display: flex;
+    justify-content: center;
     padding: 10px 0px;
     gap: 20px;
 }

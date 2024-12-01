@@ -6,6 +6,7 @@ main {
     justify-content: center;
     text-align: center;
     align-items: center;
+    margin: 50px;
 }
 .contenedor{ 
     max-width: 1600px;

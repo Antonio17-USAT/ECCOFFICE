@@ -5,7 +5,7 @@ main {
     justify-content: center;
     align-items: center;
     padding: 40px;
-    margin: 27.5px;
+    margin: 51.5px;
 }
 hr{
     border: 2px solid #4baa6e;
@@ -54,8 +54,7 @@ form {
 }
 .metodos-pago {
     display: flex;
-    flex-direction: column; /* Cambia la dirección a columna para dispositivos pequeños */
-    align-items: flex-start; /* Alinea los elementos a la izquierda */
+    justify-content: space-evenly;
     gap: 10px; /* Añade espacio entre los métodos de pago */
     width: 100%; /* Asegura que el contenedor use todo el ancho disponible */
     margin-bottom: 15px;

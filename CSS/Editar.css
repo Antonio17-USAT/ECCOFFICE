@@ -3,7 +3,7 @@ main {
     justify-content: center;
     align-items: center;
     padding: 10px;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 .user, .gender, .address, .movil, .postal {
@@ -20,7 +20,7 @@ main {
     margin: 30px 0;
     border-radius: 5px;
     background-color: #f9f9f9;
-    border: 1px solid #4BAA6E;
+    border: 2px solid #98f5a9;
     width: 600px;
     max-height: 1200px;
     gap: 10px;

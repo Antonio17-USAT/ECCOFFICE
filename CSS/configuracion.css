@@ -8,7 +8,8 @@ main {
     justify-items: center;
     align-content: center;
     margin: 30px 0px;
-    margin-bottom: 96px;
+    margin-bottom: 163px;
+    border: 2px solid black;
 } 
 .productos {
     padding: 0px;
@@ -18,6 +19,7 @@ main {
     width: 91%;
     margin-left: 3.3%;
     margin-top: 0px;
+    border: 2px solid black;
 }
 
 .editarP, .editarC {
@@ -155,16 +157,16 @@ main {
 /* Resolución: 768px */
 @media (max-width: 768px) {
     .contenedor{
-        padding-right: 10%;
+        justify-content: center;
+
     }
     .productos {
         display: flex;
         justify-content: center;
         width: 100%;
-        padding-left: 70px;
     }
     .sec {
-        width: 650px;
+        width: 500px;
     }
     .editarC h4{
         width: 67%;
@@ -207,21 +209,26 @@ main {
 
 /* Resolución: 360px */
 @media (max-width: 360px) {
+ .contenedor{
+        justify-content: center;
+
+    }
     .productos {
         display: flex;
         justify-content: center;
-        width: 112%;
+        width: 100%;
     }
     .sec {
-        width: 380px;
+        width: 500px;
+    }
+    .editarC h4{
+        width: 67%;
+    }
+    .boton{
+        padding-right: 350px;
     }
     .botones {
-        display: flex;
-        flex-direction: column;
-        width: 104%;
-    }
-    .botones button{
-        margin-bottom: 10px;
+        width: 67%;
     }
 }
 

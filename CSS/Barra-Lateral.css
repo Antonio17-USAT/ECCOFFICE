@@ -31,6 +31,10 @@
     padding: 10px 10px;
     margin-bottom: 10px;
 }
+.S:hover{
+    background-color: #4BAA6E;
+    color: white;
+}
 
 .menu-btn:hover {
     background-color: #4BAA6E;

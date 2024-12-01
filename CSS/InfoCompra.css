@@ -1,11 +1,14 @@
 main{ 
-    margin: 10px 10px;
     display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(1, auto);
+    margin: 6px auto;
 } 
 .contenedor{ 
     padding: 10px 10px ;
     display: grid;
     grid-template-columns:60% 33%;
+    max-width: 1200px;
 } 
 .campos{ 
     padding: 10px 10px ;

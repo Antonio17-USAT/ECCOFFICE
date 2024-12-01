@@ -2,6 +2,8 @@
 /*Hasta aquí el header*/
 main{ 
     padding: 10px 10px;
+    width: 80%;
+    margin: 0 auto;
 }
 .contenedor{ 
     display: flex;
@@ -10,12 +12,12 @@ main{
     align-content: center;
     margin: 30px 0px;
     margin-bottom: 96px;
+    padding: 15px 0px;
 }
 
 /*aqui es el main sin las listas*/
 .productos {
     display: flex;
-    padding: 20px;
     width: 58.4%;
 
 }
@@ -232,23 +234,25 @@ hr{
 /* Resolución: 360px */
 @media (max-width: 360px) {
     .productos {
-        padding: 0;
+        width: 200px;
+        margin: 0 auto;;
     }
     .caja {
         padding: 5px;
+        width: 100%;
     }
-    .barraBusqueda .barra {
-        font-size: 0.9em;
+    .info-a {
+        gap: 18px;
     }
-    .articulo {
-        padding: 5px;
+    .detallesArticulo {
+        gap: 10px;
     }
     .img {
-        width: 100px;
+        width: 80px;
     }
     .btnD {
-        padding: 3px 5px;
-        font-size: 14px;
+        padding: 4px 8px;
+        font-size: 16px;
     }
 }
 

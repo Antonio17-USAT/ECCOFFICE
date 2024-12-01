@@ -1,5 +1,6 @@
 main{
     padding: 10px 10px ;
+    margin: 6px 0px ; 
 }
 .contenedor{ 
     display: flex;
@@ -46,10 +47,16 @@ main{
     gap: 20px;
     border: 2px solid #b5f7cd ;
 }
-.icon{ 
+.icon{  
+    display: grid;
+    grid-gap: 10px;
     align-items: center;
     justify-content: center;
     justify-items: center;
+}
+.i{
+    display: flex;
+    justify-content: center;
 }
 .cont{ 
     display: flex;

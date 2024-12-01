@@ -4,6 +4,7 @@ main{
 }
 .texto{
     padding: 0px 350px 0px 15px ;
+    border: 2px solid black;
 }
 .formulario2{
     border: 1px solid #4BAA6E;
@@ -13,6 +14,7 @@ main{
     width: 150%;
     text-align: justify;
     margin-top: 30px;
+    border: 2px solid black;
 }
 .info{
     gap: 5%;
@@ -98,35 +100,28 @@ main{
 }
 
 @media (max-width: 992px) {
-    main {
-        margin: 0 auto; /* Centra el contenido */
-    }
+
     .contenedor{ 
         width: 100%;
         display: grid; 
+        justify-content: center;
     }
-    .Titulo {
-        margin-top: 15px;
-    }
-    .box {
-        padding: 10px;
-        width: 95%;
-    }
-    .texto {
-        padding: 0px;
-        width: 400px;
-        margin-right: 350px;
+    .filtros{ 
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        margin: 10px auto;
+        grid-gap: 20px ;
     }
     .formulario2{
         border: 1px solid #4BAA6E;
-        margin-left: 70px;
+        margin-left: 50px;
     }
-    .hr {
-        width: 60%; /* Ajuste del ancho del separador */
+    .caja-filtro button{
+        width: 190px;
     }
-    .item-boton {
-        padding-left: 10px;
-        font-size: 14px; /* Ajuste del texto en las opciones */
+    .caja-filtro button a{ 
+        font-size: 14px;
     }
 }
 
@@ -222,8 +217,15 @@ main{
         align-content: center;
         justify-content: center;
         justify-items: center;
-        width: 234px;
+        width: auto;
         margin-left: 214px;
+    }
+    .formulario2{
+        display: grid;
+        grid-template-columns: auto auto ;
+        grid-template-rows: auto auto auto;
+        margin: 10px auto;
+        grid-gap: 3px ;
     }
     .info{
         display: grid;

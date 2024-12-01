@@ -1,23 +1,26 @@
 main{ 
-    margin: 2% 2%;
+   
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .contenedor{ 
-    margin: 10px 10px ;
+    margin: 74.81px 10px ;
 }
 .Titulo{ 
     padding: 20px 10px ;
 }
-.formulario{ 
-    border: 1px solid #4BAA6E;
+.formulario {
+    background-color: #f9f9f9;
+    border: 2px solid #98f5a9;
     border-radius: 5px;
     padding: 15px;
     margin-bottom: 20px;
     width: 900px;
     height: 350px;
-} 
+}
+
+
 .box{ 
     width: 95%;
     margin: 0 auto;
@@ -55,70 +58,6 @@ main{
     font-size: 20px;
 }
 
-main {
-    margin: 2% 2%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.contenedor {
-    margin: 10px 10px;
-}
-
-.Titulo {
-    padding: 20px 10px;
-}
-
-.formulario {
-    border: 1px solid #4BAA6E;
-    border-radius: 5px;
-    padding: 15px;
-    margin-bottom: 20px;
-    width: 900px;
-    height: 350px;
-}
-
-.box {
-    width: 95%;
-    margin: 0 auto;
-    padding: 20px 20px;
-}
-
-.box label {
-    font-size: 25px;
-    padding-bottom: 20px;
-    margin-right: 20px;
-}
-
-.box input {
-    padding-right: 300px;
-    border-radius: 10px;
-}
-
-.btn-form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 15px 0px;
-    gap: 15px;
-}
-
-.btn-form .CO {
-    border-radius: 50px;
-    padding: 5px 40px;
-    background-color: #4baa6e;
-    color: white;
-    font-size: 20px;
-}
-
-.btn-form .CA {
-    border-radius: 50px;
-    padding: 5px 40px;
-    background-color: red;
-    color: white;
-    font-size: 20px;
-}
 
 /* Media Queries */
 @media (max-width: 1280px) {
