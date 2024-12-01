@@ -13,46 +13,43 @@
     <header class="header"></header>
     <div class="dropdown"></div>
     <main>
-        <div class="formulario">
-            <h2>Editar perfil</h2>
-            <div class="contenedor">
-                <div class="user">
-                    <p>Usuario</p>
-                    <div class="textillo">
-                        <input type="text" id="Usuario" name="Usuario" maxlength="20" placeholder="Usuario (máx. 12 caracteres)">
-                    </div>
+        <section>
+            <h2>Editar Perfil</h2>
+            <form action="#">
+                <div class="infor">
+                    <label for="usuario">Usuario</label>
+                    <input type="text" id="Usuario" name="Usuario" maxlength="20" placeholder="Usuario (máx. 12 caracteres)">
                 </div>
-                <div class="gender">
-                    <p>Genero</p>
-                    <div class="checks">
-                        <input type="checkbox" name="gender" id="M" class="checkbox" onclick="toggleCheckbox(this)"> Masculino
-                        <input type="checkbox" name="gender" id="F" class="checkbox" onclick="toggleCheckbox(this)"> Femenino
+                <div class="infor">
+                    <label for="genero">Genero</label>
+                    <div class="metodos-pago">
+                        <div>
+                            <input type="checkbox" name="gender" id="M" class="checkbox" onclick="toggleCheckbox(this)"> &nbsp;Masculino
+                        </div>
+                        <div>
+                            <input type="checkbox" name="gender" id="F" class="checkbox" onclick="toggleCheckbox(this)"> &nbsp;Femenino
+                        </div>
                     </div>
-                    
+                </div>                
+                <div class="infor">
+                    <label for="telefono">Telefono</label>
+                    <input type="text" name="Telefono" id="Telefono" maxlength="12" placeholder="Ingresa tu teléfono">
                 </div>
-                <div class="movil">
-                    <p>Teléfono</p>
-                    <div class="cel">
-                        <input type="text" name="Telefono" id="Telefono" maxlength="12" placeholder="Ingresa tu teléfono">
-                    </div>
-                </div>
-                <div class="address">
-                    <p>Dirección</p>
+
+                <div class="infor">
+                    <label for="direccion">Dirección</label>
                     <input type="text" name="address" id="address" maxlength="150" placeholder="Ingresa tu dirección (máx. 150 caracteres)">
                 </div>
-                <div class="postal">
-                    <p>Código postal</p>
+                <div class="infor">
+                    <label for="codigo">Código postal</label>
                     <input type="text" name="CP" id="CP" maxlength="10" placeholder="Ingresa tu código postal">
                 </div>
-                
-                <div class="btn-form">
-                    <button type="submit" id="submit" class="verde">Confirmar</button>
-                    <button class="rojo">Cancelar</button>
-                </div>
+            </form>
+            <div class="btn-form">
+                <button type="submit" id="submit" class="CO">Registrar</button>
+                <button type="reset" class="CA">Cancelar</button>
             </div>
-        </div>
-        
-
+        </section>  
     </main>
     <footer></footer>
     <div class="derechos">
