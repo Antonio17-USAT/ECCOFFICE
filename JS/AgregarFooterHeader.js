@@ -15,8 +15,8 @@ var htmldropdown = /*html*/`
                     Nosotros
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="">Nuestra Historia</a></li>
-                    <li><a class="dropdown-item" href="#">Mision y Visión</a></li>
+                    <li><a class="dropdown-item" href="Historia.html">Nuestra Historia</a></li>
+                    <li><a class="dropdown-item" href="Mision-Vision.html">Mision y Visión</a></li>
                 </ul>
             </div>
             <div class="enlace">
@@ -25,8 +25,8 @@ var htmldropdown = /*html*/`
                     Contacto
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Mensaje</a></li>
-                    <li><a class="dropdown-item" href="#">Redes Sociales</a></li>
+                    <li><a class="dropdown-item" href="contacto.html">Mensaje</a></li>
+                    <li><a class="dropdown-item" href="redesSociales.html">Redes Sociales</a></li>
                 </ul>
             </div>
             <div class="enlace">
@@ -35,11 +35,11 @@ var htmldropdown = /*html*/`
                     Ayuda
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Centro de Ayuda</a></li>
-                    <li><a class="dropdown-item" href="#">Libro de Reclamaciones</a></li>
-                    <li><a class="dropdown-item" href="#">Preguntas Frecuentes</a></li>
-                    <li><a class="dropdown-item" href="#">Horarios de atencion</a></li>
-                    <li><a class="dropdown-item" href="#">Politicas de Privacidad</a></li>
+                    <li><a class="dropdown-item" href="Centro-Ayuda.html">Centro de Ayuda</a></li>
+                    <li><a class="dropdown-item" href="Libro.html">Libro de Reclamaciones</a></li>
+                    <li><a class="dropdown-item" href="Preguntas.html">Preguntas Frecuentes</a></li>
+                    <li><a class="dropdown-item" href="Horario.html">Horarios de atencion</a></li>
+                    <li><a class="dropdown-item" href="Politicas.html">Politicas de Privacidad</a></li>
                 </ul>
             </div>
         </div>
@@ -66,7 +66,7 @@ var htmlHeader = /*html*/`
 </div>
 
 <div class="icons">
-    <a href="" class="icon"><i class="fa-solid fa-cart-shopping fa-2xl"style="color: #000000;"></i></a>
+    <a href="#" class="icon"><i class="fa-solid fa-cart-shopping fa-2xl"style="color: #000000;"></i></a>
     <a href="listaDeseos.html" class="icon"><i class="fa-regular fa-heart fa-2xl"style="color: #000000;"></i></a>
     <a href="perfilNuevo.html" class="icon"><i class="fa-regular fa-user fa-2xl" style="color: #000000;"></i></a>
 </div>
@@ -88,27 +88,27 @@ var htmlFooter = /*html*/`
     <div class="Ayuda">
         <div class="titulo-div">Te ayudamos</div>
         <div class="varios">
-            <li><a href="">Centro de ayuda</a></li>
-            <li><a href="">Contacto</a></li>
-            <li><a href="">Preguntas Frecuentes</a></li>
+            <li><a href="Centro-Ayuda.html">Centro de ayuda</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="Preguntas.html">Preguntas Frecuentes</a></li>
         </div>
     </div>
 
     <div class="Empresa">
         <div class="titulo-div">Empresa</div>
         <div class="varios">
-                <li><a href="">Nuestra historia</a></li>
-                <li><a href="">Fundadores</a></li>
-                <li><a href="">Mision y Vision</a></li>
+                <li><a href="Historia.html">Nuestra historia</a></li>
+                <li><a href="fundadores.html">Fundadores</a></li>
+                <li><a href="Mision-Vision.html">Mision y Vision</a></li>
         </div>
     </div>
 
     <div class="Info">
         <div class="titulo-div">Informacion</div>
         <div class="varios">
-            <li><a href="">Politicas de privacidad</a></li>
-            <li><a href="">Horarios de atencion</a></li>
-            <li><a href="">Libro de Reclamaciones</a></li>
+            <li><a href="Politicas.html">Politicas de privacidad</a></li>
+            <li><a href="Horario.html">Horarios de atencion</a></li>
+            <li><a href="Libro.html">Libro de Reclamaciones</a></li>
         </div>
     </div>
 
@@ -117,15 +117,15 @@ var htmlFooter = /*html*/`
             <div class="varios">
                 <li class="item">
                     <i class="fa-brands fa-facebook fa-xl" style="color: #ffffff;"></i>
-                    <span><a href="">Facebook</a></span>
+                    <span><a href="https://www.facebook.com">Facebook</a></span>
                 </li>
                 <li class="item">
                     <i class="fa-brands fa-youtube fa-xl" style="color: #ffffff;"></i>
-                    <span><a href="">Youtube</a></span>
+                    <span><a href="https://www.youtube.com">Youtube</a></span>
                 </li>
                 <li class="item">
                     <i class="fa-brands fa-instagram fa-xl" style="color: #ffffff;"></i>
-                    <span><a href="">Instagram</a></span>
+                    <span><a href="https://www.instagram.com">Instagram</a></span>
                  </li>
             </div>
         </div>

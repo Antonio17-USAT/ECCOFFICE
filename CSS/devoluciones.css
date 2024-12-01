@@ -114,6 +114,51 @@ hr {
     color: black;
 }
 
+/* aca */
+.btnD {
+    background-color: #4BAA6E;
+    color: white;
+    border: solid 2px black;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btnD:hover ,.btn-barra:hover {
+    background-color: white;
+    border: 3px solid #b5f7cd;
+    color: black;
+}
+.btnD {
+    border-radius: 5px;
+    background-color: #4baa6e;
+    color: white;
+    font-size: 15px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnD a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.btnD:hover {
+    background-color: white;
+    color: black;
+}
+
+.btnD:hover a {
+    color: black;
+}
+
+
 /* Responsividad */
 
 /* Resolución: 1280px */
