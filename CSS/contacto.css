@@ -79,6 +79,7 @@ form {
     padding: 15px 0px ;
     gap: 25px;
     
+    
 } 
 .btn-form button{
     border-radius: 50px;
@@ -93,10 +94,19 @@ form {
     background-color: #4baa6e;
     color: white;
     font-size: 20px;
+    
+}
+.btn-form .CO a{
+    text-decoration: none;
+    color: #f9f9f9;
 }
 .btn-form .CO:hover{ 
     background-color: white;
     border: 3px solid #b5f7cd ;
+    color: black;
+}
+.btn-form .CO:hover a{
+    background-color: white;
     color: black;
 }
 hr{ 

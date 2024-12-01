@@ -96,6 +96,50 @@ main{
     color: black;
 }
 
+
+.botones .CA{
+    border-radius: 50px;
+    padding: 5px 30px ;
+    background-color: red;
+    color: white;
+    font-size: 15px;
+}
+.botones .CA:hover{ 
+    background-color: white;
+    border: 3px solid red ;
+    color: black; 
+}
+.btnD {
+    border-radius: 5px;
+    background-color: #4baa6e;
+    color: white;
+    font-size: 15px;
+    border: black solid 2px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnD a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.btnD:hover {
+    background-color: white;
+    color: black;
+}
+
+.btnD:hover a {
+    color: black;
+}
+
+
 /* Responsividad */
 
 /* Resolución: 1280px */

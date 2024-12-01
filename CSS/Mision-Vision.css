@@ -28,11 +28,81 @@ main{
     padding: 0px 20px;
 }
 .img img{ 
-    width: 700px;
+    width: 400px;
+    border: black solid 1px ;
 }
 .cajaV{ 
     display: flex;
 }
+/* Aqui hay animaciones */
+/* Animaciones generales */
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Títulos con rebote */
+.Titulo h3 {
+    animation: bounceIn 1s ease-out;
+}
+
+/* Textos descriptivos con desvanecimiento */
+.text p {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out 0.5s forwards;
+}
+
+/* Imágenes con deslizamiento */
+.cajaM .img img {
+    opacity: 0;
+    animation: slideInRight 1.2s ease-out forwards;
+}
+
+.cajaV .img img {
+    opacity: 0;
+    animation: slideInLeft 1.2s ease-out forwards;
+}
+
 
 @media (max-width: 1280px) {
     .Titulo h3{ 

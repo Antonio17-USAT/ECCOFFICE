@@ -47,19 +47,37 @@ main{
     margin-left: 10%;
 }
 
-.boton button {
+.btnD {
     border-radius: 50px;
     padding: 5px 40px;
     background-color: #4baa6e;
     color: white;
     font-size: 15px;
+    border: black solid 2px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.boton button:hover {
+.btnD a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.btnD:hover {
     background-color: white;
     border: 3px solid #b5f7cd;
     color: black;
 }
+
+.btnD:hover a {
+    color: black;
+}
+
 
 /*-------- RESPONSIVE DESIGN ----------*/
 
