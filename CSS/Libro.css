@@ -4,7 +4,6 @@ main{
 }
 .texto{
     padding: 0px 350px 0px 15px ;
-    border: 2px solid black;
 }
 .formulario2{
     border: 1px solid #4BAA6E;
@@ -14,7 +13,6 @@ main{
     width: 150%;
     text-align: justify;
     margin-top: 30px;
-    border: 2px solid black;
 }
 .info{
     gap: 5%;
@@ -174,12 +172,13 @@ main{
         align-content: center;
         justify-content: center;
         justify-items: center;
-        width: 250px;
-        margin-left: 210px;
+        width: 400px;
+        margin-right: -10px;
     }
     .formulario2{
         border: 1px solid #4BAA6E;
-        margin-left: 150px;
+        margin-left: 0px;
+        width: 100%;
     }
     .info{
         display: grid;
@@ -197,7 +196,49 @@ main{
         font-size: 12px;
     }
 }
-
+@media (max-width: 394px) {
+    main {
+        grid-template-columns: 1fr; 
+    }
+    .contenedor{ 
+        width: 70%;
+        display: grid;
+    }
+    .filtros{ 
+        display: grid;
+        grid-template-columns: auto auto ;
+        grid-template-rows: auto auto auto;
+        margin: 10px auto;
+        grid-gap: 8px ;
+    }
+    .texto{ 
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        width: 400px;
+        margin-right: -10px;
+    }
+    .formulario2{
+        border: 1px solid #4BAA6E;
+        margin-left: 0px;
+        width: 97%;
+    }
+    .info{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        font-size: 13px;
+    }
+    .msj{
+        width: 180px;
+    }
+    .botones button{
+        width: 150px;
+        padding: 6px 0px;
+    }
+    .caja-filtro button a{ 
+        font-size: 12px;
+    }
+}
 @media (max-width: 360px) {
     main {
         grid-template-columns: 1fr; 
@@ -217,8 +258,7 @@ main{
         align-content: center;
         justify-content: center;
         justify-items: center;
-        width: auto;
-        margin-left: 214px;
+        width: 105%;
     }
     .formulario2{
         display: grid;

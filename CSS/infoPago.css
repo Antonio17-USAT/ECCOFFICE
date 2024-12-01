@@ -54,13 +54,15 @@ form {
 }
 .metodos-pago {
     display: flex;
-    justify-content: space-evenly;
-    gap: 10px; /* Añade espacio entre los métodos de pago */
-    width: 100%; /* Asegura que el contenedor use todo el ancho disponible */
+    justify-content: space-around;
+    gap: 15px;
+    width: 60%; /* Asegura que el contenedor use todo el ancho disponible */
     margin-bottom: 15px;
+    padding-right: -20px;
 }
 
 .metodos-pago div {
+    margin-left: -65px;
     display: flex;
     align-items: center; /* Centra verticalmente los checkboxes y las imágenes */
     gap: 10px; /* Espacio entre el checkbox y la imagen */
@@ -145,17 +147,22 @@ form {
     .infor input[type="tel"] {
         width: 60%;
     }
+    
+    
     .metodos-pago {
-        flex-direction: row; /* En pantallas grandes, los elementos estarán en fila */
-        align-items: center; /* Centra verticalmente */
-        gap: 15px; /* Espacio entre cada método de pago */
-        width: 65%; /* Alinea con el ancho de los inputs del formulario */
+        display: flex;
+        justify-content: space-around;
+        gap: 15px;
+        width: 60%; /* Asegura que el contenedor use todo el ancho disponible */
+        margin-bottom: 15px;
+        padding-right: -20px;
     }
+    
     .metodos-pago div {
-        margin-right: 90px;
-        margin-left: 0px;
-        width: 30px;
-        height: auto;
+        margin-left: -45px;
+        display: flex;
+        align-items: center; /* Centra verticalmente los checkboxes y las imágenes */
+        gap: 10px; /* Espacio entre el checkbox y la imagen */
     }
     .btn-form{
         display: flex;
@@ -206,7 +213,6 @@ form {
         gap: 25px;
     } 
 }
-
 @media (max-width: 570px) {
     main {
         padding: 15px;
@@ -225,6 +231,10 @@ form {
     }
 
     .infor label {
+        display: flex;
+        justify-content:right;
+        font-weight: bold;
+        font-size: 13px;
         width: 80%;
     }
 
@@ -260,7 +270,63 @@ form {
         font-size: 20px;
     }
 }
+@media (max-width: 394px) {
+    main {
+        padding: 15px;
+    }
 
+    section {
+        width: 130%;
+        padding: 10px;
+    }
+
+    .infor {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        font-size: 16px;
+    }
+
+    .infor label {
+        display: flex;
+        justify-content:right;
+        font-weight: bold;
+        font-size: 13px;
+        width: 92%;
+    }
+
+    .infor input[type="text"],
+    .infor input[type="email"],
+    .infor input[type="password"],
+    .infor input[type="tel"] {
+        width: 100%;
+        font-size: 16px;
+
+    }
+    .metodos-pago {
+        flex-direction: column; /* En pantallas grandes, los elementos estarán en fila */
+        align-items: flex-start; /* Centra verticalmente */
+        gap: 15px; /* Espacio entre cada método de pago */
+        width: 100%; /* Alinea con el ancho de los inputs del formulario */
+    }
+    .metodos-pago div {
+        margin-right: 50px;
+        margin-left: 0px;
+        width: 30px;
+        height: auto;
+    }
+    .btn-form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 0px ;
+        width: 100%;
+    } 
+    .btn-form .CO, .btn-form .CA {
+        font-size: 18px;
+        padding: 6px;
+    }
+}
 @media (max-width: 360px) {
     main {
         padding: 10px;
