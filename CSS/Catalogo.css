@@ -3,7 +3,7 @@
 main{ 
     grid-area: main; 
     display: grid;
-    grid-template-columns: repeat(2, 25% 75%);  
+    grid-template-columns: repeat(2, 25% 75%);
     background-color:  white;
 }
 main .filtros{ 
@@ -11,7 +11,7 @@ main .filtros{
     width: 100%;
     text-align:left ;
     font-size: 25px;
-   
+ 
 } 
 nav{ 
    background-color: #d3f7cd;
@@ -22,7 +22,7 @@ nav{
    margin-top: 2%;
    margin-bottom: 5%;
    position: fixed;
-  
+
 }
 
 .lista{
@@ -61,7 +61,7 @@ nav{
     display: block;
     text-decoration: none;
     margin: 0px;
-  
+
 } 
 .lista_dentro{ 
     text-align: left;
@@ -85,13 +85,13 @@ main .productos {
    text-align: center;
     margin: 30px auto;
     padding: 50px auto;
-    
+  
 } 
 .product-catalog {
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
-    padding: 30px auto;
+    padding: 0px;
     flex: 1; 
     width: 100%;
 }
@@ -99,7 +99,7 @@ main .productos {
 .product-card {
     width: 300px;
     height: auto;
-    padding: 10px auto;
+    padding: 10px 10px;
     background-color: #fff;
     border: 1px solid #ddd;
     text-align: center;
@@ -111,7 +111,7 @@ main .productos {
     width: 300px;
     height: 200px;
     margin-bottom: 10px;
-   
+ 
 }
 .descripcion{ 
     text-align: start;
@@ -219,5 +219,81 @@ main .productos {
     .view-button {
         font-size: 12px;
         padding: 5px 10px;
+    }
+}
+
+
+
+/* Estilo general para el cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Contenedor de productos */
+#listaProductos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* Estilo de cada tarjeta del producto */
+.producto {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+/* Efecto de hover en la tarjeta */
+.producto:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo de la imagen en la tarjeta */
+.producto img {
+    width: 100%;
+    height: auto;
+    max-height: 120px;
+    object-fit: contain;
+}
+
+/* Títulos y texto dentro de la tarjeta */
+.producto h5 {
+    margin: 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.producto p {
+    margin: 10px;
+    color: #666;
+}
+
+/* Estilo para enlaces */
+.producto a {
+    text-decoration: none;
+}
+
+/* Media queries para ajustar el diseño en pantallas más pequeñas */
+@media (max-width: 600px) {
+    #listaProductos {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    #listaProductos {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas medianas */
+    }
+}
+
+@media (min-width: 901px) {
+    #listaProductos {
+        grid-template-columns: repeat(3, 1fr); /* Tres columnas en pantallas grandes */
     }
 }

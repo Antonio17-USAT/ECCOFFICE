@@ -6,7 +6,8 @@ var htmldropdown = /*html*/`
                     Catalogo
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Carrito</a></li>
+                    <li><a class="dropdown-item" href="Catalogo.html">Catalogo</a></li>
+                    <li><a class="dropdown-item" href="Carrito.html">Carrito</a></li>
                 </ul>
             </div>
             <div class="enlace">
@@ -66,7 +67,7 @@ var htmlHeader = /*html*/`
 </div>
 
 <div class="icons">
-    <a href="#" class="icon"><i class="fa-solid fa-cart-shopping fa-2xl"style="color: #000000;"></i></a>
+    <a href="Carrito.html" class="icon"><i class="fa-solid fa-cart-shopping fa-2xl"style="color: #000000;"></i></a>
     <a href="listaDeseos.html" class="icon"><i class="fa-regular fa-heart fa-2xl"style="color: #000000;"></i></a>
     <a href="perfilNuevo.html" class="icon"><i class="fa-regular fa-user fa-2xl" style="color: #000000;"></i></a>
 </div>

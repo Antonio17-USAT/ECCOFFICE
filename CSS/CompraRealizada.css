@@ -1,0 +1,32 @@
+.contenedor-compra-realizada {  
+    display: flex;  
+    flex-direction: column;  
+    align-items: center;  
+    justify-content: center;  
+    text-align: center;  
+    margin: 50px auto;  
+    padding: 20px;  
+    border: 2px solid #28a745; /* Color verde para resaltar el éxito */  
+    background-color: #e9f7ef; /* Fondo suave */  
+    border-radius: 10px;  
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  
+    max-width: 600px;  
+}  
+
+.contenedor-compra-realizada h1 {  
+    color: #28a745; /* Verde para el título */  
+    margin-bottom: 10px;  
+    font-size: 2em;  
+}  
+
+.contenedor-compra-realizada h2 {  
+    color: #333; /* Color gris oscuro para el subtítulo */  
+    margin-bottom: 20px;  
+    font-size: 1.5em;  
+}  
+
+.contenedor-compra-realizada img {  
+    max-width: 100%; /* Hacer la imagen responsiva */  
+    height: auto;  
+    border-radius: 5px; /* Bordes redondeados para la imagen */  
+}
