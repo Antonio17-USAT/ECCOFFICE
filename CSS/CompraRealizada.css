@@ -26,7 +26,7 @@
 }  
 
 .contenedor-compra-realizada img {  
-    max-width: 100%; /* Hacer la imagen responsiva */  
+    max-width: 50%; /* Hacer la imagen responsiva */  
     height: auto;  
     border-radius: 5px; /* Bordes redondeados para la imagen */  
 }

@@ -1,5 +1,5 @@
 var htmlBarraLateral = /*html*/`
-    <button class="S"><a href="pagina1.html">Perfil</a></button>
+    <button class="S"><a href="perfilNuevo.html">Perfil</a></button>
     <div class="menu-group">
         <button class="menu-btn dropdown-btn">Compras ▼</button>
         <div class="dropdown-content">

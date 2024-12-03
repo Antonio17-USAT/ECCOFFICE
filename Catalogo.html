@@ -4,110 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalogo</title>   
-    <link rel="stylesheet" href="CSS/comun.css">
-    <link rel="stylesheet" href="CSS/Catalogo.css">
+    <title>Catalogo</title>
+
+        <link rel="stylesheet" href="CSS/comun.css">
+        <link rel="stylesheet" href="CSS/Catalogo.css">
+        <link rel="stylesheet" href="CSS/filtro.css">
 </head>
 
 <body>
     <header class="header"></header>
     <div class="dropdown"></div>
     <main>
-        <div class="filtros">
-            <nav>
-                <ul class="lista">
-                    <li class="item-open">
-                        <div class="item-boton">
-                            <a href="" class="nav-link">Inicio</a>
-                        </div>
-                    </li>
-                    <li class="item-open">
-                        <div class="item-boton">
-                            <a href="" class="nav-link">Tipo de Produto</a>
-                        </div>
-                        <ul class="lista_show">
-                            <li class="lista_dentro">
-                                <a href="" class="nav-link-dentro">Cuadernos</a>
-                            </li>
-                            <li class="lista_dentro">
-                                <a href="" class="nav-link-dentro">Lapices</a>
-                            </li>
-                            <li class="lista_dentro">
-                                <a href="" class="nav-link-dentro">Libretas</a>
-                            </li>
-                            <li class="lista_dentro">
-                                <a href="" class="nav-link-dentro">Notas adhesivas</a>
-                            </li>
-                            <li class="lista_dentro">
-                                <a href="" class="nav-link-dentro">Archivadores</a>
-                            </li>
-                            <li class="lista_dentro">
-                                <a href="" class="nav-link-dentro">Borradores</a>
-                            </li>
-                            <li class="lista_dentro">
-                                <a href="" class="nav-link-dentro">Clips</a>
-                            </li>
-                            <li class="lista_dentro">
-                                <a href="" class="nav-link-dentro">Sobres</a>
-                            </li>
-                            <li class="lista_dentro">
-                                <a href="" class="nav-link-dentro">Potadocumentos</a>
-                            </li>
-                            <li class="lista_dentro">
-                                <a href="" class="nav-link-dentro">Borradores de Pizarra</a>
-                            </li>
-                            <li class="lista_dentro">
-                                <a href="" class="nav-link-dentro">Tijeras</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="item-open">
-                        <div class="item-boton">
-                            <a href="" class="nav-link">Material</a>
-                        </div>
-                        <ul class="lista_show">
-                            <li class="lista_dentro">
-                                <a href="" class="nav-link-dentro">Papel</a>
-                            </li>
-                            <li class="lista_dentro">
-                                <a href="" class="nav-link-dentro">Carton</a>
-                            </li>
-                            <li class="lista_dentro">
-                                <a href="" class="nav-link-dentro">Madera</a>
-                            </li>
-                            <li class="lista_dentro">
-                                <a href="" class="nav-link-dentro">Metal</a>
-                            </li>
-                            <li class="lista_dentro">
-                                <a href="" class="nav-link-dentro">Otros</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="item-open">
-                        <div class="item-boton">
-                            <a href="" class="nav-link">Calificación</a>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
+        <button class="toggle-sidebar btn d-lg-none"
+            style="background-color: var(--teal-500); color: black; border: 1px solid black;" id="menu">
+            ☰ Menú
+        </button>
+        <div class="sidebar" id="sidebar">
+
         </div>
         <div class="productos">
             <h3>LOS MEJORES PRODUCTOS A BASE DE RECICLAJE</h3>
             <section class="product-catalog" id="listaProductos">
             </section>
         </div>
+
+
     </main>
     <footer></footer>
     <div class="derechos">
         <h3>Todos los derechos reservados, © Lambayeque, Perú 2024</h3>
     </div>
     <script>
-        var sitio_js="catalogo"
+        var sitio_js = "catalogo"
     </script>
     <script src="JS/AgregarFooterHeader.js"></script>
-    <script src="JS/bootstrap.bundle.min.js"></script> 
+    <script src="JS/bootstrap.bundle.min.js"></script>
     <script src="JS/TiendaCompleta.js"></script>
-    
+    <script src="JS/AgregarBarraLateralCatalogo.js"></script>
+    <script src="JS/menuMostrar.js"></script>
+
+
 </body>
 
 </html>
