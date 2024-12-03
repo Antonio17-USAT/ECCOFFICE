@@ -43,7 +43,7 @@ if (typeof sitio_js !== 'undefined') {
         const productoIndex = urlParams.get('producto');
         const producto = productos[productoIndex];
         const contenedorInfo = document.querySelector('.contenedor-info-producto');
-      
+
         const infoHTML = `
             <div class="producto-detalle">
                 <img src="${producto.ruta_imagen}" alt="${producto.nombre}" />
@@ -58,14 +58,14 @@ if (typeof sitio_js !== 'undefined') {
             </div>
         `;
         contenedorInfo.innerHTML = infoHTML;
-  
+
         const btnAgregar = document.getElementById(`btnAgregar${productoIndex}`);
         const btnIncrementar = document.getElementById(`btnIncrementar${productoIndex}`);
         const btnDecrementar = document.getElementById(`btnDecrementar${productoIndex}`);
         const spanCantidad = document.getElementById(`cantidad${productoIndex}`);
-  
+
         let cantidadActual = 1;
-  
+
         btnIncrementar.addEventListener('click', () => {
             if (cantidadActual < producto.stock) {
                 cantidadActual++;
@@ -74,14 +74,14 @@ if (typeof sitio_js !== 'undefined') {
                 alert('No puede exceder el stock disponible');
             }
         });
-  
+
         btnDecrementar.addEventListener('click', () => {
             if (cantidadActual > 1) {
                 cantidadActual--;
                 spanCantidad.textContent = cantidadActual;
             }
         });
-  
+
         btnAgregar.addEventListener('click', () => {
             añadirAlCarrito(productoIndex, cantidadActual);
             alert(`Se ha agregado ${cantidadActual} unidad(es) de ${producto.nombre} al carrito.`);
@@ -100,16 +100,22 @@ if (typeof sitio_js !== 'undefined') {
             const rowHTML = `
                 <div class="producto-carrito" producto-id="${index}">
                     <img src="${item.ruta_imagen}" alt="${item.nombre}" />
-                    <div>
+                    <div  class="detalle">
                         <h5>${item.nombre}</h5>
                         <p>${item.descripcion}</p>
+                    </div>
+                    <div class="boton">
+                      <div>
                         <button class="btn-decrementar" data-producto="${index}">-</button>
                         <span class="cantidad">${item.cantidadComprada}</span>
                         <button class="btn-incrementar" data-producto="${index}">+</button>
-                        <button class="btnEliminar" data-nombre="${item.nombre}">Eliminar</button>
+                      </div> 
+                        <div>
+                             <p>S/. ${totalProducto.toFixed(2)}</p>       
+                        </div>
+                        <div class="boton">
+                         <button class="btnEliminar" data-nombre="${item.nombre}">Eliminar</button>
                     </div>
-                    <div>
-                        <p>S/. ${totalProducto.toFixed(2)}</p>
                     </div>
                 </div>
             `;
@@ -118,13 +124,18 @@ if (typeof sitio_js !== 'undefined') {
 
         total += costoEnvio;
 
-        const resumenHTML = `
+        const resumenHTML = 
+        `   <h3>Resumen</h3>
+            <hr>
             <p>Costo total de productos: S/. ${total.toFixed(2)}</p>
             <p>Cant.: (${carrito.reduce((acc, curr) => acc + curr.cantidadComprada, 0)})</p>
             <p>Costo de envío: S/. ${costoEnvio.toFixed(2)}</p>
             <hr>
             <p>Total: S/. ${total.toFixed(2)}</p>
+            <div class="botones">
             <button id="btnComprar">Comprar</button>
+            </div>
+            
         `;
         resumen.innerHTML = resumenHTML;
 

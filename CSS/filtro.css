@@ -1,0 +1,77 @@
+/*css filtro nuevo */
+/* Botones del filtro */
+.filtro-boton {
+  background-color: #b5f7cd;
+  color: black;
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  width: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 10px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.filtro-boton:hover {
+  background-color: #4BAA6E;
+  color: white;
+}
+
+/* Contenedor principal del filtro */
+.filtro-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Títulos de las secciones del filtro */
+.filtro-container h3 {
+  font-size: 17px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: black;
+}
+
+/* Input para rango de precio */
+.filtro-container input[type="range"] {
+  width: 200px;
+  margin: 10px 0;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  background: #b5f7cd;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+.filtro-container input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #4BAA6E;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.filtro-container input[type="range"]::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  background: #4BAA6E;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Espaciado entre botones y elementos */
+.filtro-container button + button,
+.filtro-container h3 + button,
+.filtro-container h3 + input {
+  margin-top: 10px;
+}
