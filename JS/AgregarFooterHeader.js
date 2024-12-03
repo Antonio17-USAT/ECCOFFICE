@@ -52,27 +52,27 @@ var htmldropdown = /*html*/`
         </div>
 
 `
-
 var htmlHeader = /*html*/`
 <div class="he1">
-<div class="logo">
-    <img src="Img/pinguino drogo.png" alt="ECCOFFICE Logo" class="logo-img">
-    <span class="logo-text"><strong>ECCOFFICE</strong></span>
-</div>
-<div class="caja-busqueda">
-    <div class="barra-busqueda">
-        <input type="text" placeholder="Buscar producto">
-        <span class="icono">Q</span>
+    <div class="logo">
+        <a href="inicio.html" style:"text-decoration:none"> 
+            <img src="Img/pinguino drogo.png" alt="ECCOFFICE Logo" class="logo-img">
+            <span class="logo-text"><strong>ECCOFFICE</strong></span>
+        </a>
     </div>
-</div>
+    <div class="caja-busqueda">
+        <div class="barra-busqueda">
+            <input type="text" placeholder="Buscar producto">
+            <span class="icono">Q</span>
+        </div>
+    </div>
 
-<div class="icons">
-    <a href="Carrito.html" class="icon"><i class="fa-solid fa-cart-shopping fa-2xl"style="color: #000000;"></i></a>
-    <a href="listaDeseos.html" class="icon"><i class="fa-regular fa-heart fa-2xl"style="color: #000000;"></i></a>
-    <a href="perfilNuevo.html" class="icon"><i class="fa-regular fa-user fa-2xl" style="color: #000000;"></i></a>
-</div>
-</div>
-`
+    <div class="icons">
+        <a href="Carrito.html" class="icon"><i class="fa-solid fa-cart-shopping fa-2xl" style="color: #000000;"></i></a>
+        <a href="listaDeseos.html" class="icon"><i class="fa-regular fa-heart fa-2xl" style="color: #000000;"></i></a>
+        <a href="perfilNuevo.html" class="icon"><i class="fa-regular fa-user fa-2xl" style="color: #000000;"></i></a>
+    </div>
+</div>`
 
 var htmlFooter = /*html*/`
 <div class="caja-footer">
