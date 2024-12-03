@@ -14,3 +14,6 @@ body {
     font-family: Arial, sans-serif;
     
 }
+.logo a, .icons a{
+    text-decoration: none;
+}

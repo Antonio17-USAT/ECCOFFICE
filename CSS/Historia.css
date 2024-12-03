@@ -36,7 +36,7 @@ main{
     justify-items: center; 
     align-content: center;
 }
-.img{ 
+.cimg{ 
     display: flex; 
     align-items: center;
     justify-content: center;
@@ -45,7 +45,7 @@ main{
     padding: 20px 10px;
 }
 
-.img img{ 
+.cimg img{ 
     width: 500px;
     height: 350px;
 }
@@ -79,15 +79,13 @@ main{
     color: white;
     color: black;
 }
-img{
-    width: 100%;
-}
-.img{
+
+.cimg{
     width: 100%;
     transition: all 1s;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
-.img:hover{
+.cimg:hover{
     clip-path: polygon(50% 0,100% 50%, 50% 100%, 0 50%);
 }
 /* Animacion: */
@@ -119,7 +117,7 @@ img{
     animation: fadeInLeft 1s ease-in-out;
 }
 
-.cont-img .img img {
+.cont-img .cimg img {
     opacity: 0;
     animation: zoomIn 1.2s ease-in-out 0.5s forwards;
 }
@@ -157,10 +155,10 @@ img{
         width: 70%;
         display: grid;
     }
-    .img{ 
+    .cimg{ 
         padding: 50px 10px;
     }
-    .img img{ 
+    .cimg img{ 
         width: 800px;
         height: 400px;
     }
@@ -177,10 +175,10 @@ img{
         width: 60%;
         display: grid;
     }
-    .img{ 
+    .cimg{ 
         padding: 50px 10px;
     }
-    .img img{ 
+    .cimg img{ 
         width: 650px;
         height: 400px;
     }
@@ -200,10 +198,10 @@ img{
     .Text p{ 
         font-size: 20px;
     }
-    .img{ 
+    .cimg{ 
         padding: 50px 10px;
     }
-    .img img{ 
+    .cimg img{ 
         width: 380px;
         height: 300px;
     }
@@ -223,10 +221,10 @@ img{
     .Text p{ 
         font-size: 20px;
     }
-    .img{ 
+    .cimg{ 
         padding: 50px 10px;
     }
-    .img img{ 
+    .cimg img{ 
         width: 350px;
         height: 300px;
     }
@@ -246,10 +244,10 @@ img{
     .Text p{ 
         font-size: 17px;
     }
-    .img{ 
+    .cimg{ 
         padding: 50px 10px;
     }
-    .img img{ 
+    .cimg img{ 
         width: 300px;
         height: 250px;
     }
