@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizada</title>
+ 
+    <link rel="stylesheet" href="CSS/comun.css">
+    <link rel="stylesheet" href="CSS/Barra-Lateral.css">
+    <link rel="stylesheet" href="CSS/personalizada.css">
+</head>
+
+<body>
+    <header class="header"></header>
+    <div class="dropdown"></div>
+    <main>
+        <div class="contenedor">
+            
+            <div class="personalizar-productos">
+                <!-- Banner o mensaje de bienvenida -->
+                <div class="mensaje-bienvenida">
+                    <h2>Bienvenido a la página de Personalización</h2>
+                    <p>Elige el producto, sube tu logo y selecciona una temática especial para tu marca.</p>
+                </div>
+        
+                <!-- Selección del Producto a Personalizar -->
+                <div class="producto-seleccionado">
+                    <h3>Selecciona un producto para personalizar</h3>
+                    <div class="productos-galeria">
+                        <div class="producto">
+                            <img src="Img/clips.jpg" alt="Producto 1">
+                            <button class="btn-seleccionar">Seleccionar Producto</button>
+                        </div>
+                        <div class="producto">
+                            <img src="Img/archivadores_carton.jpg" alt="Producto 2">
+                            <button class="btn-seleccionar">Seleccionar Producto</button>
+                        </div>
+                        
+                        <!-- Más productos -->
+                    </div>
+                </div>
+        
+                <!-- Cargar Logo -->
+                <div class="subir-logo">
+                    <h3>Sube tu logo</h3>
+                    <input type="file" id="logo" name="logo" accept=".png, .jpg, .svg">
+                    <p>Formato recomendado: PNG o SVG</p>
+                    <div id="vista-previa-logo"><img src="Img/pinguino drogo verde.png" alt="ALARAKO"></div>
+                </div>
+        
+                <!-- Elección de Temática de Marca -->
+                <div class="eleccion-tematica">
+                    <h3>Elige una temática para tu marca</h3>
+                    <select name="tematica" id="tematica">
+                        <option value="ecologica">Ecológica</option>
+                        <option value="minimalista">Minimalista</option>
+                        <option value="moderna">Moderna</option>
+                        <!-- Más opciones -->
+                    </select>
+                    <div id="vista-previa-tematica"></div>
+                </div>
+        
+                <!-- Agregar Texto Personalizado -->
+                <div class="texto-personalizado">
+                    <h3>Agrega un mensaje o lema</h3>
+                    <input type="text" placeholder="Escribe tu mensaje aquí" id="texto">
+                </div>
+        
+                <!-- Vista Previa Interactiva -->
+                <div class="vista-previa">
+                    <h3>Vista Previa de tu Producto</h3>
+                    <div class="producto-3d" id="producto-3d">
+                        <img src="Img/Libreta-Pinguinesca.jpeg" alt="ALARAKO">
+                    </div>
+                </div>
+                
+                <!-- Botones de Acción -->
+                <div class="acciones">
+                    <button class="btn-guardar">Guardar Personalización</button>
+                    <button class="btn-ver-carrito">Ver Carrito</button>
+                    <button class="btn-finalizar">Finalizar Compra</button>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    
+    <footer></footer>
+    <div class="derechos">
+        <h3>Todos los derechos reservados, © Lambayeque, Perú 2024</h3>
+    </div>
+    
+    <!-- Se agrego -->
+   
+    <script src="JS/AgregarFooterHeader.js"></script>
+    <script src="JS/menuMostrar.js"></script>
+    <script src="JS/bootstrap.bundle.min.js"></script> 
+
+   
+    
+</body>
+
+</html>

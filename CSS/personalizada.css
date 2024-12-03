@@ -1,0 +1,668 @@
+/* Estilos generales */
+main {
+    padding: 10px 10px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 15px 0;
+}
+
+/* Sección de personalización de productos------------------------------- */
+.personalizar-productos {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border: solid  #4BAA6E 1px;
+    border-radius: 5px;
+    padding: 5%;
+}
+.personalizar-productos .producto-seleccionado,
+.personalizar-productos .subir-logo,
+.personalizar-productos .eleccion-tematica,
+.personalizar-productos .texto-personalizado,
+.personalizar-productos .vista-previa
+{
+    border: solid  #4BAA6E 1px;
+    border-radius: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.mensaje-bienvenida {
+    text-align: center;
+}
+/* ACA */
+.producto-seleccionado {
+    display: flex;
+    flex-direction: column;
+}
+
+.producto-seleccionado h3 {
+    text-align: center;
+}
+
+.productos-galeria {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-items: center;
+}
+
+.producto {
+    width: 200px;
+    text-align: center;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    border: solid #4BAA6E 1px;
+    border-radius: 5px;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+/* Efecto de aumento de imagen al pasar el mouse */
+.producto img:hover {
+    transform: scale(1.2); /* Aumenta el tamaño al 120% */
+}
+
+.btn-seleccionar {
+    background-color: #4BAA6E;
+    color: white;
+    border: solid black 1px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-seleccionar:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid #4BAA6E;
+}
+
+
+
+/* Subir logo-------------------------------------------------- */
+/* Contenedor de la sección de subir logo */
+.subir-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center; /* Centra todos los elementos horizontalmente */
+    justify-content: center; /* Centra todos los elementos verticalmente */
+}
+
+/* Estilo para las imágenes dentro de .subir-logo (si las hubiera) */
+.subir-logo div{
+    width: 300px;
+    height: 300px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.subir-logo div img {
+    width: 250px;  /* Asegura que la imagen ocupe todo el ancho disponible */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    border: solid #4BAA6E 1px;
+}
+
+/* Vista previa del logo */
+/* Estilo para la vista previa del logo-*------------------- */
+#vista-previa-logo {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+    border: solid black 1px;
+    margin-top: 10px;
+}
+
+/* Estilo para la imagen dentro de la vista previa */
+#vista-previa-logo img {
+    max-width: 100%;  /* Ajusta la imagen al tamaño del contenedor */
+    max-height: 100%; /* Ajusta la imagen al tamaño del contenedor */
+    object-fit: contain; /* Mantiene la proporción de la imagen */
+    transition: transform 0.3s ease-in-out; /* Transición suave cuando la imagen cambia */
+}
+
+/* Efecto hover para agrandar la imagen */
+#vista-previa-logo img:hover {
+    transform: scale(1.2); /* Aumenta el tamaño de la imagen al 120% */
+}
+
+/* Aseguramos que la imagen dentro de vista-previa-logo se ajuste bien */
+#vista-previa-logo img {
+    max-width: 100%;  /* Asegura que la imagen no sobrepase el tamaño del contenedor */
+    max-height: 100%; /* Asegura que la imagen no sobrepase el tamaño del contenedor */
+    object-fit: contain; /* Mantiene la proporción de la imagen */
+}
+
+/* Centraliza el contenedor principal */
+.eleccion-tematica,
+.texto-personalizado,
+.vista-previa,
+.acciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+
+/* Elección de temática----------------------- */
+.eleccion-tematica select {
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%; /* Ajusta el tamaño según lo que desees */
+    max-width: 500px; /* Limita el tamaño máximo */
+    background-color: #b5f7cd; /* Color de fondo */
+    color: black; /* Color del texto */
+    border: none;
+    font-size: 25px; /* Elimina el borde predeterminado */
+}
+
+/* Estilo cuando el select está enfocado (para mantener la estética) */
+.eleccion-tematica select:focus {
+    outline: none; /* Quita el borde azul por defecto */
+    background-color: #b5f7cd; /* Color de fondo */
+    color: black; /* Cambia el color de fondo al hacer foco */
+}
+
+/* Texto personalizado------------------------------------- */
+.texto-personalizado{
+    padding-bottom: 5px;
+}
+.texto-personalizado input {
+    padding: 10px;
+    width: 100%; /* Ajusta el tamaño según lo que desees */
+    max-width: 500px; /* Limita el tamaño máximo */
+    border-radius: 5px;
+    border: 1px solid black;
+    color: #4BAA6E;
+}
+
+/* Vista previa interactiva--------------------------------------- */
+.vista-previa {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.producto-3d {
+    width: 300px;
+    height: 300px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.producto-3d img {
+    width: 250px;
+    height: 250px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+    border: solid #4BAA6E 1px;
+    margin-top: 10px;
+    transition: transform 0.3s ease; /* Suaviza la transición */
+}
+
+/* Efecto de transform cuando el mouse pasa por encima */
+.producto-3d img:hover {
+    transform: scale(1.2); /* Aumenta el tamaño de la imagen al 120% */
+}
+
+
+/* Botones de acción------------------------------------------------------- */
+.acciones {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3,auto);
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que los botones se acomoden mejor en pantallas más pequeñas */
+    gap: 30px;
+}
+
+.btn-guardar,
+.btn-ver-carrito,
+.btn-finalizar {
+    background-color: #4BAA6E;
+    color: white;
+    border: solid black 1px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-guardar:hover,
+.btn-ver-carrito:hover,
+.btn-finalizar:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid #4BAA6E;
+}
+/* Productos-galeria base */
+.productos-galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas por defecto */
+    gap: 20px;
+    justify-items: center; /* Alinea los items horizontalmente al centro */
+    align-items: center; /* Alinea los items verticalmente al centro */
+}
+
+/* Producto */
+.producto {
+    display: flex;
+    flex-direction: column; /* Coloca la imagen y el botón en columna */
+    align-items: center; /* Alinea todos los elementos al centro */
+    text-align: center; /* Centra el texto dentro del producto */
+    gap: 10px; /* Espaciado entre imagen y botón */
+    width: 100%; /* Asegura que el contenedor ocupe todo el espacio disponible */
+}
+
+/* Imagen dentro del producto */
+.producto img {
+    width: 150px; /* Ajuste base para las imágenes */
+    height: auto; /* Mantiene la proporción */
+    border: solid 1px #4BAA6E; /* Bordes uniformes */
+    border-radius: 5px;
+    transition: transform 0.3s ease; /* Efecto de hover */
+}
+
+.producto img:hover {
+    transform: scale(1.1); /* Efecto de agrandamiento */
+}
+
+/* Botón dentro del producto */
+.btn-seleccionar {
+    background-color: #4BAA6E;
+    color: white;
+    border: solid 1px #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    max-width: 180px; /* Botones uniformes */
+    text-align: center;
+}
+
+.btn-seleccionar:hover {
+    background-color: white;
+    color: #4BAA6E;
+    border: 2px solid #4BAA6E;
+}
+/* Producto */
+.producto {
+    display: flex;
+    flex-direction: column; /* Coloca la imagen y el botón en columna */
+    align-items: center; /* Alinea todos los elementos al centro */
+    text-align: center; /* Centra el texto dentro del producto */
+    gap: 10px; /* Espaciado entre imagen y botón */
+    width: 100%; /* Asegura que el contenedor ocupe todo el espacio disponible */
+}
+
+/* Botón dentro del producto */
+/* Botón dentro del producto */
+.btn-seleccionar {
+    background-color: #4BAA6E;
+    color: white;
+    border: solid 1px #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: auto; /* El ancho será el contenido del texto */
+    max-width: 180px; /* Limita el ancho máximo */
+    text-align: center; /* Centra el texto */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    overflow: hidden; /* Esconde el texto si se desborda */
+    text-overflow: ellipsis; /* Añade puntos suspensivos si el texto es muy largo */
+}
+
+/* Botón hover */
+.btn-seleccionar:hover {
+    background-color: white; /* Color de fondo negro */
+    color: black; /* El texto sigue siendo blanco */
+    border: 2px solid #4BAA6E; /* Mantiene el borde verde */
+}
+
+/* Responsividad */
+
+/* Resolución: 1280px */
+@media (max-width: 1280px) {
+    .productos-galeria {
+        gap: 5px;
+    }
+
+    .producto {
+        width: 100%;
+    }
+
+    .producto img {
+        width: 200px; /* Ajusta el ancho de la imagen */
+        height: auto; /* Mantiene la proporción de la imagen */
+        object-fit: contain; /* Mantiene la imagen dentro del contenedor sin deformarse */
+    }
+
+    .btn-seleccionar {
+        padding: 4px 8px;
+    }
+    .subir-logo input[type="file"]{
+        width: 580px;
+    }
+    .texto-personalizado input[type="text"]{
+        width: 550px;
+    }
+
+    #vista-previa-logo {
+        width: 300px;
+        height: 300px;
+    }
+    .vista-previa div img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .eleccion-tematica select {
+        width: 400px;
+    }
+    .btn-seleccionar {
+        color: white;
+        cursor: pointer;
+        font-size: 14px;
+        width: auto; /* El ancho será el contenido del texto */
+        max-width: 180px; /* Limita el ancho máximo */
+        text-align: center; /* Centra el texto */
+        white-space: nowrap; /* Evita que el texto se divida en varias líneas 
+        overflow: hidden; /* Esconde el texto si se desborda */
+        text-overflow: ellipsis; /* Añade puntos suspensivos si el texto es muy largo */
+    }
+}
+
+/* Resolución: 990px */
+@media (max-width: 990px) {
+    .productos-galeria {
+        gap: 5px;
+    }
+
+    .producto {
+        width: 100%;
+    }
+
+    .producto img {
+        width: 200px; /* Ajusta el ancho de la imagen */
+        height: auto; /* Mantiene la proporción de la imagen */
+        object-fit: contain; /* Mantiene la imagen dentro del contenedor sin deformarse */
+    }
+
+    .btn-seleccionar {
+        padding: 4px 8px;
+    }
+    .subir-logo input[type="file"]{
+        width: 580px;
+    }
+    .texto-personalizado input[type="text"]{
+        width: 550px;
+    }
+
+    #vista-previa-logo {
+        width: 300px;
+        height: 300px;
+    }
+    .vista-previa div img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .eleccion-tematica select {
+        width: 400px;
+    }
+    .btn-seleccionar {
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+        width: auto; /* El ancho será el contenido del texto */
+        max-width: 180px; /* Limita el ancho máximo */
+        text-align: center; /* Centra el texto */
+        white-space: nowrap; /* Evita que el texto se divida en varias líneas 
+        overflow: hidden; /* Esconde el texto si se desborda */
+        text-overflow: ellipsis; /* Añade puntos suspensivos si el texto es muy largo */
+    }
+}
+
+/* Resolución: 768px */
+@media (max-width: 768px) {
+    .productos-galeria {
+        gap: 5px;
+    }
+
+    .producto {
+        width: 100%;
+    }
+
+    .producto img {
+        width: 180px; /* Ajusta el ancho de la imagen */
+        height: auto; /* Mantiene la proporción de la imagen */
+        object-fit: contain; /* Mantiene la imagen dentro del contenedor sin deformarse */
+    }
+
+    .btn-seleccionar {
+        padding: 4px 8px;
+    }
+    .subir-logo input[type="file"]{
+        width: 480px;
+    }
+    .texto-personalizado input[type="text"]{
+        width: 450px;
+    }
+
+    #vista-previa-logo {
+        width: 300px;
+        height: 300px;
+    }
+    .vista-previa div img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .eleccion-tematica select {
+        width: 400px;
+    }
+    .btn-seleccionar {
+        color: white;
+        cursor: pointer;
+        font-size: 19px;
+        width: auto; /* El ancho será el contenido del texto */
+        max-width: 200px; /* Limita el ancho máximo */
+        text-align: center; /* Centra el texto */
+        white-space: nowrap; /* Evita que el texto se divida en varias líneas 
+        overflow: hidden; /* Esconde el texto si se desborda */
+        text-overflow: ellipsis; /* Añade puntos suspensivos si el texto es muy largo */
+    }
+}
+
+/* Resolución: 429px */
+@media (max-width: 429px) {
+    .productos-galeria {
+        gap: 5px;
+    }
+
+    .producto {
+        width: 100%;
+    }
+
+    .producto img {
+        width: 120px; /* Ajusta el ancho de la imagen */
+        height: auto; /* Mantiene la proporción de la imagen */
+        object-fit: contain; /* Mantiene la imagen dentro del contenedor sin deformarse */
+    }
+
+    .btn-seleccionar {
+        padding: 4px 8px;
+    }
+    .subir-logo input[type="file"]{
+        width: 320px;
+    }
+    .texto-personalizado input[type="text"]{
+        width: 200px;
+    }
+
+    #vista-previa-logo {
+        width: 180px;
+        height: 180px;
+    }
+    .vista-previa div img{
+        width: 250px;
+        height: 250px;
+    }
+
+    .eleccion-tematica select {
+        width: 250px;
+    }
+    .acciones{
+        display: flex;
+    }
+    .btn-seleccionar {
+        color: white;
+        cursor: pointer;
+        font-size: 17px;
+        width: auto; /* El ancho será el contenido del texto */
+        max-width: 200px; /* Limita el ancho máximo */
+        text-align: center; /* Centra el texto */
+        white-space: nowrap; /* Evita que el texto se divida en varias líneas 
+        overflow: hidden; /* Esconde el texto si se desborda */
+        text-overflow: ellipsis; /* Añade puntos suspensivos si el texto es muy largo */
+    }
+}
+
+/* Resolución: 395px */
+@media (max-width: 395px) {
+    .productos-galeria {
+        gap: 5px;
+    }
+
+    .producto {
+        width: 100%;
+    }
+
+    .producto img {
+        width: 120px; /* Ajusta el ancho de la imagen */
+        height: auto; /* Mantiene la proporción de la imagen */
+        object-fit: contain; /* Mantiene la imagen dentro del contenedor sin deformarse */
+    }
+
+    .btn-seleccionar {
+        padding: 4px 8px;
+    }
+    .subir-logo input[type="file"]{
+        width: 320px;
+    }
+    .texto-personalizado input[type="text"]{
+        width: 200px;
+    }
+
+    #vista-previa-logo {
+        width: 180px;
+        height: 180px;
+    }
+    .vista-previa div img{
+        width: 250px;
+        height: 250px;
+    }
+
+    .eleccion-tematica select {
+        width: 250px;
+    }
+    .acciones{
+        display: flex;
+    }
+    .btn-seleccionar {
+        color: white;
+        cursor: pointer;
+        font-size: 15px;
+        width: auto; /* El ancho será el contenido del texto */
+        max-width: 150px; /* Limita el ancho máximo */
+        text-align: center; /* Centra el texto */
+        white-space: nowrap; /* Evita que el texto se divida en varias líneas 
+        overflow: hidden; /* Esconde el texto si se desborda */
+        text-overflow: ellipsis; /* Añade puntos suspensivos si el texto es muy largo */
+    }
+}
+
+/* Resolución: 360px */
+@media (max-width: 361px) {
+    .productos-galeria {
+        gap: 5px;
+    }
+
+    .producto {
+        width: 100%;
+    }
+
+    .producto img {
+        width: 140px; /* Ajusta el ancho de la imagen */
+        height: auto; /* Mantiene la proporción de la imagen */
+        object-fit: contain; /* Mantiene la imagen dentro del contenedor sin deformarse */
+    }
+
+    .btn-seleccionar {
+        padding: 4px 8px;
+    }
+    .subir-logo input[type="file"]{
+        width: 280px;
+    }
+    .texto-personalizado input[type="text"]{
+        width: 200px;
+    }
+
+    #vista-previa-logo {
+        width: 150px;
+        height: 150px;
+    }
+    .vista-previa div img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .eleccion-tematica select {
+        width: 200px;
+    }
+    .acciones{
+        display: flex;
+    }
+}
