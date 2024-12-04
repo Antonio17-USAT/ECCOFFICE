@@ -64,7 +64,7 @@ var htmlHeader = /*html*/`
     <div class="caja-busqueda">
         <div class="barra-busqueda">
             <input type="text" placeholder="Buscar producto">
-            <span class="icono">Q</span>
+            <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #000000;"></i>
         </div>
     </div>
 

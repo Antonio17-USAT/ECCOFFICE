@@ -1,3 +1,8 @@
+.productos{ 
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1500px;
+}
 .campos{
     width: 85%;
 }
@@ -11,6 +16,9 @@
     border-radius:5px ;
     margin:20px;
     padding: 10px;
+}
+#listaCarrito{
+    width: 85%;
 }
 .cont h4{
     font-style: italic;

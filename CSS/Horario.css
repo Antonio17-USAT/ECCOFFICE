@@ -2,7 +2,8 @@
     display: flex;
     justify-content: center;
     justify-items: center;
-    margin: 0 auto;
+    margin: 10px auto;
+    margin-bottom: 50px;
 }
 /*-------------*/
 .texto{

@@ -68,6 +68,9 @@ body{
 .busqueda{ 
     padding: 0px 100px;
 }
+.barra-busqueda i{ 
+    padding: 0px 10px;  
+}
 
 .icons {
     display: flex;

@@ -369,6 +369,7 @@ form {
     .myf{
         margin-left: 7px;
         margin-top: -30px;
+        padding-left: 10px;
     }
     .btn-form{
         display: flex;
