@@ -9,8 +9,11 @@ var htmlBarraLateral = /*html*/`
     <button class="S"><a href="listaDeseos.html">Lista de Deseos</a></button>
     <button class="S"><a href="devoluciones.html">Devoluciones</a></button>
     <button class="S"><a href="configuracion.html">Configuración</a></button>
-    
+    <div>
+        <input type="date" id="fecha" name="fecha"> 
+    </div>
     
     <button class="close-sidebar btn btn-danger">✖ Cerrar</button>
+    
 `
 document.getElementsByClassName('sidebar')[0].innerHTML = htmlBarraLateral
