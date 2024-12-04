@@ -137,7 +137,7 @@ if (typeof sitio_js !== 'undefined') {
                         </div>
                         <div class="boton">
                          <button class="btnEliminar" data-nombre="${item.nombre}">Eliminar</button>
-                    </div>
+                        </div>
                     </div>
                 </div>
             `;
