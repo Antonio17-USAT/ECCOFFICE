@@ -208,7 +208,7 @@ main {
 }
 
 /* Resolución: 428px */
-@media (max-width: 428px) {
+@media (max-width: 429px) {
     .productos {
         display: flex;
         justify-content: center;
@@ -225,8 +225,8 @@ main {
     .boton{
         margin-left: 0px;
     }
-    .boton #editar{
-        width: 100%;
+    .boton a #editar{
+        width: 60%;
         font-size: 14px;
     }
     .info{
@@ -237,10 +237,13 @@ main {
     }
     .botones {
         gap: 5px;
-        width: 104%;
+        width: 100%;
     }
     #btn{
         font-size: 14px;
+    }
+    .botones a button{
+        width: 0%;
     }
 }
 
