@@ -127,7 +127,9 @@ main{
     opacity: 1;
     animation: zoomIn 1.2s ease-in-out 0.5s forwards;
 }
-
+.Text p{ 
+    font-size: 20px;
+}
 
   
 

@@ -43,9 +43,9 @@ hr{
 .dato-oficial{
     width: 240px;
 }
-.edi {
-    width: 175px;
-    padding: 5px 15px;
+.boton a .edi {
+    width: 100px;
+    padding: 5px 5px;
 }
 .boton {
     display: flex;
@@ -66,6 +66,7 @@ hr{
     border: 3px solid #b5f7cd;
     color: black;
 }
+
 @media (max-width: 890px) {
     .campos{
         margin-left: -20px;
@@ -76,7 +77,6 @@ hr{
 
 @media (max-width: 429px) {
     .productos{
-        border: 2px solid rgb(188, 29, 29);
         padding: 30px 30px;
         display: grid;
         grid-template-columns:1fr;
