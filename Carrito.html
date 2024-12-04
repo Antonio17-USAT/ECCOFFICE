@@ -33,26 +33,3 @@
 </body>
 
 </html>
-
-<div class="producto-carrito" producto-id="${index}">
-    <img src="${item.ruta_imagen}" alt="${item.nombre}" />
-    <div class="detalle">
-        <h5>${item.nombre}</h5>
-        <p>${item.descripcion}</p>
-    </div>
-    <div class="boton">
-        <div>
-
-            <button class="btn-decrementar" data-producto="${index}">-</button>
-            <span class="cantidad">${item.cantidadComprada}</span>
-        </div>
-        <button class="btn-incrementar" data-producto="${index}">+</button>
-
-    </div>
-    <div>
-        <p>S/. ${totalProducto.toFixed(2)}</p>
-    </div>
-    <div class="boton">
-        <button class="btnEliminar" data-nombre="${item.nombre}">Eliminar</button>
-    </div>
-</div

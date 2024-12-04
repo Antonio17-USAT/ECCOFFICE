@@ -1,12 +1,199 @@
+
+.sidebar a{ 
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+  color: black;
+}
+
+/* Botones del menú */
+.menu-btn {
+  background-color:  #b5f7cd;
+  color: black;
+  font-weight: bold;
+  padding: 10px 0px;
+  border-radius: 20px;
+  width: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 10px 10px;
+  margin-bottom: 10px;
+}
+.S {
+  background-color:  #b5f7cd;
+  padding: 10px 0px;
+  border-radius: 20px;
+  width: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 10px 10px;
+  margin-bottom: 10px;
+}
+.S:hover{
+  background-color: #4BAA6E;
+  color: white;
+}
+
+.menu-btn:hover {
+  background-color: #4BAA6E;
+  color: white;
+}
+
+/* Botón desplegable */
+.dropdown-btn {
+  position: relative;
+}
+
+/* Submenú */
+.dropdown-content {
+  display: none;
+  flex-direction: column;
+  background-color: white;
+  margin: 10px 0px;
+  margin-left: 20px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.submenu-btn {
+  color: black;
+  padding: 8px 10px;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+.dropdown-content:hover{ 
+  background-color: white;
+  border: 2px solid #4BAA6E;
+  color: black;
+}
+
+.submenu-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Mostrar el submenú cuando se activa */
+
+.show {
+  display: flex;
+}
+.close-sidebar{
+  background-color:  #ffffff;
+  color: black;
+  padding: 10px 0px;
+  border-radius: 20px;
+  width: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 10px 10px;
+  margin-bottom: 10px;
+}
+#menu{
+  width: 200px;
+  margin-left: 62%;
+}
+/*-------- Para poner al costado derecho el boton "MENU" -------------------------------------------------*/
+@media (max-width: 990px) {
+  #menu{
+    margin-top: 5%;
+      width: 200px;
+      margin-left: 65%;
+  }
+}
+
+@media (max-width: 769px) {
+  #menu{
+      width: 200px;
+      margin-left: 66%;
+  }
+}
+
+@media (max-width: 429px) {
+  #menu{
+      width: 200px;
+      margin-left: 50%;
+  }
+}
+
+@media (max-width: 391px) {
+  #menu{
+      width: 200px;
+      margin-left: 40%;
+  }
+}
+
+@media (max-width: 360px) {
+  #menu{
+      width: 200px;
+      margin-left: 40%;
+  }
+}
+
+/*Añadir para la apariencia del boton cerrar y del boton menu en transparente*/
+@media (min-width: 998px) {
+  .close-sidebar {
+      display: none;
+  }
+  #menu{
+      display: none;
+      
+  }
+}
+
+
+/*ALERTA: ESTO PROVENIA DEL CSS DE LA PROPIA PADINA DE DETALLE-PEDIDO*/
+/*
+Añadir en las paginas de esta rama: para el color del menu
+*/
+:root {
+  --teal-500: #7df1a7; /* Color para teal-500 */
+}
+
+@media (max-width: 992px) {
+  .sidebar {
+      display: none; /* Oculta la barra lateral por defecto */
+      position: fixed; /* Mantiene la barra fija en la pantalla */
+      top: 0;
+      left: 0;
+      height: 100vh; /* Ocupa toda la altura visible */
+      width: 280px;
+      background-color: #f8f9fa;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+      padding: 20px;
+      overflow-y: auto; /* Permite el scroll si el contenido excede */
+  }
+
+  .sidebar.show {
+      display: block; /* Muestra la barra lateral cuando tiene la clase "show" */
+  }
+
+  .contenedor {
+      flex-direction: column;
+      align-items: stretch;
+  }
+
+  .toggle-sidebar {
+      margin-bottom: 15px;
+  }
+}
+
+
 /*css filtro nuevo */
 /* Botones del filtro */
 .filtro-boton {
-  background-color: #b5f7cd;
+  background-color: #7df1a7;
   color: black;
   font-weight: bold;
-  border: none;
+  border: black solid 2px;
   padding: 10px;
-  border-radius: 20px;
+  padding-left: 5%;
+  border-radius: 50px;
   width: 230px;
   display: flex;
   align-items: center;
@@ -14,11 +201,17 @@
   margin-bottom: 10px;
   cursor: pointer;
   text-align: left;
+  font-size: 15px;
+  
+    
+    
+    
 }
 
 .filtro-boton:hover {
-  background-color: #4BAA6E;
-  color: white;
+  
+  background-color: #4baa6e;
+  color: black;
 }
 
 /* Contenedor principal del filtro */
@@ -26,8 +219,11 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 10px;
+  padding-left: 25%;
+  padding-top: 10%;
+
   box-sizing: border-box;
+
 }
 
 /* Títulos de las secciones del filtro */
@@ -75,3 +271,51 @@
 .filtro-container h3 + input {
   margin-top: 10px;
 }
+
+/*ALERTA: ESTO PROVENIA DEL CSS DE LA PROPIA PADINA DE DETALLE-PEDIDO*/
+/*
+Añadir en las paginas de esta rama: para el color del menu
+*/
+:root {
+  --teal-500: #7df1a7; /* Color para teal-500 */
+}
+
+@media (max-width: 992px) {
+  .sidebar {
+      display: none; /* Oculta la barra lateral por defecto */
+      position: fixed; /* Mantiene la barra fija en la pantalla */
+      top: 0;
+      left: 0;
+      height: 100vh; /* Ocupa toda la altura visible */
+      width: 280px;
+      background-color: #f8f9fa;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+      padding: 20px;
+      overflow-y: auto; /* Permite el scroll si el contenido excede */
+      padding-left: 0;
+  }
+  .filtro-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 10%;
+    padding-top: 10%;
+  
+    box-sizing: border-box;
+  
+  }
+  .sidebar.show {
+      display: block; /* Muestra la barra lateral cuando tiene la clase "show" */
+  }
+
+  .contenedor {
+      flex-direction: column;
+      align-items: stretch;
+  }
+
+  .toggle-sidebar {
+      margin-bottom: 15px;
+  }
+}
+

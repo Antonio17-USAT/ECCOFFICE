@@ -8,6 +8,7 @@ var htmldropdown = /*html*/`
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="Catalogo.html">Catalogo</a></li>
                     <li><a class="dropdown-item" href="Carrito.html">Carrito</a></li>
+                    <li><a class="dropdown-item" href="personalizada.html">Personalizar</a></li>
                 </ul>
             </div>
             <div class="enlace">

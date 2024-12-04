@@ -98,17 +98,21 @@ body {
 
 /* Estilo de cada tarjeta del producto */
 .producto {
-    background-color: #fff;
-    border: 3px solid #4BAA6E;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: transform 0.2s;
+    width: 100%;  /* Esto asegura que la caja ocupe todo el ancho disponible */
+    max-width: 300px;  /* Ajusta el valor según el tamaño que desees para la caja */
+    margin: 10px;  /* Espaciado entre los productos */
+    box-sizing: border-box;  /* Asegura que los márgenes no se sumen al ancho */
+    border: 1px solid #4BAA6E;  /* Agrega un borde sutil */
+    padding: 10px;
+    background-color: #fff;  /* Fondo blanco para la caja del producto */
+    border-radius: 8px;  /* Bordes redondeados */
+    transition: transform 0.3s ease;  /* Efecto suave al interactuar */
 }
 
-/* Efecto de hover en la tarjeta */
+/* Efecto al pasar el ratón sobre el producto */
 .producto:hover {
-    transform: scale(1.05);
+    transform: scale(1.05);  /* Un pequeño aumento de tamaño */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra suave */
 }
 
 /* Estilo de la imagen en la tarjeta */
@@ -152,5 +156,28 @@ body {
 @media (min-width: 901px) {
     #listaProductos {
         grid-template-columns: repeat(3, 1fr); /* Tres columnas en pantallas grandes */
+    }
+}
+
+/* Resolución: 428px */
+@media (max-width: 428px) {
+    #listaProductos {
+        grid-template-columns: auto; /* Una columna en pantallas pequeñas */
+        margin-left: 13%;
+    }
+}
+/* Resolución: 390px */
+@media (max-width: 392px) {
+    #listaProductos {
+        grid-template-columns: auto; /* Una columna en pantallas pequeñas */
+        margin-left: 8%;
+    }
+}
+
+/* Resolución: 360px */
+@media (max-width: 360px) {
+    #listaProductos {
+        grid-template-columns: auto; /* Una columna en pantallas pequeñas */
+        margin-left: 6%;
     }
 }

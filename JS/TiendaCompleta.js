@@ -30,7 +30,7 @@ if (typeof sitio_js !== 'undefined') {
                 <div class="producto">
                     <a href="producto.html?producto=${index}">
                         <img src="${producto.ruta_imagen}" alt="${producto.nombre}" />
-                        <h5>${producto.nombre}</h5>
+                        <h5 style="color: #4BAA6E;"><strong>${producto.nombre}</strong></h5>
                         <p>Precio: S/. ${producto.precio.toFixed(2)}</p>
                         <p>Stock: ${producto.stock}</p>
                     </a>
@@ -45,18 +45,40 @@ if (typeof sitio_js !== 'undefined') {
         const contenedorInfo = document.querySelector('.contenedor-info-producto');
 
         const infoHTML = `
-            <div class="producto-detalle">
-                <img src="${producto.ruta_imagen}" alt="${producto.nombre}" />
-                <h2>${producto.nombre}</h2>
-                <p>${producto.descripcion}</p>
-                <p>Precio: S/. ${producto.precio.toFixed(2)}</p>
-                <p>Stock disponible: ${producto.stock}</p>
-                <button id="btnDecrementar${productoIndex}">-</button>
-                <span id="cantidad${productoIndex}" class="cantidad">1</span>
-                <button id="btnIncrementar${productoIndex}">+</button>
-                <button id="btnAgregar${productoIndex}">Agregar al carrito</button>
-            </div>
-        `;
+    <div class="producto-detalle" style="width: 100%; max-width: 500px; margin: 20px auto; padding: 20px; background-color: #fff; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); box-sizing: border-box; text-align: center;">
+        
+        <img src="${producto.ruta_imagen}" alt="${producto.nombre}" style="max-width: 100%; height: auto; border-radius: 8px; margin-bottom: 15px;" />
+        <h2 style="color: #4BAA6E; font-size: 1.8rem; margin-bottom: 10px;">${producto.nombre}</h2>
+        <p style="font-size: 1.1rem; color: #333; margin-bottom: 10px;">${producto.descripcion}</p>
+        <p style="font-size: 1.1rem; color: #333; margin-bottom: 10px;">Precio: S/. ${producto.precio.toFixed(2)}</p>
+        <p style="font-size: 1.1rem; color: #333; margin-bottom: 10px;">Stock disponible: ${producto.stock}</p>
+
+        <!-- Botón Decrementar -->
+        <div class="boton" style="display: inline-block; margin: 5px;">
+            <button id="btnDecrementar${productoIndex}" style="border-radius: 50px; background-color: #4baa6e; color: white; font-size: 15px; border-color: black solid 2px; padding: 10px 20px; cursor: pointer;">
+                -
+            </button>
+        </div>
+
+        <!-- Cantidad -->
+        <span id="cantidad${productoIndex}" class="cantidad" style="font-size: 1.2rem; font-weight: bold; color: black; margin: 0 10px;">1</span>
+
+        <!-- Botón Incrementar -->
+        <div class="boton" style="display: inline-block; margin: 5px;">
+            <button id="btnIncrementar${productoIndex}" style="border-radius: 50px; background-color: #4baa6e; color: white; font-size: 15px; border-color: black solid 2px; padding: 10px 20px; cursor: pointer;">
+                +
+            </button>
+        </div>
+
+        <!-- Botón Agregar al carrito -->
+        <div class="boton" style="display: inline-block; margin: 5px;">
+            <button id="btnAgregar${productoIndex}" style="border-radius: 50px; background-color: #4baa6e; color: white; font-size: 15px; border-color: black solid 2px; padding: 10px 20px; cursor: pointer;">
+                Agregar al carrito
+            </button>
+        </div>
+    </div>
+`;
+
         contenedorInfo.innerHTML = infoHTML;
 
         const btnAgregar = document.getElementById(`btnAgregar${productoIndex}`);
