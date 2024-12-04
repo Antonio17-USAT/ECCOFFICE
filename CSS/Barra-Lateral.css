@@ -97,6 +97,34 @@
     width: 200px;
     margin-left: 62%;
 }
+
+/* Estilo para el input de tipo date */
+.sidebar input[type="date"] {
+    background-color: #b5f7cd;  /* Color de fondo similar a los botones */
+    color: black;  /* Color del texto */
+    padding: 10px;  /* Padding similar al de los botones */
+    width: 230px;  /* Ancho similar al de los botones */
+    border-radius: 20px;  /* Bordes redondeados */
+    border: black solid 2px;  /* Sin borde */
+    margin-bottom: 10px;  /* Espacio inferior para separar del siguiente elemento */
+    font-size: 16px;  /* Tamaño de fuente similar a los botones */
+    text-align: center;  /* Alineación del texto */
+}
+
+/* Estilo cuando el input de tipo date está en foco (focus) */
+.sidebar input[type="date"]:focus {
+    outline: none;  /* Elimina el borde por defecto */
+    background-color: #4BAA6E;  /* Fondo verde cuando se hace foco */
+    color: white;  /* Color del texto cuando tiene foco */
+}
+
+/* Estilo para cuando se pasa el mouse sobre el input de tipo date */
+.sidebar input[type="date"]:hover {
+    background-color: #4BAA6E;  /* Fondo verde cuando se pasa el mouse */
+    color: white;  /* Color del texto en hover */
+}
+
+
 /*-------- Para poner al costado derecho el boton "MENU" ----------*/
 @media (max-width: 990px) {
     #menu{

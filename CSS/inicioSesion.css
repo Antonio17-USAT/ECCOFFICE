@@ -29,6 +29,9 @@ main {
     width: 600px;
     padding: 10px 40px;
 }
+.opc a{
+    text-decoration: none;
+}
 
 .opc h1{
     font-size: 30px;
@@ -42,7 +45,7 @@ main {
     color:  #4BAA6E ;
 }
 
-.opc button {
+.opc a button {
     border: #ada7a7 1px solid;
     display: block;
     width: 100%;

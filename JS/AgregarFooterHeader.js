@@ -71,7 +71,7 @@ var htmlHeader = /*html*/`
     <div class="icons">
         <a href="Carrito.html" class="icon"><i class="fa-solid fa-cart-shopping fa-2xl" style="color: #000000;"></i></a>
         <a href="listaDeseos.html" class="icon"><i class="fa-regular fa-heart fa-2xl" style="color: #000000;"></i></a>
-        <a href="perfilNuevo.html" class="icon"><i class="fa-regular fa-user fa-2xl" style="color: #000000;"></i></a>
+        <a href="inicioSesion.html" class="icon"><i class="fa-regular fa-user fa-2xl" style="color: #000000;"></i></a>
     </div>
 </div>`
 
