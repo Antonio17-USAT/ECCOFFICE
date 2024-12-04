@@ -1,16 +1,14 @@
-main{ 
-    margin: 10px 10px;
-    margin: 35.5px 0px;
-}
-.contenedor{
+.contenedor{ 
     display: flex;
-    margin: 0px auto;
-    padding: 0px 0 207px 0; 
+    justify-content: center;
+    justify-items: center;
+    margin: 0 auto;
 }
 /*-------------*/
 .texto{
-    padding: 0px 30px ; 
-    
+    width: 800px;
+    padding: 0px 25px ;
+    padding-bottom: 25px;
 }
 .Titulo{ 
     margin-top: 25px;
@@ -21,7 +19,6 @@ main{
     border: 1px solid #4BAA6E;
     border-radius: 5px;
     padding: 15px;
-    width: 87%;
     text-align: justify;
     max-width: 1200px;
     margin: 15px 0;
@@ -58,6 +55,16 @@ hr{
 .preg {
     max-width: 1200px;
 }
+.imagen{
+    width: 718px;
+    display: flex;
+    justify-content: center;
+}
+.imagen img{
+    border: 2px solid #4BAA6E;
+    border-radius: 5px;
+    width: 300px;
+}
 /*-------- RESPONSIVE DESIGN ----------*/
 
 @media (max-width: 1280px) {
@@ -76,21 +83,25 @@ hr{
         grid-gap: 20px;
     }
     .texto { 
-        align-content: center;
-        justify-content: center;
-        justify-items: center;
-        width: 85%;
+        width: 720px;
+        padding: 0px 0px;
     }
     .Titulo {
         margin-top: 20px;
     }
     .box {
         padding: 10px;
-        width: 101%;
+        width: 720px;
         max-width: 1000px;
     }
     hr {
         width: 60%; 
+    }
+    .imagen{
+        width: 699px;
+    }
+    .imagen img{
+        width: 300px;
     }
 }
 
@@ -113,18 +124,17 @@ hr{
         font-size: 18px;
     }
     .box {
-        width: 100%;
+        width: 720px;
     }
     hr {
         width: 70%; 
     }
     .texto {
-        padding: 5px;
-        width: 750px;
+        width: 720px;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
     main {
         grid-template-columns: 1fr; 
     }
@@ -146,24 +156,21 @@ hr{
         font-size: 14px;
     }
     .texto { 
-        align-content: center;
-        justify-content: center;
-        justify-items: center;
+        width: 600px;
     }
     .Titulo {
         margin-top: 10px;
         font-size: 16px;
     }
     .box {
-        padding: 10px;
-        width: 100%;
+        width: 600px;
     }
     hr {
         width: 80%;
     }
 }
 
-@media (max-width: 428px) {
+@media (max-width: 429px) {
     .contenedor {
         width: 70%;
         display: grid;
@@ -176,18 +183,14 @@ hr{
         grid-gap: 8px;
     }
     .texto { 
-        align-content: center;
-        justify-content: center;
-        justify-items: center;
-        width: 370px;
+        width: 360px;
     }
     .Titulo {
         font-size: 16px;
         margin-top: 10px;
     }
     .box {
-        padding: 8px;
-        border-radius: 4px;
+        width: 360px;
     }
     .preg{
         font-size: 19px;
@@ -198,6 +201,12 @@ hr{
     hr {
         width: 90%;
     }
+    .imagen{
+        width: 338px;
+    }
+    .imagen img{
+        width: 200px;
+    }
     .caja-filtro button{
         width: 180px;
         padding: 6px 5px;
@@ -207,7 +216,7 @@ hr{
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 361px) {
     .contenedor {
         display: grid;
         padding: 0px;
@@ -223,5 +232,11 @@ hr{
     }
     hr {
         width: 100%;
+    }
+    .imagen{
+        width: 347px;
+    }
+    .imagen img{
+        width: 200px;
     }
 }

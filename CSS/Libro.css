@@ -1,16 +1,20 @@
-
-main{ 
-    margin: 10px 10px;
+.contenedor{ 
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin: 0 auto;
 }
+/*-------------*/
 .texto{
-    padding: 0px 350px 0px 15px ;
+    width: 800px;
+    padding: 0px 25px ;
+    padding-bottom: 25px;
 }
-.formulario2{
+.formulario2{ 
     border: 1px solid #4BAA6E;
     border-radius: 5px;
     padding: 20px 20px;
-    margin: 80px 10px;
-    width: 150%;
+    width: 745px;
     text-align: justify;
     margin-top: 30px;
 }
@@ -85,9 +89,14 @@ main{
         margin: 10px auto;
         grid-gap: 20px ;
     }
+    .texto{
+        width: 600px;
+        padding: 0px 0px ;
+        padding-bottom: 25px;
+    }
     .formulario2{
         border: 1px solid #4BAA6E;
-        margin-left: 50px;
+        width: 600px;
     }
     .caja-filtro button{
         width: 190px;
@@ -111,9 +120,14 @@ main{
         margin: 10px auto;
         grid-gap: 20px ;
     }
+    .texto{
+        width: 610px;
+        padding: 0px 0px ;
+        padding-bottom: 25px;
+    }
     .formulario2{
         border: 1px solid #4BAA6E;
-        margin-left: 50px;
+        width: 610px;
     }
     .caja-filtro button{
         width: 190px;
@@ -138,13 +152,14 @@ main{
         margin: 10px auto;
         grid-gap: 20px ;
     }
- 
-    .texto{ 
-      padding: 0px;
-        width: 400px;
-        margin-right: 350px;
+    .texto{
+        width: 607px;
+        padding: 0px 0px ;
+        padding-bottom: 25px;
     }
-
+    .formulario2{
+        width: 607px;
+    }
     .caja-filtro button{
         width: 190px;
     }

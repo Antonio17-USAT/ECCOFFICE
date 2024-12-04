@@ -1,10 +1,13 @@
-main{ 
-    margin: 10px 10px;
+.contenedor{ 
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin: 0 auto;
 }
-
 /*-------------*/
 .texto{
-    padding: 0px 30px ; 
+    width: 800px;
+    padding: 0px 25px ; 
 }
 .Titulo{ 
     margin-top: 25px;
@@ -15,7 +18,7 @@ main{
     border: 1px solid #4BAA6E;
     border-radius: 5px;
     padding: 15px;
-    width: 80%;
+    width: 745px;
     text-align: justify;
     max-width: 1200px;
     margin: 15px 0;
@@ -29,6 +32,16 @@ main{
     border: 1px solid #4BAA6E;
     width: 45%;
 
+}
+.imagen{
+    width: 710px;
+    display: flex;
+    justify-content: center;
+}
+.imagen img{
+    border: 2px solid #4BAA6E;
+    border-radius: 5px;
+    width: 300px;
 }
 
 /*-------- RESPONSIVE DESIGN ----------*/
@@ -49,17 +62,22 @@ main{
         grid-gap: 20px ;
     }
     .texto{ 
-        align-content: center;
-        justify-content: center;
-        justify-items: center;
-        width: 700px;
-    }
-    .Titulo{
-        margin-left: 20px;
+        padding: 0px 0px;
+        width: 600px;
     }
     .box{
         width: 600px;
-        margin-left: 20px;
+        
+    }
+    .imagen{
+        width: 570px;
+        display: flex;
+        justify-content: center;
+    }
+    .imagen img{
+        border: 2px solid #4BAA6E;
+        border-radius: 5px;
+        width: 300px;
     }
     .caja-filtro button{
         width: 190px;
@@ -75,15 +93,13 @@ main{
     }
     .Titulo {
         margin-top: 15px;
-        margin-left: 20px;
     }
     .box {
         padding: 10px;
-        width: 95%;
+        width: 600px;
     }
     .texto {
-        width: 640px;
-        padding: 5px;
+        width: 600px;
     }
     .hr {
         width: 60%; /* Ajuste del ancho del separador */
@@ -93,36 +109,6 @@ main{
         font-size: 14px; /* Ajuste del texto en las opciones */
     }
 }
-
-@media (max-width: 768px) {
-    main {
-        grid-template-columns: 1fr; 
-    }
-    .contenedor{ 
-        width: 70%;
-        display: grid;
-    }
-    .filtros{ 
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto auto;
-        margin: 10px auto;
-        grid-gap: 20px ;
-    }
-    .texto{ 
-        align-content: center;
-        justify-content: center;
-        justify-items: center;
-    }
-
-    .caja-filtro button{
-        width: 190px;
-    }
-    .caja-filtro button a{ 
-        font-size: 14px;
-    }
-}
-
 @media (max-width: 428px) {
     main {
         grid-template-columns: 1fr; 
@@ -138,16 +124,19 @@ main{
         margin: 10px auto;
         grid-gap: 8px ;
     }
-    .texto{ 
-        align-content: center;
-        justify-content: center;
-        justify-items: center;
-        width: 395px;
-    }
+    .texto,
     .box {
-        padding: 10px;
-        margin-left: 9px;
-        width: 95%;
+        width: 360px;
+    }
+    .imagen{
+        width: 340px;
+        display: flex;
+        justify-content: center;
+    }
+    .imagen img{
+        border: 2px solid #4BAA6E;
+        border-radius: 5px;
+        width: 250px;
     }
     .caja-filtro button{
         width: 180px;
@@ -157,10 +146,25 @@ main{
         font-size: 12px;
     }
 }
-
-@media (max-width: 360px) {
-    .contenedor{ 
-        display: grid;
-        padding: 0px 0px;
+@media (max-width: 394px) {
+    .texto,
+    .box {
+        width: 348px;
+    }
+    .imagen{
+        width: 328px;
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (max-width: 361px) {
+    .texto,
+    .box {
+        width: 346px;
+    }
+    .imagen{
+        width: 325px;
+        display: flex;
+        justify-content: center;
     }
 }

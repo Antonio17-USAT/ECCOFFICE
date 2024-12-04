@@ -1,41 +1,55 @@
-main {
-    margin: 10px 10px;
+.contenedor{ 
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin: 0 auto;
 }
-
-.contenedor {
-    padding-bottom: 113px;
-
-}
-
-.texto {
-    padding: 15px 400px 0px 15px;
-    margin-top: 5px;
-
+/*-------------*/
+.texto{
+    width: 800px;
+    padding: 0px 13px ;
 }
 
 .texto .Titulo {
     padding-left: 12px;
-    padding-top: 4px;
+    padding-top: 25px;
 }
 
 .box {
     border-radius: 5px;
     padding: 15px;
-    width: 165%;
+    width: 87%;
     text-align: justify;
     max-width: 1200px;
-    margin: 15px 0;
+    margin: 0px 0;
     display: grid;
     grid-gap: 20px;
 }
 
 .caja {
     border: 1px solid #4BAA6E;
-    padding: 10px 10px;
     border-radius: 5px;
+    width: 745px;
+    padding: 10px 10px;
 }
+.caja div{
+    width: 745px;
+    height: 110px;
+    display: flex;
+    flex-direction: row;
+}
+.caja div p{
+    width: 500px;
+    height: 110px;
+    padding: 40px 10px;
+}
+.caja div a img{
+    display: flex;
+    width: 170px;
 
-/-------- RESPONSIVE ----------/ @media (max-width: 1280px) {
+}
+/*-------- RESPONSIVE ----------*/ 
+@media (max-width: 1280px) {
     main {
         grid-template-columns: 1fr;
     }
@@ -54,12 +68,36 @@ main {
     }
 
     .texto {
-        align-content: center;
-        justify-content: center;
-        justify-items: center;
-        margin-left: 160px;
+        width: 600px;
+        padding: 0px 0px;  
     }
+    .Titulo{
+        margin-left: -10px;
+    }
+    .box{
+        width: 600px;
+        padding: 0px 0px;
+    }
+    .caja{
+        padding: 10px 10px;
+        width: 600px;
+    }
+    .caja div{
+        display: flex;
+        flex-direction: column;
+        width: 580px;
+        height: 165px;
+    }
+    .caja div p{
 
+        width: 580px;
+        height: 20px;
+        padding: 0px 10px;
+    }
+    .caja div a{
+        padding: 20px 10px;
+        width: 580px;
+    }
     .caja-filtro button {
         width: 190px;
     }
@@ -74,28 +112,21 @@ main {
         margin: 0 auto;
         /* Centra el contenido */
     }
-
     .Titulo {
         margin-top: 15px;
     }
-
+    
     .box {
-        padding: 10px;
-        width: 95%;
+        width: 606px;
     }
-
-    .texto {
-        padding: 5px;
-        width: 650px;
-        margin-left: 45px;
-
+    
+    .caja{
+        width: 606px;
     }
-
     .hr {
         width: 60%;
         /* Ajuste del ancho del separador */
     }
-
     .item-boton {
         padding-left: 10px;
         font-size: 14px;
@@ -136,7 +167,7 @@ main {
     }
 }
 
-@media (max-width: 428px) {
+@media (max-width: 429px) {
     main {
         grid-template-columns: 1fr;
     }
@@ -155,17 +186,38 @@ main {
     }
 
     .texto {
-        align-content: center;
+        width: 365px;
+        padding-top: -100px;
+        padding-bottom: 40px;
+    }
+    .Titulo{
+        margin-top: 0px;
+    }
+    .box {
+        width: 365px;
+    } 
+    .caja{
+        font-size: 14px;
+        width: 365px;
+    }
+    .caja div{
+        width: 340px;
+    }
+    .caja div p{
+        margin: 0px 0px;
+        width: 340px;
+        height: 100px;
+    }
+    .caja div a{
+        display: flex;
         justify-content: center;
-        justify-items: center;
-        width: 400px;
-        margin-left: 15px;
+        width: 340px;
+        height: 100px;
+        padding: 0px 0px;
     }
-
-    .caja {
-        font-size: 12px;
+    .caja div a img{
+        width: 140px;
     }
-
     .caja-filtro button {
         width: 180px;
         padding: 6px 5px;
@@ -177,8 +229,17 @@ main {
 }
 
 @media (max-width: 360px) {
-    .contenedor {
-        display: grid;
-        padding: 0px 0px;
+    .texto {
+        width: 365px;
+    }
+    .Titulo{
+        margin-top: 0px;
+    }
+    .box {
+        width: 362px;
+    } 
+    .caja{
+        font-size: 15px;
+        width: 362px;
     }
 }
