@@ -1,3 +1,4 @@
+/*css fundadores*/
 main {
     display: flex;
     justify-content: center;
@@ -95,8 +96,8 @@ main {
     }
     .contenedor {
         grid-template-rows: repeat(4, auto);
-        grid-gap: 1.5%;
-        max-width: 90%; /* Reduce el ancho máximo */
+        grid-gap: 0%;
+        max-width: 100%; /* Reduce el ancho máximo */
     }
     .fotoI, .fotoD {
         width: 90px;
