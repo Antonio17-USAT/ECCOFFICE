@@ -1,4 +1,4 @@
-/*Hasta aquí el header*/
+/* css configuracion*/
 main {
     padding: 10px 10px;
 }
@@ -173,7 +173,7 @@ main {
 }
 
 /* Resolución: 768px */
-@media (max-width: 768px) {
+@media (max-width: 769px) {
     .contenedor{
         justify-content: center;
 
@@ -190,7 +190,7 @@ main {
         margin-right: 10%;
     }
     .boton #editar{
-        width: 100%;
+        width: 50%;
         font-size: 17px;
     }
     .editarC h4{
