@@ -57,7 +57,7 @@ var htmlHeader = /*html*/`
 <div class="he1">
     <div class="logo">
         <a href="inicio.html" style:"text-decoration:none"> 
-            <img src="Img/pinguino drogo.png" alt="ECCOFFICE Logo" class="logo-img">
+            <img src="Img/pinguino drogo.webp" alt="ECCOFFICE Logo" class="logo-img">
             <span class="logo-text"><strong>ECCOFFICE</strong></span>
         </a>
     </div>
@@ -79,7 +79,7 @@ var htmlFooter = /*html*/`
 <div class="caja-footer">
     <div class="logo">
         <div class="logo-f">
-                    <img src="Img/pinguino drogo.png" alt="ECCOFFICE Logo" class="logo-img">
+                    <img src="Img/pinguino drogo.webp" alt="ECCOFFICE Logo" class="logo-img">
         </div>
                 <div class="text-f">
                     <span class="logo-text"><strong>ECCOFFICE</strong></span>
