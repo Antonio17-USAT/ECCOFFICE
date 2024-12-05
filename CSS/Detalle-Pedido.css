@@ -93,9 +93,14 @@ hr {
     font-size: 15px;
 }
 
-.botones button:hover {
+.botones .verde:hover {
     background-color: white;
     border: 3px solid #b5f7cd;
+    color: black;
+}
+.botones .rojo:hover {
+    background-color: white;
+    border: 3px solid red;
     color: black;
 }
 
